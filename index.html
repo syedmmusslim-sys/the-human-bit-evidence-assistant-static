@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>State-transition product demo — Evidence Assistant static walkthrough</title>
+  <style>
+    :root { color-scheme: light; --ink:#17231f; --muted:#5f6f68; --line:#dfe8e3; --paper:#fbf7ef; --green:#133d32; --mint:#eaf4ee; --amber:#fff2d3; --red:#7a2e24; --blue:#e9f1ff; --blueInk:#193a68; }
+    * { box-sizing: border-box; }
+    body { margin:0; font:16px/1.55 system-ui,-apple-system,Segoe UI,Arial,sans-serif; color:var(--ink); background:linear-gradient(180deg,#f8f4ec 0%,#ffffff 50%); }
+    main { max-width:1180px; margin:0 auto; padding:24px 20px 56px; }
+    .topnav { display:flex; flex-wrap:wrap; gap:8px; margin:0 0 18px; }
+    .navlink { padding:8px 11px; border:1px solid var(--line); border-radius:999px; background:#fff; color:#105f4b; text-decoration:none; font-weight:800; }
+    .navlink.active { background:var(--green); color:#fff; }
+    .hero { background:#fff; border:1px solid var(--line); border-radius:28px; padding:34px; box-shadow:0 16px 42px rgba(19,61,50,.08); }
+    .eyebrow { display:inline-flex; gap:8px; align-items:center; margin:0 0 14px; padding:6px 10px; border-radius:999px; background:var(--amber); color:#624600; font-weight:800; font-size:13px; letter-spacing:.02em; text-transform:uppercase; }
+    h1 { margin:0; font-size:clamp(32px,5vw,58px); line-height:1.02; letter-spacing:-.04em; color:var(--green); }
+    h2 { margin:36px 0 12px; font-size:26px; line-height:1.15; color:var(--green); }
+    h3 { margin:0 0 8px; font-size:18px; color:var(--green); }
+    h4 { margin:12px 0 6px; font-size:14px; letter-spacing:.02em; text-transform:uppercase; color:var(--muted); }
+    p { margin:0 0 14px; }
+    a { color:#105f4b; font-weight:800; }
+    a:focus-visible { outline:3px solid #f4a62a; outline-offset:3px; }
+    table { width:100%; border-collapse:collapse; background:#fff; border:1px solid var(--line); border-radius:18px; overflow:hidden; display:block; overflow-x:auto; }
+    th, td { padding:12px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; min-width:140px; }
+    th { background:var(--mint); color:var(--green); }
+    .lead { margin-top:18px; max-width:820px; font-size:20px; color:#31423b; }
+    .boundary { margin-top:22px; padding:16px; border:1px solid #f0c36d; border-radius:18px; background:#fff8e7; color:#513b09; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px; }
+    .grid2 { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:14px; }
+    .card, .beat, .panel { background:#fff; border:1px solid var(--line); border-radius:22px; padding:20px; }
+    .status { display:inline-block; margin:4px 0 10px; padding:4px 9px; border-radius:999px; background:var(--mint); color:var(--green); font-weight:800; font-size:13px; }
+    .danger { background:#fff4f2; color:var(--red); }
+    .good { background:var(--mint); color:var(--green); }
+    .info { background:var(--blue); color:var(--blueInk); }
+    .muted { color:var(--muted); }
+    .quote { border-left:4px solid var(--green); padding-left:14px; font-weight:800; }
+    .arrow { display:grid; place-items:center; color:var(--green); font-size:26px; font-weight:900; }
+    .tour { display:flex; flex-wrap:wrap; gap:8px; margin:16px 0; }
+    .tour span { padding:8px 10px; border-radius:999px; background:var(--mint); color:var(--green); font-weight:800; }
+    .cta { border:2px solid var(--green); background:var(--mint); }
+    .pill { display:inline-block; padding:3px 8px; border-radius:999px; background:var(--mint); color:var(--green); font-size:12px; font-weight:900; }
+    .pill.block { background:#fff4f2; color:var(--red); }
+    .pill.hold { background:var(--amber); color:#624600; }
+    .pill.ready { background:var(--blue); color:var(--blueInk); }
+    .chips { display:flex; flex-wrap:wrap; gap:8px; margin:12px 0 4px; }
+    .disabled { opacity:.68; filter:grayscale(.2); }
+    .stage { display:grid; grid-template-columns:1.05fr .95fr; gap:14px; align-items:stretch; margin:0 0 14px; }
+    .stage .now { border:1px solid var(--line); border-radius:20px; padding:18px 18px 18px 60px; position:relative; background:#fff; }
+    .stage .num { position:absolute; left:16px; top:18px; width:32px; height:32px; display:grid; place-items:center; border-radius:50%; background:var(--green); color:#fff; font-weight:900; }
+    .beforeafter { display:grid; grid-template-columns:1fr auto 1fr; gap:10px; align-items:stretch; }
+    .ba { border:1px solid var(--line); border-radius:16px; padding:14px; background:#fbfdfc; }
+    .ba.before { background:#fff4f2; }
+    .ba.after { background:var(--mint); }
+    .template { font-family:ui-monospace,SFMono-Regular,Consolas,monospace; white-space:pre-wrap; background:#102b24; color:#f6fff9; border-radius:18px; padding:16px; overflow:auto; }
+    footer { margin-top:34px; padding-top:18px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
+    @media (max-width:820px) { .stage { grid-template-columns:1fr; } .beforeafter { grid-template-columns:1fr; } .arrow { transform:rotate(90deg); } .hero { padding:24px; } }
+  </style>
+</head>
+<body>
+<main>
+<nav class="topnav" aria-label="Static walkthrough pages"><a class="navlink active" href="index.html">Product demo</a><a class="navlink" href="manager-handoff-summary.html">Manager handoff</a><a class="navlink" href="evidence-packet-summary.html">Evidence packet</a><a class="navlink" href="pilot-checklist-summary.html">Pilot checklist</a><a class="navlink" href="pilot-proposal-summary.html">Pilot proposal</a><a class="navlink" href="buyer-one-pager-summary.html">Buyer one-pager</a><a class="navlink" href="public-launch-gate-summary.html">Launch boundary</a></nav>
+
+<section class="hero">
+  <p class="eyebrow">Static walkthrough, not the app</p>
+  <h1>Watch the case change state: blocked → received → reviewed → chased → handed off.</h1>
+  <p class="lead">Evidence Assistant is a reviewer-ready close-readiness workflow for bookkeeping, accounting, and CAS teams. This is a static state-transition product demo: each beat shows the current state, one dominant action, what is blocked, and exactly what changes in the case — from “we cannot close” through evidence intake, reviewer decision, and chase, to a manager handoff without chasing the wrong things.</p>
+  <section class="beforeafter" aria-label="Synthetic before and after outcome">
+    <article class="ba before"><h4>Before</h4><p><strong>4 open blockers in the Kainga case</strong>, <strong>14 baseline chase touches</strong>, two duplicate re-asks, and a manager still asking: “can we close or not?”</p></article>
+    <div class="arrow" aria-hidden="true">→</div>
+    <article class="ba after"><h4>After</h4><p><strong>1 accepted</strong>, <strong>2 rejected/problem items</strong>, <strong>4 unresolved</strong>, accepted/waiting-review items excluded from chase, manager packet ready for review only.</p></article>
+  </section>
+  <div class="boundary"><strong>Current boundary:</strong> this is a static walkthrough, not the app. It has no mutable API, no forms, no server calls, no real client data, and no claim that the local-only build can safely hold client files or run as a hosted service.</div>
+</section>
+
+
+<h2>Case command centre first: one safe next action</h2>
+<section class="grid2" aria-label="Build 28 case command centre first">
+  <article class="card cta"><h3>Kainga Cafe · August close</h3><p><strong>Case command centre first:</strong> the close is still blocked. The one safe dominant action is to route received evidence to reviewer and chase only unresolved blockers.</p><section class="chips"><span class="pill block">3 chase-now blockers</span><span class="pill hold">1 waiting reviewer decision</span><span class="pill">1 accepted/excluded from chase</span></section></article>
+  <article class="card"><h3>Visible disabled controls</h3><p><button disabled>Accept as staff — denied for staff role</button> <button disabled>Export packet — blocked by unresolved items</button> <button disabled>Send chase — needs staff approval</button></p><p class="muted">Static no-network demo: these controls do not submit anywhere. They show the enforced product boundary buyers must experience before this can beat Claude plus spreadsheet.</p></article>
+</section>
+
+<h2>Interactive-feeling enforcement simulator (static, no network)</h2>
+<p class="muted">Use the disclosure steps below like a click-through. Each step shows actor, role, prior state, new state, reason, and downstream consequence without scripts, forms, server calls, or real client data.</p>
+<section class="grid2" aria-label="Build 28 static enforcement simulator">
+  <details class="card" open><summary><strong>1. Staff tries to accept evidence</strong></summary><p><strong>Actor / role:</strong> Mason Ng, staff operator.</p><p><strong>Prior state:</strong> contractor invoices received, waiting-review.</p><p><strong>Attempt:</strong> staff tries to accept.</p><p><strong>New state:</strong> denied for staff role; still waiting-review.</p><p><strong>Consequence:</strong> no EvidenceItem is created; packet inclusion stays blocked; route to reviewer becomes the safe next action.</p></details>
+  <details class="card"><summary><strong>2. Staff routes to reviewer</strong></summary><p><strong>Actor / role:</strong> Mason Ng, staff operator.</p><p><strong>Prior state:</strong> received but unaccepted.</p><p><strong>Action:</strong> route to reviewer.</p><p><strong>New state:</strong> reviewer queue for Amara Lee.</p><p><strong>Consequence:</strong> waiting-review items are paused from chase and excluded from packet until reviewer decision.</p></details>
+  <details class="card"><summary><strong>3. Reviewer accepts contractor invoices</strong></summary><p><strong>Actor / role:</strong> Amara Lee, reviewer.</p><p><strong>Prior state:</strong> waiting-review.</p><p><strong>Reason:</strong> period, entity, ABN and requirement match.</p><p><strong>New state:</strong> accepted → packet-ready.</p><p><strong>Consequence:</strong> contractor invoices become accepted/excluded from chase and included in the handoff packet.</p></details>
+  <details class="card"><summary><strong>4. Reviewer rejects July statement for August close</strong></summary><p><strong>Actor / role:</strong> Amara Lee, reviewer.</p><p><strong>Prior state:</strong> bank statement uploaded.</p><p><strong>Reason:</strong> wrong period — July bank statement enters August packet only in the generic-AI failure path.</p><p><strong>New state:</strong> rejected-chaseable.</p><p><strong>Consequence:</strong> packet blocks the file and chase asks for corrected August statement.</p></details>
+  <details class="card"><summary><strong>5. Chase list updates from state</strong></summary><p><strong>Prior state:</strong> mixed accepted, rejected, unresolved and waiting-review items.</p><p><strong>New state:</strong> chase includes payroll/PAYG, corrected August bank statement, readable supplier invoice.</p><p><strong>Consequence:</strong> accepted contractor invoices and waiting-review card statement are excluded from chase.</p></details>
+  <details class="card"><summary><strong>6. Staff approves simulated chase; no auto-send</strong></summary><p><strong>Actor / role:</strong> Mason Ng, staff operator.</p><p><strong>Prior state:</strong> draft chase only.</p><p><strong>New state:</strong> staff-approved simulated send.</p><p><strong>Consequence:</strong> communication thread records approval; no real send occurs from the static artifact.</p></details>
+</section>
+
+<h2>Audit-event timeline generated from ledger state</h2>
+<table aria-label="Audit-event timeline"><thead><tr><th>Actor</th><th>Role</th><th>Action</th><th>Prior state</th><th>New state</th><th>Reason</th><th>Consequence</th></tr></thead><tbody><tr><td>Mason Ng</td><td>Staff</td><td>Staff tries to accept</td><td>Waiting review</td><td>Denied for staff role</td><td>Reviewer-only acceptance</td><td>No EvidenceItem; route to reviewer</td></tr><tr><td>Amara Lee</td><td>Reviewer</td><td>Accept contractor invoices</td><td>Waiting review</td><td>Packet-ready</td><td>Period/entity match</td><td>Accepted/excluded from chase</td></tr><tr><td>Amara Lee</td><td>Reviewer</td><td>Reject bank statement</td><td>Uploaded</td><td>Rejected-chaseable</td><td>Wrong period</td><td>Request corrected August file</td></tr><tr><td>Mason Ng</td><td>Staff</td><td>Approve simulated chase</td><td>Draft</td><td>Simulated sent</td><td>Human approval before any send</td><td>Thread logged; no auto-send</td></tr></tbody></table>
+
+<h2>Generated manager handoff preview</h2>
+<section class="card"><p><strong>Generated from ledger state:</strong> accepted contractor invoices, rejected wrong-period bank statement, unresolved payroll/PAYG and supplier invoice, waiting-review credit card statement, staff-approved chase history, reviewer of record, and manager questions. This preview is deliberately derived from the state labels above, not a separate sales paragraph.</p></section>
+
+<h2>Pilot runbook and commercial proof worksheet</h2>
+<section class="grid2"><article class="card"><h3>Pilot runbook</h3><p><strong>Day 0 setup:</strong> sponsor, reviewer, staff operator, close blocker, data boundary and baseline agreed. <strong>Day 1–10:</strong> run the governed close-readiness workflow. <strong>Day 11:</strong> manager handoff review. <strong>Day 12 go/no-go:</strong> decide continuation from measured evidence.</p></article><article class="card"><h3>Buyer-baseline worksheet + ROI calculator</h3><p>Synthetic-labelled inputs: minutes per chase touch, reviewer interruption time, manager rework time, duplicate re-ask count, delayed close impact, and estimated AUD payback. All ROI calculator outputs remain hypotheses until a buyer baseline is measured.</p></article></section>
+
+<h2>Start here: how to use this pack in a 20-minute buyer walkthrough</h2>
+<section class="grid">
+  <article class="card"><h3>Who this is for</h3><p>CAS/bookkeeping team lead or operations-minded partner at a firm doing recurring monthly close for multiple clients.</p></article>
+  <article class="card"><h3>Facilitator path</h3><p>Minute 0–3: ask where close gets stuck. Minute 3–12: walk the state-transition storyboard below. Minute 12–17: review the manager handoff and the pilot proposal. Minute 17–20: ask, “Is a one close cycle concierge pilot worth scoping?”</p></article>
+  <article class="card"><h3>Buyer question at the end</h3><p>Would a scoped, synthetic-or-governed one close cycle prove whether this reduces chase touches, reviewer interruptions, and manager rework?</p></article>
+</section>
+
+<h2>Operating roles in this demo</h2>
+<section class="grid">
+  <article class="card"><h3>Partner/CAS lead</h3><p>Decides whether to approve a one-cycle pilot based on handoff quality, risk boundary, and staff time saved.</p></article>
+  <article class="card"><h3>Reviewer</h3><p>The only role that can accept or reject evidence. Their decision controls packet inclusion and chase exclusions.</p></article>
+  <article class="card"><h3>Staff operator</h3><p>Chases unresolved blockers only; never chases accepted items or items paused for reviewer decision.</p></article>
+  <article class="card"><h3>Client-facing operator</h3><p>Uses approved chase copy only after staff approval; this static kit never auto-sends and never collects documents.</p></article>
+</section>
+
+<h2>The state-transition storyboard</h2>
+<p class="muted">Synthetic example. Each beat is one state change with a before/after card, so a buyer experiences the workflow instead of only reading about it.</p>
+<div class="tour"><span>1 Start blocked</span><span>2 Receive evidence</span><span>3 Reviewer decision</span><span>4 Chase approval</span><span>5 Packet handoff</span></div>
+
+<article class="stage" aria-label="State beat Start blocked">
+  <div class="now">
+    <span class="num">1</span>
+    <span class="status danger">Current state: Start blocked</span>
+    <h3>Start blocked</h3>
+    <h4>What staff sees</h4><p>Kainga Cafe, August close: wrong-period bank statement, missing payroll/PAYG report, and an illegible supplier invoice. Four open blockers in this case.</p>
+    <h4>Dominant action (one)</h4><p>Open the blocker list and request only unresolved evidence.</p>
+    <h4>What is blocked / disabled</h4><p>Close-ready and packet export are disabled while blockers are open. Nothing can be marked done from the inbox.</p>
+  </div>
+  <div class="beforeafter" aria-label="Before and after this action">
+    <div class="ba before"><h4>Before</h4><p>Cannot close · 4 open blockers in the Kainga case · manager asking “can we close or not?”</p></div>
+    <div class="arrow" aria-hidden="true">→</div>
+    <div class="ba after"><h4>What changes in the case (after)</h4><p>Blockers are named with reasons; staff works one queue, not an inbox.</p></div>
+  </div>
+</article>
+<article class="stage" aria-label="State beat Receive evidence">
+  <div class="now">
+    <span class="num">2</span>
+    <span class="status info">Current state: Receive evidence</span>
+    <h3>Receive evidence</h3>
+    <h4>What staff sees</h4><p>Contractor invoices and a credit card statement arrive with source, read signal, and period hint. Both land in waiting-review.</p>
+    <h4>Dominant action (one)</h4><p>Record receipt and route each item to the reviewer.</p>
+    <h4>What is blocked / disabled</h4><p>Staff cannot accept: the Accept control is disabled for non-reviewers. Received items are excluded from chase and packet until reviewed.</p>
+  </div>
+  <div class="beforeafter" aria-label="Before and after this action">
+    <div class="ba before"><h4>Before</h4><p>Received in the inbox looks like handled.</p></div>
+    <div class="arrow" aria-hidden="true">→</div>
+    <div class="ba after"><h4>What changes in the case (after)</h4><p>Received is not accepted; the item holds in waiting-review with its source preserved.</p></div>
+  </div>
+</article>
+<article class="stage" aria-label="State beat Reviewer decision">
+  <div class="now">
+    <span class="num">3</span>
+    <span class="status info">Current state: Reviewer decision</span>
+    <h3>Reviewer decision</h3>
+    <h4>What staff sees</h4><p>The reviewer sees each waiting-review item with its period, entity, and readability signals.</p>
+    <h4>Dominant action (one)</h4><p>Reviewer accepts contractor invoices, rejects the July-for-August bank statement, and marks the illegible invoice cannot-determine — each with a named reason.</p>
+    <h4>What is blocked / disabled</h4><p>Non-reviewer accept is disabled. Only a reviewer decision can move evidence into the packet.</p>
+  </div>
+  <div class="beforeafter" aria-label="Before and after this action">
+    <div class="ba before"><h4>Before</h4><p>Anyone could call an item “good enough” and move on.</p></div>
+    <div class="arrow" aria-hidden="true">→</div>
+    <div class="ba after"><h4>What changes in the case (after)</h4><p>Accepted → packet-ready; rejected → chase-now; accepted contractor invoices are excluded from chase.</p></div>
+  </div>
+</article>
+<article class="stage" aria-label="State beat Chase approval">
+  <div class="now">
+    <span class="num">4</span>
+    <span class="status info">Current state: Chase approval</span>
+    <h3>Chase approval</h3>
+    <h4>What staff sees</h4><p>The chase draft includes only the missing payroll, the corrected August bank statement, and a readable supplier invoice.</p>
+    <h4>Dominant action (one)</h4><p>Staff reviews and approves a simulated send that names the exact client action.</p>
+    <h4>What is blocked / disabled</h4><p>No auto-send. Accepted items cannot be added to the chase. Waiting-review items stay paused. Send is disabled until staff approval.</p>
+  </div>
+  <div class="beforeafter" aria-label="Before and after this action">
+    <div class="ba before"><h4>Before</h4><p>A reply-all chases everything, including the already-accepted invoices.</p></div>
+    <div class="arrow" aria-hidden="true">→</div>
+    <div class="ba after"><h4>What changes in the case (after)</h4><p>The chase asks only for what still blocks close, after human approval.</p></div>
+  </div>
+</article>
+<article class="stage" aria-label="State beat Packet handoff">
+  <div class="now">
+    <span class="num">5</span>
+    <span class="status good">Current state: Packet handoff</span>
+    <h3>Packet handoff</h3>
+    <h4>What staff sees</h4><p>The packet gathers accepted evidence, explicit unresolved blockers, chase history, audit scope, and manager questions.</p>
+    <h4>Dominant action (one)</h4><p>Hand off the packet to the manager.</p>
+    <h4>What is blocked / disabled</h4><p>The packet cannot silently record unresolved or waiting-review items as done.</p>
+  </div>
+  <div class="beforeafter" aria-label="Before and after this action">
+    <div class="ba before"><h4>Before</h4><p>A folder of files; the manager reconstructs the story.</p></div>
+    <div class="arrow" aria-hidden="true">→</div>
+    <div class="ba after"><h4>What changes in the case (after)</h4><p>A decision trail that explains why the close is, or is not, ready.</p></div>
+  </div>
+</article>
+
+<h2>Operator-first case command centre</h2>
+<p class="muted">Operator language, not buyer takeaway copy: what staff sees, what reviewer can decide, and what is blocked, with the consequence of each state made visually central.</p>
+<section class="chips" aria-label="Enforced state consequences">
+  <span class="pill block">non-reviewer accept disabled</span>
+  <span class="pill hold">waiting-review hold</span>
+  <span class="pill">accepted-excluded</span>
+  <span class="pill block">rejected-chaseable</span>
+  <span class="pill ready">packet-ready</span>
+</section>
+<section class="grid2" aria-label="Static product panels">
+  <article class="card"><h3>Case command centre <span class="pill">Kainga Cafe · August close</span></h3><p><strong>What staff sees:</strong> cannot close because payroll/PAYG is missing, the July bank statement was rejected for August, and the supplier invoice is illegible. Contractor invoices are accepted and excluded from chase.</p><p><strong>Dominant action:</strong> approve the chase for chase-now blockers; hold the credit card statement for review.</p></article>
+  <article class="card"><h3>Reviewer decision card <span class="pill">reviewer-gated</span></h3><p><strong>What reviewer can decide:</strong> accept, reject, or cannot-determine. <strong>What is blocked:</strong> Mason (staff) can route and chase, but non-reviewer accept disabled — Amara must accept/reject. Accept → packet-ready; Reject → chase-now; Cannot determine → chase-now with a clearer request.</p></article>
+  <article class="card"><h3>chase-now</h3><p><strong>What changes in the case:</strong> payroll/PAYG report, corrected August bank statement, and a readable supplier invoice stay listed as unresolved close blockers until answered.</p></article>
+  <article class="card"><h3>hold-for-review</h3><p><strong>waiting-review hold:</strong> the credit card statement received today is paused until a reviewer decision. It is not chased and not in the packet.</p></article>
+  <article class="card disabled"><h3>accepted-excluded</h3><p><strong>What is blocked:</strong> contractor invoices accepted by the reviewer are excluded from chase to prevent duplicate re-asks.</p></article>
+  <article class="card"><h3>packet-ready</h3><p><strong>What changes in the case:</strong> accepted evidence plus explicit unresolved blockers, chase history, audit scope, manager questions, and local deterministic proof are assembled for handoff.</p></article>
+</section>
+
+<h2>Evidence ledger: the workflow state ChatGPT does not own</h2>
+<p class="muted">Synthetic example. This evidence ledger is the wedge: reviewer-gated acceptance, unresolved blocker state, chase exclusions, audit trail, and packet inclusion are structured instead of buried in chat prose.</p>
+<table aria-label="Evidence ledger"><thead><tr><th>Requirement</th><th>Evidence received</th><th>Source</th><th>Status</th><th>Reviewer</th><th>Decision reason</th><th>Chase inclusion</th><th>Packet inclusion</th></tr></thead><tbody><tr><td>August bank statement</td><td>July statement uploaded for August close</td><td>Client email attachment</td><td>Rejected</td><td>Amara Lee, reviewer</td><td>Wrong period</td><td>Included in chase</td><td>Excluded until corrected</td></tr><tr><td>Contractor invoices</td><td>August invoice bundle</td><td>Portal export</td><td>Accepted</td><td>Amara Lee, reviewer</td><td>Dates and ABNs match</td><td>Excluded from chase</td><td>Included in packet</td></tr><tr><td>Payroll/PAYG report</td><td>Not yet received</td><td>Close checklist</td><td>Unresolved</td><td>Mason Ng, staff owner</td><td>Missing evidence</td><td>Included in chase</td><td>Open blocker</td></tr><tr><td>Supplier invoice image</td><td>Photo is unreadable</td><td>Client upload</td><td>Cannot determine</td><td>Amara Lee, reviewer</td><td>Illegible</td><td>Included in chase</td><td>Open blocker</td></tr><tr><td>Credit card statement</td><td>Statement received this morning</td><td>Client reply</td><td>Waiting review</td><td>Reviewer pending</td><td>Not accepted yet</td><td>Paused from chase</td><td>Pending packet decision</td></tr></tbody></table>
+
+<h2>Same messy synthetic email: where generic AI and spreadsheets fail</h2>
+<section class="card"><p><strong>Same messy synthetic email:</strong> “Here are the July bank statement, some August contractor invoices, payroll later, and a blurry supplier photo. Also I found the credit card statement.” Generic AI can draft a plausible chase note and summary from it, but it does not own workflow state — so the same input can produce the failures below.</p></section>
+<table aria-label="Same-input generic AI or spreadsheet failure demo"><thead><tr><th>Same synthetic input</th><th>Generic AI / spreadsheet outcome (can fail)</th><th>Evidence Assistant state outcome (prevents it)</th></tr></thead><tbody><tr><td>Client email lists August contractor invoices already accepted by the reviewer.</td><td class="danger">Generic AI or a spreadsheet re-lists the accepted contractor evidence chased again in the next chase draft, because it has no accepted-excluded state.</td><td class="good">accepted-excluded: accepted contractor invoices cannot enter the chase, so they are not re-asked.</td></tr><tr><td>“Also I found the credit card statement” arrives this morning, unreviewed.</td><td class="danger">A generic waiting-review card statement mishandled as done — the AI treats “found it” as complete and folds it into the summary.</td><td class="good">waiting-review hold: the card statement is paused, excluded from chase and packet, until a reviewer decides.</td></tr><tr><td>A July bank statement is attached for the August close.</td><td class="danger">Generic AI lets the July bank statement enter the August packet because it reads the file as “a bank statement” without a period gate.</td><td class="good">rejected-chaseable: wrong-period evidence is rejected with a named reason and cannot enter the August packet.</td></tr><tr><td>A junior edits a shared status column to “accepted”.</td><td class="danger">A spreadsheet lets a non-reviewer changes accepted status without gate — any editor can flip a cell to accepted.</td><td class="good">non-reviewer accept disabled: only a reviewer decision can set accepted, and it is logged with a reason.</td></tr></tbody></table>
+<section class="grid2">
+  <article class="card"><h3>Generic AI can draft plausible prose</h3><p>Given pasted emails and a checklist, generic AI can draft a chase note and a summary. It may also chase already-accepted contractor invoices or treat a July bank statement as enough for August when the prompt loses context.</p></article>
+  <article class="card"><h3>Evidence Assistant preserves workflow state</h3><p>The Evidence Assistant state result blocks each failure mode: accepted evidence is not chased, waiting-review is held, wrong-period evidence is blocked from the packet, and a non-reviewer cannot accept. Only reviewer decisions move evidence into the packet.</p></article>
+</section>
+
+<h2>Operating templates</h2>
+<section class="grid">
+  <article class="card"><h3>Close blocker intake template</h3><pre class="template">Requirement:
+Evidence received:
+Source:
+Period/readability signal:
+Owner:
+Can/cannot close because:</pre></article>
+  <article class="card"><h3>Reviewer decision rubric</h3><pre class="template">Accept only if period, entity, readability, and requirement match.
+Reject if wrong period/entity.
+Cannot determine if unreadable or incomplete.
+Record named reason.</pre></article>
+  <article class="card"><h3>Chase approval checklist</h3><pre class="template">Includes only unresolved blockers.
+Excludes accepted evidence.
+Pauses waiting-review items.
+Names exact client action.
+Approved by staff before simulated send.</pre></article>
+  <article class="card"><h3>Manager scorecard / go-no-go</h3><pre class="template">Close-ready? no/partial/yes
+Accepted evidence:
+Unresolved blockers:
+Reviewer questions:
+Metric movement:
+Go/no-go recommendation:</pre></article>
+</section>
+
+<section class="card cta"><h3>Safe next step</h3><p>Walk the manager handoff and the <a href="pilot-proposal-summary.html">closeable pilot proposal</a> with the CAS lead. Do not send client documents through this page; it is static and has no intake form. Evidence Assistant owns reviewer-gated workflow state, human approval before any send, and manager-ready handoff evidence — not what portals, email, and ChatGPT already do. Missing or wrong client evidence is the gap it closes, and a concierge pilot measures whether it does.</p></section>
+<footer>Evidence Assistant static walkthrough. Synthetic sample only. Local-only build evidence was used to create these pages; no server is contacted by this artifact. Do not submit client documents through this static page.</footer>
+</main>
+</body>
+</html>

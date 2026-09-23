@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pilot checklist summary — Evidence Assistant static walkthrough</title>
+  <style>
+    :root { color-scheme: light; --ink:#17231f; --muted:#5f6f68; --line:#dfe8e3; --paper:#fbf7ef; --green:#133d32; --mint:#eaf4ee; --amber:#fff2d3; --red:#7a2e24; --blue:#e9f1ff; --blueInk:#193a68; }
+    * { box-sizing: border-box; }
+    body { margin:0; font:16px/1.55 system-ui,-apple-system,Segoe UI,Arial,sans-serif; color:var(--ink); background:linear-gradient(180deg,#f8f4ec 0%,#ffffff 50%); }
+    main { max-width:1180px; margin:0 auto; padding:24px 20px 56px; }
+    .topnav { display:flex; flex-wrap:wrap; gap:8px; margin:0 0 18px; }
+    .navlink { padding:8px 11px; border:1px solid var(--line); border-radius:999px; background:#fff; color:#105f4b; text-decoration:none; font-weight:800; }
+    .navlink.active { background:var(--green); color:#fff; }
+    .hero { background:#fff; border:1px solid var(--line); border-radius:28px; padding:34px; box-shadow:0 16px 42px rgba(19,61,50,.08); }
+    .eyebrow { display:inline-flex; gap:8px; align-items:center; margin:0 0 14px; padding:6px 10px; border-radius:999px; background:var(--amber); color:#624600; font-weight:800; font-size:13px; letter-spacing:.02em; text-transform:uppercase; }
+    h1 { margin:0; font-size:clamp(32px,5vw,58px); line-height:1.02; letter-spacing:-.04em; color:var(--green); }
+    h2 { margin:36px 0 12px; font-size:26px; line-height:1.15; color:var(--green); }
+    h3 { margin:0 0 8px; font-size:18px; color:var(--green); }
+    h4 { margin:12px 0 6px; font-size:14px; letter-spacing:.02em; text-transform:uppercase; color:var(--muted); }
+    p { margin:0 0 14px; }
+    a { color:#105f4b; font-weight:800; }
+    a:focus-visible { outline:3px solid #f4a62a; outline-offset:3px; }
+    table { width:100%; border-collapse:collapse; background:#fff; border:1px solid var(--line); border-radius:18px; overflow:hidden; display:block; overflow-x:auto; }
+    th, td { padding:12px; border-bottom:1px solid var(--line); text-align:left; vertical-align:top; min-width:140px; }
+    th { background:var(--mint); color:var(--green); }
+    .lead { margin-top:18px; max-width:820px; font-size:20px; color:#31423b; }
+    .boundary { margin-top:22px; padding:16px; border:1px solid #f0c36d; border-radius:18px; background:#fff8e7; color:#513b09; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px; }
+    .grid2 { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:14px; }
+    .card, .beat, .panel { background:#fff; border:1px solid var(--line); border-radius:22px; padding:20px; }
+    .status { display:inline-block; margin:4px 0 10px; padding:4px 9px; border-radius:999px; background:var(--mint); color:var(--green); font-weight:800; font-size:13px; }
+    .danger { background:#fff4f2; color:var(--red); }
+    .good { background:var(--mint); color:var(--green); }
+    .info { background:var(--blue); color:var(--blueInk); }
+    .muted { color:var(--muted); }
+    .quote { border-left:4px solid var(--green); padding-left:14px; font-weight:800; }
+    .arrow { display:grid; place-items:center; color:var(--green); font-size:26px; font-weight:900; }
+    .tour { display:flex; flex-wrap:wrap; gap:8px; margin:16px 0; }
+    .tour span { padding:8px 10px; border-radius:999px; background:var(--mint); color:var(--green); font-weight:800; }
+    .cta { border:2px solid var(--green); background:var(--mint); }
+    .pill { display:inline-block; padding:3px 8px; border-radius:999px; background:var(--mint); color:var(--green); font-size:12px; font-weight:900; }
+    .pill.block { background:#fff4f2; color:var(--red); }
+    .pill.hold { background:var(--amber); color:#624600; }
+    .pill.ready { background:var(--blue); color:var(--blueInk); }
+    .chips { display:flex; flex-wrap:wrap; gap:8px; margin:12px 0 4px; }
+    .disabled { opacity:.68; filter:grayscale(.2); }
+    .stage { display:grid; grid-template-columns:1.05fr .95fr; gap:14px; align-items:stretch; margin:0 0 14px; }
+    .stage .now { border:1px solid var(--line); border-radius:20px; padding:18px 18px 18px 60px; position:relative; background:#fff; }
+    .stage .num { position:absolute; left:16px; top:18px; width:32px; height:32px; display:grid; place-items:center; border-radius:50%; background:var(--green); color:#fff; font-weight:900; }
+    .beforeafter { display:grid; grid-template-columns:1fr auto 1fr; gap:10px; align-items:stretch; }
+    .ba { border:1px solid var(--line); border-radius:16px; padding:14px; background:#fbfdfc; }
+    .ba.before { background:#fff4f2; }
+    .ba.after { background:var(--mint); }
+    .template { font-family:ui-monospace,SFMono-Regular,Consolas,monospace; white-space:pre-wrap; background:#102b24; color:#f6fff9; border-radius:18px; padding:16px; overflow:auto; }
+    footer { margin-top:34px; padding-top:18px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
+    @media (max-width:820px) { .stage { grid-template-columns:1fr; } .beforeafter { grid-template-columns:1fr; } .arrow { transform:rotate(90deg); } .hero { padding:24px; } }
+  </style>
+</head>
+<body>
+<main>
+<nav class="topnav" aria-label="Static walkthrough pages"><a class="navlink" href="index.html">Product demo</a><a class="navlink" href="manager-handoff-summary.html">Manager handoff</a><a class="navlink" href="evidence-packet-summary.html">Evidence packet</a><a class="navlink active" href="pilot-checklist-summary.html">Pilot checklist</a><a class="navlink" href="pilot-proposal-summary.html">Pilot proposal</a><a class="navlink" href="buyer-one-pager-summary.html">Buyer one-pager</a><a class="navlink" href="public-launch-gate-summary.html">Launch boundary</a></nav>
+
+<section class="hero"><p class="eyebrow">Pilot checklist · non-case pilot collateral</p><h1>How a firm would trial it safely</h1><p class="lead">A concierge pilot package for one close cycle, with explicit roles, data boundary, metrics, and stop criteria. This page is deliberately non-case pilot collateral; the Kainga case continuity lives in the product demo, manager handoff, and evidence packet pages. The full closeable proposal is on the <a href="pilot-proposal-summary.html">pilot proposal</a> page.</p><div class="boundary">Static walkthrough, not the app. Do not submit client documents through this page.</div></section>
+<h2>Concierge pilot package</h2>
+<section class="grid"><article class="card"><h3>Scope</h3><p>One close cycle, 1–3 clients, synthetic/redacted or separately governed data, one named CAS lead, one reviewer, one staff operator.</p></article><article class="card"><h3>Timeline</h3><p>Day 0 setup; days 1–10 run the close-readiness workflow; day 11 manager handoff review; day 12 scorecard and go/no-go.</p></article><article class="card"><h3>Measured outcomes</h3><p>Days to close-ready, chase touches, reviewer interruptions, duplicate re-asks, wrong evidence caught before manager review, and handoff acceptance.</p></article><article class="card"><h3>Exit criteria</h3><p>Stop if the data boundary cannot be maintained, staff cannot identify a recurring close blocker, or the manager says the handoff does not reduce review effort.</p></article><article class="card"><h3>Roles to name</h3><p>Named sponsor, named reviewer, and staff operator, agreed before day 0.</p></article><article class="card"><h3>Data boundary</h3><p>Synthetic/redacted or separately governed data only; no real client documents through the static kit.</p></article></section>
+<h2>Example metric model, labelled synthetic</h2><table><thead><tr><th>Metric</th><th>Before (synthetic)</th><th>Target after pilot (hypothesis)</th></tr></thead><tbody><tr><td>Chase touches</td><td>14</td><td>8</td></tr><tr><td>Reviewer interruptions</td><td>5</td><td>2</td></tr><tr><td>Duplicate re-asks</td><td>2</td><td>0</td></tr><tr><td>Wrong-period files caught early</td><td>0 consistently tracked</td><td>2 logged before manager review</td></tr></tbody></table>
+<p><a href="evidence-packet-summary.html">Back: evidence packet</a> · <a href="pilot-proposal-summary.html">Next: pilot proposal</a></p>
+<footer>Evidence Assistant static walkthrough. Synthetic sample only. Local-only build evidence was used to create these pages; no server is contacted by this artifact. Do not submit client documents through this static page.</footer>
+</main>
+</body>
+</html>

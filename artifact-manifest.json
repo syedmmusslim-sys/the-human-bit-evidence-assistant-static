@@ -1,0 +1,48 @@
+{
+  "builder": "evidence-assistant-static-pilot-pack-builder",
+  "builder_version": "28.0.0",
+  "generated_at": "1970-01-01T00:00:00.000Z",
+  "artifact_boundary": "static walkthrough, not the app; no mutable API; no real client data",
+  "files": [
+    {
+      "name": "index.html",
+      "bytes": 30153,
+      "sha256": "d26ee31e8f73fa7cc20c1b648c7e144814c928bc16e523c892ee4c7795a797c9"
+    },
+    {
+      "name": "manager-handoff-summary.html",
+      "bytes": 10428,
+      "sha256": "b62bc57461b5b0329bbf7d50586bbeb3b534c78b2fda3eb662514cffe2329a58"
+    },
+    {
+      "name": "evidence-packet-summary.html",
+      "bytes": 7564,
+      "sha256": "24ba2e3a3c51aca5ac28acc4263a58762f9428824d4bf74486120acac4379178"
+    },
+    {
+      "name": "pilot-checklist-summary.html",
+      "bytes": 8482,
+      "sha256": "dc7fbfbcaf83fb4fc3c3b2b56302ff8e98e554f677493bc07c2b385ca46ec462"
+    },
+    {
+      "name": "pilot-proposal-summary.html",
+      "bytes": 12699,
+      "sha256": "226edf352d6d43e6649caaa64aed8f059f03b7574f45e35af4b87702f77acce6"
+    },
+    {
+      "name": "buyer-one-pager-summary.html",
+      "bytes": 8638,
+      "sha256": "25ca969a8c517d039bf6fce9cb393bffbb0d1c911b78ff1217aa6130aa9c1831"
+    },
+    {
+      "name": "public-launch-gate-summary.html",
+      "bytes": 7881,
+      "sha256": "1cd48cebcf7cd6cc13987ef3cc95e707abe0b5a290816dbc031170e65acbffdb"
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "failures": [],
+    "files_checked": 8
+  }
+}
