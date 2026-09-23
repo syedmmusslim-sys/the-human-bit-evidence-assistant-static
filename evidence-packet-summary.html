@@ -67,13 +67,16 @@
     .ba.before { background:#fff4f2; }
     .ba.after { background:var(--mint); }
     .template { font-family:ui-monospace,SFMono-Regular,Consolas,monospace; white-space:pre-wrap; background:#102b24; color:#f6fff9; border-radius:18px; padding:16px; overflow:auto; }
+    .download-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
+    .download-card { border:2px solid #143d32; background:#f4fbf6; }
+    code, .mono { font-family:ui-monospace,SFMono-Regular,Consolas,monospace; }
     footer { margin-top:34px; padding-top:18px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
     @media (max-width:820px) { .stage { grid-template-columns:1fr; } .beforeafter { grid-template-columns:1fr; } .command-hero { grid-template-columns:1fr; } .arrow { transform:rotate(90deg); } .hero { padding:24px; } }
   </style>
 </head>
 <body>
 <main>
-<nav class="topnav" aria-label="Static walkthrough pages"><a class="navlink" href="index.html">Product demo</a><a class="navlink" href="manager-handoff-summary.html">Manager handoff</a><a class="navlink active" href="evidence-packet-summary.html">Evidence packet</a><a class="navlink" href="pilot-checklist-summary.html">Pilot checklist</a><a class="navlink" href="pilot-proposal-summary.html">Pilot proposal</a><a class="navlink" href="buyer-one-pager-summary.html">Buyer one-pager</a><a class="navlink" href="public-launch-gate-summary.html">Launch boundary</a></nav>
+<nav class="topnav" aria-label="Static walkthrough pages"><a class="navlink" href="index.html">Product demo</a><a class="navlink" href="manager-handoff-summary.html">Manager handoff</a><a class="navlink active" href="evidence-packet-summary.html">Evidence packet</a><a class="navlink" href="pilot-checklist-summary.html">Pilot checklist</a><a class="navlink" href="pilot-proposal-summary.html">Pilot proposal</a><a class="navlink" href="buyer-one-pager-summary.html">Buyer one-pager</a><a class="navlink" href="public-launch-gate-summary.html">Launch boundary</a><a class="navlink" href="verifier-pack.html">Verifier pack</a></nav>
 
 <section class="hero"><p class="eyebrow">Evidence packet</p><h1>Decision trail, not a file dump</h1><p class="lead">The packet summarizes requirements, evidence status, communications, audit events, and checksum-style local integrity proof.</p><div class="boundary">This checksum-style example is local deterministic proof only. It is not a legal attestation, not tamper-proof evidence, and not a production audit system.</div></section>
 <h2>Synthetic packet manifest</h2>

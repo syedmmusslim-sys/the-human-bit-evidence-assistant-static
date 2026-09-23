@@ -1,10 +1,6 @@
 {
-  "build": "build-35",
-  "source": "C:/HermesWorkspace/product-research/evidence-assistant/build35-static-product-demo",
-  "public_url": "https://syedmmusslim-sys.github.io/the-human-bit-evidence-assistant-static/",
-  "hosting": "GitHub Pages durable static mirror",
-  "boundary": "Read-only durable static mirror only; not mutable SaaS, not tenant-authenticated, not approved for real client data; strict security-header proof remains separate.",
-  "builder_version": "35.0.0",
-  "file_count": 7,
-  "generated_at": "2026-09-24T00:00:00.000Z"
+  "build": "build-36",
+  "published_at": "2026-09-24T00:00:00.000Z",
+  "artifact": "build36-static-product-demo",
+  "boundary": "GitHub Pages durable static mirror; read-only static collateral only; not mutable SaaS; not tenant-authenticated; not approved for real client data."
 }

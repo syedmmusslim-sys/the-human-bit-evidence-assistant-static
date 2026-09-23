@@ -1,48 +1,63 @@
 {
   "builder": "evidence-assistant-static-pilot-pack-builder",
-  "builder_version": "35.0.0",
+  "builder_version": "36.0.0",
   "generated_at": "1970-01-01T00:00:00.000Z",
   "artifact_boundary": "static walkthrough, not the app; no mutable API; no real client data",
   "files": [
     {
       "name": "index.html",
-      "bytes": 32289,
-      "sha256": "1f4affe930c1a39fe78fdd22936e5bc640ce3be1b1a1a8958f668e03b0b617e4"
+      "bytes": 33071,
+      "sha256": "aae10993942141f7177535879ed39f3514b44d897ca16bdc769a8d4a03d4a69a"
     },
     {
       "name": "manager-handoff-summary.html",
-      "bytes": 11814,
-      "sha256": "0ed31da7b980ae724dec2fd1144c034fba3b16f9f1cf561a9a1134f01509faf3"
+      "bytes": 12130,
+      "sha256": "10603eb0b5fadaabde89adae7231f4dddecdc295d36aaadc109872e8a7017a74"
     },
     {
       "name": "evidence-packet-summary.html",
-      "bytes": 8950,
-      "sha256": "f28fc7066545cd94e9b5ea55eb95a40646fdc05141dd64eb1af4cb930f419b55"
+      "bytes": 9266,
+      "sha256": "323101dbeb7d9babbc98b9fe17dd1e26708794e6d1bf9f9ef84bf1587488665b"
     },
     {
       "name": "pilot-checklist-summary.html",
-      "bytes": 9868,
-      "sha256": "312ce428f50be9fa591c4fb68ae243f32ba3634fba647f46a80b173d656b1eb0"
+      "bytes": 10184,
+      "sha256": "66168cd9389dd169a06775c371dc84062d62ead2ad1d7e81bc6694db7bf9f2ee"
     },
     {
       "name": "pilot-proposal-summary.html",
-      "bytes": 14192,
-      "sha256": "82a51c7f9d22136ff35028bfd5a656db24e2ce56d27b1654e4f364121adf4000"
+      "bytes": 14508,
+      "sha256": "6c66a77d48de6de3b9205f1efeb4b5805a9c2018cc0a69dcc13cfe97fcc3a480"
     },
     {
       "name": "buyer-one-pager-summary.html",
-      "bytes": 10024,
-      "sha256": "f26a1bcbb6b5d7022bcd0c050f7e428271e78b16ae151012346fb92e210ce39a"
+      "bytes": 10340,
+      "sha256": "173fa29f121d7fcea8bef12bc82c34f0eb89e8793732ddbde5104fd25194fe74"
     },
     {
       "name": "public-launch-gate-summary.html",
-      "bytes": 9452,
-      "sha256": "631106f2b27660df9319572c8afb118078ec8ada19e800b1fd88b52ce46eed04"
+      "bytes": 9773,
+      "sha256": "8a7f48053fd4a26914db26b3b1e485923857b109e05f54c0e80d8712637d16c8"
+    },
+    {
+      "name": "verifier-pack.html",
+      "bytes": 10632,
+      "sha256": "9725bcdbf9c2e008f669809157d7572ed88d34c2addfb5d41264ea8a3c4eb71c"
+    },
+    {
+      "name": "export-bundle-verifier.mjs",
+      "bytes": 3681,
+      "sha256": "aae7c7b4e3449153a813febd145e9d10cfd98eccd1bcddbc284cda550e36d817"
+    },
+    {
+      "name": "VERIFIER-PACK-README.md",
+      "bytes": 881,
+      "sha256": "724587ea91db35f2424829ff9821b6d0a4e9691f73dcac9099942dd2a620b6d8"
     }
   ],
   "validation": {
     "ok": true,
     "failures": [],
-    "files_checked": 8
+    "files_checked": 11
   }
 }
