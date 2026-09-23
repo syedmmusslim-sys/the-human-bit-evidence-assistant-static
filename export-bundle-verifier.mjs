@@ -27,7 +27,7 @@ if (!Array.isArray(signatureDoc.signed_files) || signatureDoc.signed_files.lengt
 if (!/not a production identity signature/i.test(signatureDoc.boundary || '')) fail('boundary does not refuse production identity signing');
 for (const file of signatureDoc.signed_files) {
   if (!file || typeof file.name !== 'string') fail('signed_files entry missing name');
-  if (file.name.includes('/') || file.name.includes('\') || file.name === 'export-integrity-signature.json') fail('unsafe signed file name: ' + file.name);
+  if (file.name.includes('/') || file.name.includes('\\') || file.name === 'export-integrity-signature.json') fail('unsafe signed file name: ' + file.name);
   const abs = path.join(bundleDir, file.name);
   if (!fs.existsSync(abs)) fail('signed file missing: ' + file.name);
   const bytes = fs.readFileSync(abs);
