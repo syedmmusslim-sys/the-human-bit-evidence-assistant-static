@@ -75,14 +75,14 @@
 
 
 <h2>Case command centre first: one safe next action</h2>
-<section class="grid2" aria-label="Build 28 case command centre first">
+<section class="grid2" aria-label="Build 29 case command centre first">
   <article class="card cta"><h3>Kainga Cafe · August close</h3><p><strong>Case command centre first:</strong> the close is still blocked. The one safe dominant action is to route received evidence to reviewer and chase only unresolved blockers.</p><section class="chips"><span class="pill block">3 chase-now blockers</span><span class="pill hold">1 waiting reviewer decision</span><span class="pill">1 accepted/excluded from chase</span></section></article>
   <article class="card"><h3>Visible disabled controls</h3><p><button disabled>Accept as staff — denied for staff role</button> <button disabled>Export packet — blocked by unresolved items</button> <button disabled>Send chase — needs staff approval</button></p><p class="muted">Static no-network demo: these controls do not submit anywhere. They show the enforced product boundary buyers must experience before this can beat Claude plus spreadsheet.</p></article>
 </section>
 
 <h2>Interactive-feeling enforcement simulator (static, no network)</h2>
 <p class="muted">Use the disclosure steps below like a click-through. Each step shows actor, role, prior state, new state, reason, and downstream consequence without scripts, forms, server calls, or real client data.</p>
-<section class="grid2" aria-label="Build 28 static enforcement simulator">
+<section class="grid2" aria-label="Build 29 static enforcement simulator">
   <details class="card" open><summary><strong>1. Staff tries to accept evidence</strong></summary><p><strong>Actor / role:</strong> Mason Ng, staff operator.</p><p><strong>Prior state:</strong> contractor invoices received, waiting-review.</p><p><strong>Attempt:</strong> staff tries to accept.</p><p><strong>New state:</strong> denied for staff role; still waiting-review.</p><p><strong>Consequence:</strong> no EvidenceItem is created; packet inclusion stays blocked; route to reviewer becomes the safe next action.</p></details>
   <details class="card"><summary><strong>2. Staff routes to reviewer</strong></summary><p><strong>Actor / role:</strong> Mason Ng, staff operator.</p><p><strong>Prior state:</strong> received but unaccepted.</p><p><strong>Action:</strong> route to reviewer.</p><p><strong>New state:</strong> reviewer queue for Amara Lee.</p><p><strong>Consequence:</strong> waiting-review items are paused from chase and excluded from packet until reviewer decision.</p></details>
   <details class="card"><summary><strong>3. Reviewer accepts contractor invoices</strong></summary><p><strong>Actor / role:</strong> Amara Lee, reviewer.</p><p><strong>Prior state:</strong> waiting-review.</p><p><strong>Reason:</strong> period, entity, ABN and requirement match.</p><p><strong>New state:</strong> accepted → packet-ready.</p><p><strong>Consequence:</strong> contractor invoices become accepted/excluded from chase and included in the handoff packet.</p></details>
