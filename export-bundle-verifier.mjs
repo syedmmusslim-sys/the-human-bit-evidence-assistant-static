@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Build 36 public/static export bundle verifier.
+// Build 37 public/static export bundle verifier.
 // Boundary: verifies local/static export integrity only. It does not upload files,
 // approve evidence, send email, notarise records, or provide production identity signing.
 
@@ -7,7 +7,7 @@ import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
 
-const bundleDir = path.resolve(process.argv[2] || 'build36-export-bundle');
+const bundleDir = path.resolve(process.argv[2] || 'build37-export-bundle');
 const signaturePath = path.join(bundleDir, 'export-integrity-signature.json');
 function canonicalJson(value) {
   if (Array.isArray(value)) return '[' + value.map(canonicalJson).join(',') + ']';
@@ -20,7 +20,7 @@ if (!fs.existsSync(bundleDir)) fail('bundle directory does not exist: ' + bundle
 if (!fs.existsSync(signaturePath)) fail('missing export-integrity-signature.json');
 let signatureDoc;
 try { signatureDoc = JSON.parse(fs.readFileSync(signaturePath, 'utf8')); } catch (err) { fail('signature file is not valid JSON: ' + err.message); }
-if (signatureDoc.build !== 'build-36') fail('expected build-36, found ' + signatureDoc.build);
+if (signatureDoc.build !== 'build-37') fail('expected build-37, found ' + signatureDoc.build);
 if (signatureDoc.algorithm !== 'Ed25519') fail('unsupported algorithm: ' + signatureDoc.algorithm);
 if (signatureDoc.hash_algorithm !== 'SHA-256') fail('unsupported hash algorithm: ' + signatureDoc.hash_algorithm);
 if (!Array.isArray(signatureDoc.signed_files) || signatureDoc.signed_files.length < 1) fail('signed_files missing or empty');
@@ -44,4 +44,4 @@ try { publicKey = crypto.createPublicKey(signatureDoc.public_key_pem); } catch (
 const signature = Buffer.from(signatureDoc.signature_base64 || '', 'base64');
 if (!signature.length) fail('signature_base64 missing');
 if (!crypto.verify(null, payloadBytes, publicKey, signature)) fail('Ed25519 signature verification failed');
-console.log('EXPORT_INTEGRITY_PASS build-36 ' + signatureDoc.signed_files.length + ' files ' + actualPayloadHash);
+console.log('EXPORT_INTEGRITY_PASS build-37 ' + signatureDoc.signed_files.length + ' files ' + actualPayloadHash);

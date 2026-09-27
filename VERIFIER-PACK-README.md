@@ -1,4 +1,4 @@
-# Evidence Assistant Build 36 verifier pack
+# Evidence Assistant Build 37 verifier pack
 
 This public verifier pack lets a buyer or reviewer run the export-integrity check locally.
 
@@ -11,13 +11,13 @@ This public verifier pack lets a buyer or reviewer run the export-integrity chec
 ## Run
 
 ```bash
-node export-bundle-verifier.mjs build36-export-bundle
+node export-bundle-verifier.mjs build37-export-bundle
 ```
 
 Expected success begins with:
 
 ```
-EXPORT_INTEGRITY_PASS build-36 10 files
+EXPORT_INTEGRITY_PASS build-37 10 files
 ```
 
 If a signed file is changed after export, the verifier prints `EXPORT_INTEGRITY_FAIL` and exits non-zero.

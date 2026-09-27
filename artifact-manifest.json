@@ -1,13 +1,13 @@
 {
   "builder": "evidence-assistant-static-pilot-pack-builder",
-  "builder_version": "36.0.0",
+  "builder_version": "37.0.0",
   "generated_at": "1970-01-01T00:00:00.000Z",
   "artifact_boundary": "static walkthrough, not the app; no mutable API; no real client data",
   "files": [
     {
       "name": "index.html",
       "bytes": 33071,
-      "sha256": "aae10993942141f7177535879ed39f3514b44d897ca16bdc769a8d4a03d4a69a"
+      "sha256": "cc46cc2cfa8667b996d3819c44f0976acafe7b8fe20e954fa3cb48ee9576e873"
     },
     {
       "name": "manager-handoff-summary.html",
@@ -42,17 +42,17 @@
     {
       "name": "verifier-pack.html",
       "bytes": 10632,
-      "sha256": "9725bcdbf9c2e008f669809157d7572ed88d34c2addfb5d41264ea8a3c4eb71c"
+      "sha256": "54e2d87983e92648d1bc476fc6ca94830a2545834d89740729e329575d89f95d"
     },
     {
       "name": "export-bundle-verifier.mjs",
       "bytes": 3682,
-      "sha256": "b09cbbe5b905c7930aba437f6077b790fb028cc5806450e274e39cdd9c7f11e0"
+      "sha256": "1b680df3d35366ca1bcb1ecf0e25b24779740811996e569d952430220b108fc2"
     },
     {
       "name": "VERIFIER-PACK-README.md",
       "bytes": 881,
-      "sha256": "724587ea91db35f2424829ff9821b6d0a4e9691f73dcac9099942dd2a620b6d8"
+      "sha256": "4c1037e3799c5e0b0039e9ef520cf4c28e27cbe83cd775233e25e4984cf11fb5"
     }
   ],
   "validation": {
