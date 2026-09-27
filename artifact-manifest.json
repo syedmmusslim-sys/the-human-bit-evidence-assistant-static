@@ -1,63 +1,68 @@
 {
   "builder": "evidence-assistant-static-pilot-pack-builder",
-  "builder_version": "37.0.0",
+  "builder_version": "38.0.0",
   "generated_at": "1970-01-01T00:00:00.000Z",
   "artifact_boundary": "static walkthrough, not the app; no mutable API; no real client data",
   "files": [
     {
       "name": "index.html",
-      "bytes": 33071,
-      "sha256": "cc46cc2cfa8667b996d3819c44f0976acafe7b8fe20e954fa3cb48ee9576e873"
+      "bytes": 37080,
+      "sha256": "7eb39850e158bfa902f164fcf8c0be4e160d12919e523a7a4a44232c9bddfe5f"
     },
     {
       "name": "manager-handoff-summary.html",
-      "bytes": 12130,
-      "sha256": "10603eb0b5fadaabde89adae7231f4dddecdc295d36aaadc109872e8a7017a74"
+      "bytes": 13358,
+      "sha256": "32125145515a7dc754761295d62ac3df73d99f27a8f7d787480c5c8cbbf0e230"
     },
     {
       "name": "evidence-packet-summary.html",
-      "bytes": 9266,
-      "sha256": "323101dbeb7d9babbc98b9fe17dd1e26708794e6d1bf9f9ef84bf1587488665b"
+      "bytes": 10494,
+      "sha256": "405cf7927d6ae2e3e8d19f291c1ad962f06899b9dd62a42c48fff60c2be081df"
     },
     {
       "name": "pilot-checklist-summary.html",
-      "bytes": 10184,
-      "sha256": "66168cd9389dd169a06775c371dc84062d62ead2ad1d7e81bc6694db7bf9f2ee"
+      "bytes": 11412,
+      "sha256": "df7ef691d1ee5cd579032fa2534724fcf587d6a0bce788cdf50d545ac4fa6ea6"
     },
     {
       "name": "pilot-proposal-summary.html",
-      "bytes": 14508,
-      "sha256": "6c66a77d48de6de3b9205f1efeb4b5805a9c2018cc0a69dcc13cfe97fcc3a480"
+      "bytes": 15736,
+      "sha256": "480ebc49ef2ef6f1cd9d1d54c5eedfd6ab2dc84a8e9569782122af0eeeddf926"
     },
     {
       "name": "buyer-one-pager-summary.html",
-      "bytes": 10340,
-      "sha256": "173fa29f121d7fcea8bef12bc82c34f0eb89e8793732ddbde5104fd25194fe74"
+      "bytes": 11568,
+      "sha256": "36297149e3c0e88750014558c63ed3b4fb00f9578b8c21889c923445299e73d7"
     },
     {
       "name": "public-launch-gate-summary.html",
-      "bytes": 9773,
-      "sha256": "8a7f48053fd4a26914db26b3b1e485923857b109e05f54c0e80d8712637d16c8"
+      "bytes": 11001,
+      "sha256": "069d9e83367415d7386ec41a4366ddda70fbb93869f76f85eb9bff4113ac27b5"
     },
     {
       "name": "verifier-pack.html",
-      "bytes": 10632,
-      "sha256": "54e2d87983e92648d1bc476fc6ca94830a2545834d89740729e329575d89f95d"
+      "bytes": 11860,
+      "sha256": "fdea83a56b5ea200cbef92db4b46f74b4221f2559a686cbac08127e9359e27af"
     },
     {
       "name": "export-bundle-verifier.mjs",
       "bytes": 3682,
-      "sha256": "1b680df3d35366ca1bcb1ecf0e25b24779740811996e569d952430220b108fc2"
+      "sha256": "8a4a44c63ff2edb6ec344f54846b5164bf954f179d14bb335f01b87a2aa9ed19"
     },
     {
       "name": "VERIFIER-PACK-README.md",
       "bytes": 881,
-      "sha256": "4c1037e3799c5e0b0039e9ef520cf4c28e27cbe83cd775233e25e4984cf11fb5"
+      "sha256": "4312425eba23a4e10f824a123676345cca3a8a1ae63d4d166d29ef9509364c96"
+    },
+    {
+      "name": "workflow-simulator.js",
+      "bytes": 5639,
+      "sha256": "9c6103ade7a5c9c5a8777f44df23f10d117fb0476ed098d4b41356c02ac5e10a"
     }
   ],
   "validation": {
     "ok": true,
     "failures": [],
-    "files_checked": 11
+    "files_checked": 12
   }
 }

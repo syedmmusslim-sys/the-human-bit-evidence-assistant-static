@@ -69,9 +69,22 @@
     .template { font-family:ui-monospace,SFMono-Regular,Consolas,monospace; white-space:pre-wrap; background:#102b24; color:#f6fff9; border-radius:18px; padding:16px; overflow:auto; }
     .download-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
     .download-card { border:2px solid #143d32; background:#f4fbf6; }
+    .simulator { border:2px solid #143d32; background:linear-gradient(180deg,#ffffff,#f4fbf6); }
+    .sim-layout { display:grid; grid-template-columns:minmax(220px,.7fr) minmax(0,1.3fr); gap:14px; }
+    .sim-actions { display:flex; flex-direction:column; gap:8px; }
+    .sim-action { appearance:none; width:100%; text-align:left; padding:11px 12px; border:1px solid #b8c9c0; border-radius:14px; background:#fff; color:#143d32; font-weight:900; cursor:pointer; }
+    .sim-action[disabled] { opacity:.48; cursor:not-allowed; }
+    .sim-action.active { background:#143d32; color:#fff; border-color:#143d32; }
+    .sim-board { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:10px; }
+    .sim-card { border:1px solid var(--line); border-radius:18px; padding:14px; background:#fff; min-height:128px; }
+    .sim-card h4 { margin-top:0; }
+    .sim-list { margin:0; padding-left:18px; }
+    .sim-status { font-weight:900; color:#7a2e24; }
+    .sim-status.ready { color:#143d32; }
+    .audit-log { max-height:220px; overflow:auto; }
     code, .mono { font-family:ui-monospace,SFMono-Regular,Consolas,monospace; }
     footer { margin-top:34px; padding-top:18px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
-    @media (max-width:820px) { .stage { grid-template-columns:1fr; } .beforeafter { grid-template-columns:1fr; } .command-hero { grid-template-columns:1fr; } .arrow { transform:rotate(90deg); } .hero { padding:24px; } }
+    @media (max-width:820px) { .stage { grid-template-columns:1fr; } .beforeafter { grid-template-columns:1fr; } .command-hero { grid-template-columns:1fr; } .sim-layout { grid-template-columns:1fr; } .sim-board { grid-template-columns:1fr; } .sim-action { overflow-wrap:anywhere; } .arrow { transform:rotate(90deg); } .hero { padding:24px; } }
   </style>
 </head>
 <body>
@@ -84,6 +97,7 @@
 <h2>Safe next action</h2><section class="card cta"><p>Use this one-pager and the <a href="pilot-proposal-summary.html">pilot proposal</a> to decide whether a one-close-cycle concierge pilot is worth scoping. Do not send client files via this static page.</p></section>
 <h2>Procurement-safe boundary</h2><section class="card"><p>Current yes: a governed concierge pilot using synthetic, redacted, or separately buyer-governed data. Current no: production SaaS, real-client-data hosting, live integrations, signed/tamper-proof exports, promised financial return, or a completed DPA/security packet.</p></section>
 <p><a href="pilot-proposal-summary.html">Back: pilot proposal</a> · <a href="public-launch-gate-summary.html">Next: launch boundary</a></p>
+<script src="workflow-simulator.js" defer></script>
 <footer>Evidence Assistant static walkthrough. Synthetic sample only. Local-only build evidence was used to create these pages; no server is contacted by this artifact. Do not submit client documents through this static page.</footer>
 </main>
 </body>

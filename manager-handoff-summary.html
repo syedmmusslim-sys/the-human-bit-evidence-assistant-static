@@ -69,9 +69,22 @@
     .template { font-family:ui-monospace,SFMono-Regular,Consolas,monospace; white-space:pre-wrap; background:#102b24; color:#f6fff9; border-radius:18px; padding:16px; overflow:auto; }
     .download-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; }
     .download-card { border:2px solid #143d32; background:#f4fbf6; }
+    .simulator { border:2px solid #143d32; background:linear-gradient(180deg,#ffffff,#f4fbf6); }
+    .sim-layout { display:grid; grid-template-columns:minmax(220px,.7fr) minmax(0,1.3fr); gap:14px; }
+    .sim-actions { display:flex; flex-direction:column; gap:8px; }
+    .sim-action { appearance:none; width:100%; text-align:left; padding:11px 12px; border:1px solid #b8c9c0; border-radius:14px; background:#fff; color:#143d32; font-weight:900; cursor:pointer; }
+    .sim-action[disabled] { opacity:.48; cursor:not-allowed; }
+    .sim-action.active { background:#143d32; color:#fff; border-color:#143d32; }
+    .sim-board { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:10px; }
+    .sim-card { border:1px solid var(--line); border-radius:18px; padding:14px; background:#fff; min-height:128px; }
+    .sim-card h4 { margin-top:0; }
+    .sim-list { margin:0; padding-left:18px; }
+    .sim-status { font-weight:900; color:#7a2e24; }
+    .sim-status.ready { color:#143d32; }
+    .audit-log { max-height:220px; overflow:auto; }
     code, .mono { font-family:ui-monospace,SFMono-Regular,Consolas,monospace; }
     footer { margin-top:34px; padding-top:18px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
-    @media (max-width:820px) { .stage { grid-template-columns:1fr; } .beforeafter { grid-template-columns:1fr; } .command-hero { grid-template-columns:1fr; } .arrow { transform:rotate(90deg); } .hero { padding:24px; } }
+    @media (max-width:820px) { .stage { grid-template-columns:1fr; } .beforeafter { grid-template-columns:1fr; } .command-hero { grid-template-columns:1fr; } .sim-layout { grid-template-columns:1fr; } .sim-board { grid-template-columns:1fr; } .sim-action { overflow-wrap:anywhere; } .arrow { transform:rotate(90deg); } .hero { padding:24px; } }
   </style>
 </head>
 <body>
@@ -91,6 +104,7 @@
 <section class="card"><ul><li>Can payroll/PAYG be supplied today, or should the close date move?</li><li>Should the corrected bank statement be re-reviewed before the close meeting?</li><li>Is the illegible supplier invoice material to this close, or deferrable?</li></ul></section>
 <h2>Evidence ledger slice</h2><table aria-label="Evidence ledger"><thead><tr><th>Requirement</th><th>Evidence received</th><th>Source</th><th>Status</th><th>Reviewer</th><th>Decision reason</th><th>Chase inclusion</th><th>Packet inclusion</th></tr></thead><tbody><tr><td>August bank statement</td><td>July statement uploaded for August close</td><td>Client email attachment</td><td>Rejected</td><td>Amara Lee, reviewer</td><td>Wrong period</td><td>Included in chase</td><td>Excluded until corrected</td></tr><tr><td>Contractor invoices</td><td>August invoice bundle</td><td>Portal export</td><td>Accepted</td><td>Amara Lee, reviewer</td><td>Dates and ABNs match</td><td>Excluded from chase</td><td>Included in packet</td></tr><tr><td>Payroll/PAYG report</td><td>Not yet received</td><td>Close checklist</td><td>Unresolved</td><td>Mason Ng, staff owner</td><td>Missing evidence</td><td>Included in chase</td><td>Open blocker</td></tr><tr><td>Supplier invoice image</td><td>Photo is unreadable</td><td>Client upload</td><td>Cannot determine</td><td>Amara Lee, reviewer</td><td>Illegible</td><td>Included in chase</td><td>Open blocker</td></tr><tr><td>Credit card statement</td><td>Statement received this morning</td><td>Client reply</td><td>Waiting review</td><td>Reviewer pending</td><td>Not accepted yet</td><td>Paused from chase</td><td>Pending packet decision</td></tr></tbody></table>
 <p><a href="index.html">Back to product demo</a> · <a href="evidence-packet-summary.html">Next: evidence packet</a></p>
+<script src="workflow-simulator.js" defer></script>
 <footer>Evidence Assistant static walkthrough. Synthetic sample only. Local-only build evidence was used to create these pages; no server is contacted by this artifact. Do not submit client documents through this static page.</footer>
 </main>
 </body>
