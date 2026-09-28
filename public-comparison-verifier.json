@@ -1,91 +1,21 @@
 {
-  "build": "81",
-  "status": "public_sanitized_partial_comparison_verifier",
-  "claim_boundary": "Build 81 canonical comparison remains partial: workflow-control evidence, no blanket AI superiority, ChatGPT same-input capture still blocked/unverified.",
-  "prompt_sha256": "a618dd17bcf16f2ac8f726864baeae272a8ee412e6523aa631fa3ccd39c91904",
-  "claude": {
-    "provider": "Claude Code CLI",
-    "model_reported": "claude-opus-5[1m]",
-    "timestamp_utc": "2026-09-28T08:45:32Z",
-    "exit_code": 0,
-    "session_id": "39198838-3b7a-41e3-8764-2c18b6aedabd",
-    "prompt_sha256": "a618dd17bcf16f2ac8f726864baeae272a8ee412e6523aa631fa3ccd39c91904",
-    "raw_result_sha256": "fbf24f9457e3a04ec810427444b8d5ffea242b082d731bb740c085ceac805249",
-    "result_text": "```json\n{\n  \"include_now\": [\n    { \"name\": \"May bank statement\", \"reason\": \"Accepted; correct period and entity.\" },\n    { \"name\": \"Supplier invoice 1042\", \"reason\": \"Accepted and linked to expense accrual.\" }\n  ],\n  \"hold_for_review\": [\n    { \"name\": \"Stripe payout export\", \"reason\": \"Received but payout-fee treatment is a reviewer decision; do not chase and do not pack.\" },\n    { \"name\": \"Fuel receipt scan\", \"reason\": \"Unreadable image; reviewer must choose reject vs re-upload before any client contact.\" }\n  ],\n  \"chase\": [\n    { \"name\": \"Loan statement\", \"reason\": \"Wrong period supplied; chase May with the stated reviewer reason.\", \"owner\": \"Client\" },\n    { \"name\": \"ATO payment receipt\", \"reason\": \"Wrong entity ABN; chase corrected copy with reason stated.\", \"owner\": \"Client\" },\n    { \"name\": \"Director approval note\", \"reason\": \"Never received.\", \"owner\": \"Client\" },\n    { \"name\": \"Payroll summary\", \"reason\": \"Needed for wages reconciliation.\", \"owner\": \"Client\" },\n    { \"name\": \"Credit card statement\", \"reason\": \"Still blocking reconciliation.\", \"owner\": \"Client\" }\n  ],\n  \"exclude\": [\n    { \"name\": \"Rent invoice duplicate\", \"reason\": \"Superseded by the accepted rent invoice; must not generate a second chase.\" }\n  ],\n  \"manager_ready\": {\n    \"ready\": false,\n    \"why\": \"Only 2 of 10 lines are decision-complete. 5 lines are outstanding with the client and 2 await reviewer decisions, so bank, loan, payroll, card and ATO reconciliations are all unresolved.\",\n    \"blocking_count\": 7,\n    \"conditions_to_become_ready\": [\n      \"Reviewer rules on Stripe payout fees and the fuel receipt (each resolves to accept, reject, or re-upload).\",\n      \"All 5 chased items returned and accepted, or explicitly scoped out of the packet with a recorded reason.\",\n      \"Duplicate rent line confirmed excluded so the packet contains exactly one rent invoice.\"\n    ],\n    \"safe_partial_output_now\": \"An interim status pack: 2 accepted lines, 2 reviewer decisions pending, 5 client chases open, 1 excluded duplicate \u2014 labelled as not sign-off-ready.\"\n  },\n  \"failure_risks\": [\n    \"Chasing held lines: Stripe and fuel-receipt items look 'outstanding' in a tracker, so someone emails the client before the reviewer has decided, which contradicts the reviewer and damages credibility.\",\n    \"Duplicate chase: the superseded rent invoice is easy to re-request, making the client re-send what was already accepted.\",\n    \"Lost rejection reason: 'wrong period' and 'wrong entity ABN' live in chat scrollback, so the chase goes out as a bare 'please resend' and the client returns the same defective document.\",\n    \"Stale state divergence: the spreadsheet and the chat disagree once a document arrives mid-thread; nobody knows which is authoritative at packet time.\",\n    \"Silent inclusion of unapproved items: a held or rejected line gets copied into the packet because the spreadsheet row has no hard gate between 'received' and 'accepted'.\",\n    \"No provenance trail: at sign-off there is no record of who accepted each line, when, or on what basis \u2014 the packet cannot be defended in review or audit.\",\n    \"Ownership ambiguity: 'owner' in a spreadsheet does not enforce who acts next, so client-side and reviewer-side items get mixed and both stall.\",\n    \"False readiness signal: a mostly-green sheet reads as complete when 7 of 10 lines are unresolved, inviting premature manager sign-off.\",\n    \"Manual recount cost: every status change requires re-deriving the include/hold/chase split by hand, and the error rate rises with each pass.\"\n  ]\n}\n```\n\nTwo notes on the judgement calls: rejected items are chased (not excluded) because the underlying evidence is still required \u2014 rejection describes the document received, not the requirement. And the held lines are deliberately kept out of both the packet *and* the chase list; \"not yet decided\" is a distinct state from \"outstanding,\" and collapsing the two is the single most likely error in a chat-plus-tracker setup.",
-    "raw_json_file": "claude-same-input-capture.raw.json"
-  },
-  "spreadsheet_operator": {
-    "provider": "Deterministic spreadsheet/operator baseline",
-    "method": "Rules-only baseline over canonical-case-state.json; no AI judgement. Mimics a disciplined tracker with status filters.",
-    "include_now": [
-      "May bank statement",
-      "Supplier invoice 1042"
-    ],
-    "hold_for_review": [
-      "Stripe payout export",
-      "Fuel receipt scan"
-    ],
-    "chase": [
-      "Loan statement",
-      "Director approval note",
-      "Payroll summary",
-      "ATO payment receipt",
-      "Credit card statement"
-    ],
-    "exclude": [
-      "Rent invoice duplicate"
-    ],
-    "manager_ready": false,
-    "known_failure_risk": "Works only if a human keeps statuses current; does not enforce reviewer-only mutation, audit persistence, stale-state prevention or packet lock."
-  },
+  "build": "82",
+  "claim_boundary": "Build 82 canonical workflow-control evidence, not blanket AI superiority",
   "evidence_assistant_projection": {
-    "provider": "Evidence Assistant seeded static workbench projection",
-    "method": "Build 81 canonical state projection used by public artifact and gates.",
-    "include_now": [
-      "May bank statement",
-      "Supplier invoice 1042"
-    ],
-    "hold_for_review": [
-      "Stripe payout export",
-      "Fuel receipt scan"
-    ],
-    "chase": [
-      {
-        "name": "Loan statement",
-        "reason": "Wrong period supplied; May still needed."
-      },
-      {
-        "name": "Director approval note",
-        "reason": "Not received."
-      },
-      {
-        "name": "Payroll summary",
-        "reason": "Needed for wages reconciliation."
-      },
-      {
-        "name": "ATO payment receipt",
-        "reason": "Wrong entity ABN on receipt."
-      },
-      {
-        "name": "Credit card statement",
-        "reason": "Still blocking reconciliation."
-      }
-    ],
-    "exclude": [
-      "Rent invoice duplicate"
-    ],
-    "manager_ready": false,
-    "packet_rule": "Packet remains locked until required lines are accepted by reviewer; collection is not acceptance.",
-    "audit_claim": "Static projection only; mutable audit persistence is not proven by this public artifact."
+    "method": "Build 82 static public route plus local gates"
   },
-  "chatgpt": {
-    "status": "blocked_not_fabricated",
-    "reason": "OPENAI_API_KEY missing / no ChatGPT capture channel available in this environment"
-  },
-  "raw_file_hashes": {
-    "claude-same-input-capture.raw.json": "fbf24f9457e3a04ec810427444b8d5ffea242b082d731bb740c085ceac805249",
-    "spreadsheet-operator-capture.json": "7a116dd12fa03fbc9f7ce412ea35b1a4e93427142195c0c769ff253b885273df",
-    "evidence-assistant-seeded-workbench-capture.json": "d117e52aa8bcf735278919919fad8a2b26f0328ba500dc9b39314e047b356f14",
-    "same-input-capture-registry.json": "415874cc1fe1c96847949e6dc96afca55626a506313fef50cd249bf9f02c4aff"
-  }
+  "chatgpt_status": "empty_unverified_blocked",
+  "claude_status": "partial_verified_capture",
+  "competitive_set": [
+    "Karbon",
+    "TaxDome",
+    "Canopy",
+    "Financial Cents",
+    "Dext",
+    "Hubdoc",
+    "email",
+    "spreadsheet",
+    "Claude",
+    "ChatGPT"
+  ]
 }

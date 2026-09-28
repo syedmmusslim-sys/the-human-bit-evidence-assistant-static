@@ -1,71 +1,76 @@
 {
-  "build": "80",
-  "browser": "C:\\Users\\Hermes\\AppData\\Local\\ms-playwright\\chromium_headless_shell-1228\\chrome-headless-shell-win64\\chrome-headless-shell.exe",
-  "started_at": "2026-09-28T10:12:57.036Z",
+  "build": "82",
+  "browser": "chromium-family headless browser (local path withheld)",
+  "started_at": "withheld in public artifact; see local proof if needed",
   "screenshots": [
     {
-      "file": "C:\\HermesWorkspace\\product-research\\evidence-assistant\\build81-browser-proof\\index-desktop.png",
-      "bytes": 105113
+      "file": "index-desktop.png",
+      "bytes": 91998
     },
     {
-      "file": "C:\\HermesWorkspace\\product-research\\evidence-assistant\\build81-browser-proof\\operator-route-desktop.png",
-      "bytes": 96896
+      "file": "operator-route-desktop.png",
+      "bytes": 97041
     },
     {
-      "file": "C:\\HermesWorkspace\\product-research\\evidence-assistant\\build81-browser-proof\\index-mobile.png",
-      "bytes": 150905
+      "file": "index-mobile.png",
+      "bytes": 151897
     }
   ],
   "checks": [
     {
-      "name": "Build81 first viewport says conversion and before-after proof",
+      "name": "Build82 first viewport is buyer-native with request CTA",
       "passed": true,
-      "detail": "{\"title\":\"Start here — Evidence Assistant\",\"h1\":\"One close-readiness route with a concrete pilot conversion packet and before/after proof.\",\"nav\":[\"Start\",\"Walkthrough\",\"Pilot package\",\"Comparison\",\"Boundaries\",\"Next step\"],\"text\":\"The Human Bit · Evidence Assistant\\nBuild 81 public buyer artifact · single buyer route · canonical proof status · static/read-only supervised-pilot conversion pack\\nacceptedwaiting reviewrejected/problemrequested/missing\\nStart\\nWalkthrough\\nPilot package\\nComparison"
+      "detail": "{\"title\":\"Start here — Evidence Assistant\",\"h1\":\"Know exactly why Blue Wattle cannot close — and chase only unresolved evidence.\",\"nav\":[\"Start\",\"Walkthrough\",\"Pilot package\",\"Comparison\",\"Boundaries\",\"Next step\"],\"text\":\"The Human Bit · Evidence Assistant\\nKnow why Blue Wattle cannot close, chase only unresolved evidence, and hand managers a ready packet. Build 82 proof details sit below the buyer route.\\n\\nRequest supervised pilot\\n\\nStart\\nWalkthrough\\nPilot package\\nComparison\\nBoundaries\\nNext step\\ncannot close\\nstaff sorts\\nreviewer decides\\nchase only blockers\\nmanager handoff\\nKnow exactly why Blue Wattle cannot close — and chase only unresolved evidence.\\n\\nBuyer outcome: a bookkee"
     },
     {
-      "name": "Build81 buyer nav is collapsed to six-step buyer route",
+      "name": "Build82 buyer nav remains six-step route",
       "passed": true,
       "detail": "[\"Start\",\"Walkthrough\",\"Pilot package\",\"Comparison\",\"Boundaries\",\"Next step\"]"
     },
     {
-      "name": "Build81 no forms and disabled static CTA remains non-mutating",
+      "name": "Build82 no forms on static public artifact",
       "passed": true,
-      "detail": "[]"
+      "detail": "{\"title\":\"Start here — Evidence Assistant\",\"h1\":\"Know exactly why Blue Wattle cannot close — and chase only unresolved evidence.\",\"nav\":[\"Start\",\"Walkthrough\",\"Pilot package\",\"Comparison\",\"Boundaries\",\"Next step\"],\"text\":\"The Human Bit · Evidence Assistant\\nKnow why Blue Wattle cannot close, chase only unresolved evidence, and hand managers a ready packet. Build 82 proof details sit below the buyer route.\\n\\nRequest supervised pilot\\n\\nStart\\nWalkthrough\\nPilot package\\nComparison\\nBoundaries\\nNext step\\ncannot close\\nstaff sorts\\nreviewer decides\\nchase only blockers\\nmanager handoff\\nKnow exactly why Blue Wattle cannot close — and chase only unresolved evidence.\\n\\nBuyer outcome: a bookkee"
     },
     {
-      "name": "Build81 comparison visible with canonical partial evidence and honest gaps",
+      "name": "Build82 operator route uses canonical case and handoff proof",
       "passed": true,
-      "detail": "The Human Bit · Evidence Assistant\nBuild 81 public buyer artifact · route-normalised · canonical proof status · static/read-only supervised-pilot conversion pack\nacceptedwaiting reviewrejected/problemrequested/missing\nStart\nWalkthrough\nPilot package\nComparison\nBoundaries\nNext step\ncannot close\nstaff sorts\nreviewer decides\nchase blockers\nmanager handoff\nComparison claim: workflow-control evidence, not blanket AI superiority.\n\nBuild 81 enforces one canonical status model across every shipped comparison/proof page. ChatGPT remains blocked/unverified; Claude has a partial real capture; spreadsheet"
+      "detail": "The Human Bit · Evidence Assistant\nKnow why Blue Wattle cannot close, chase only unresolved evidence, and hand managers a ready packet. Build 82 proof details sit below the buyer route.\n\nRequest supervised pilot\n\nStart\nWalkthrough\nPilot package\nComparison\nBoundaries\nNext step\ncannot close\nstaff sorts\nreviewer decides\nchase only blockers\nmanager handoff\nThe route: cannot close → sorted evidence → reviewer decision → blocker chase → manager handoff.\n\nThis walkthrough uses one canonical Blue Wattle case across the route, proof JSON and screenshots: payroll variance support, bank reconciliation, GST adjustment workpaper and director loan statement.\n\n1Staff: close is blocked\n\nBlue Wattle cannot c"
     },
     {
-      "name": "Build81 operator route shows role sequence, handoff and before-after proof",
+      "name": "Build82 pilot pack gives paid stance, measures and DPA path",
       "passed": true,
-      "detail": "The Human Bit · Evidence Assistant\nBuild 81 public buyer artifact · single buyer route · canonical proof status · static/read-only supervised-pilot conversion pack\nacceptedwaiting reviewrejected/problemrequested/missing\nStart\nWalkthrough\nPilot package\nComparison\nBoundaries\nNext step\ncannot close\nstaff sorts\nreviewer decides\nchase only blockers\nmanager handoff\nThe route: cannot close → sorted evidence → reviewer decision → blocker chase → manager handoff.\n\nThis page is the one-screen product spine the prior artifact lacked. It shows each role, status, blocker and next action without asking the "
+      "detail": "The Human Bit · Evidence Assistant\nKnow why Blue Wattle cannot close, chase only unresolved evidence, and hand managers a ready packet. Build 82 proof details sit below the buyer route.\n\nRequest supervised pilot\n\nStart\nWalkthrough\nPilot package\nComparison\nBoundaries\nNext step\ncannot close\nstaff sorts\nreviewer decides\nchase only blockers\nmanager handoff\nSupervised pilot package: scope, effort, measures, security checklist and paid decision rule.\n\nOne-page pilot pack: a paid, supervised two-close-cycle pilot for bookkeeping/CAS firms that already feel close-readiness pain.\n\nScope\n\nOne firm, one close workflow, one client archetype like Blue Wattle, staff intake, reviewer decisions, chase appro"
     },
     {
-      "name": "Build81 pilot conversion gives approval, effort, success and DPA path",
+      "name": "Build82 comparison covers competitors and blocks AI overclaim",
       "passed": true,
-      "detail": "The Human Bit · Evidence Assistant\nBuild 81 public buyer artifact · single buyer route · canonical proof status · static/read-only supervised-pilot conversion pack\nacceptedwaiting reviewrejected/problemrequested/missing\nStart\nWalkthrough\nPilot package\nComparison\nBoundaries\nNext step\ncannot close\nstaff sorts\nreviewer decides\nchase only blockers\nmanager handoff\nBuild 81 pilot conversion packet: who approves, what happens, what is measured.\n\nThis is a static public handoff, not a form. A qualified firm can decide whether to request a supervised two-close-cycle concierge pilot without entering cli"
+      "detail": "The Human Bit · Evidence Assistant\nKnow why Blue Wattle cannot close, chase only unresolved evidence, and hand managers a ready packet. Build 82 proof details sit below the buyer route.\n\nRequest supervised pilot\n\nStart\nWalkthrough\nPilot package\nComparison\nBoundaries\nNext step\ncannot close\nstaff sorts\nreviewer decides\nchase only blockers\nmanager handoff\nWhere this fits — and where it does not — versus portals, email, spreadsheets and general AI.\n\nComparison claim: workflow-control evidence, not blanket AI superiority. ChatGPT remains empty_unverified_blocked until same-input capture exists; Claude has partial_verified_capture. The product must win through state, gates and handoff proof.\n\nAlte"
     },
     {
-      "name": "Build81 mobile viewport has no horizontal overflow and keeps h1 visible",
+      "name": "Build82 next step has explicit request copy and sequence",
       "passed": true,
-      "detail": "{\"scrollW\":390,\"clientW\":390,\"h1\":\"One close-readiness route with a concrete pilot conversion packet and before/after proof.\",\"visible\":true}"
+      "detail": "The Human Bit · Evidence Assistant\nKnow why Blue Wattle cannot close, chase only unresolved evidence, and hand managers a ready packet. Build 82 proof details sit below the buyer route.\n\nRequest supervised pilot\n\nStart\nWalkthrough\nPilot package\nComparison\nBoundaries\nNext step\ncannot close\nstaff sorts\nreviewer decides\nchase only blockers\nmanager handoff\nRequest a supervised pilot — then qualify, secure, run two close cycles and decide with evidence.\n\nRequest supervised pilot — this static artifact has no form. Safe next action: reply to Syed / The Human Bit with the subject line below.\n\nCopyable request\nSubject: Evidence Assistant supervised pilot\n\nWe want to assess the Blue Wattle-style clos"
     },
     {
-      "name": "Build81 rendered links/buttons have accessible names",
+      "name": "Build82 mobile viewport has no horizontal overflow and keeps h1 visible",
+      "passed": true,
+      "detail": "{\"scrollW\":390,\"clientW\":390,\"h1\":\"Know exactly why Blue Wattle cannot close — and chase only unresolved evidence.\",\"visible\":true}"
+    },
+    {
+      "name": "Build82 rendered links/buttons have accessible names",
       "passed": true,
       "detail": ""
     },
     {
-      "name": "Build81 browser run produced no console errors",
+      "name": "Build82 browser run produced no console errors",
       "passed": true,
       "detail": ""
     }
   ],
-  "finished_at": "2026-09-28T10:12:58.288Z",
+  "finished_at": "withheld in public artifact; see local proof if needed",
   "result": {
-    "passed": 9,
+    "passed": 10,
     "failed": 0
   }
 }

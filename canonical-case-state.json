@@ -1,78 +1,31 @@
 {
-  "build": "81",
-  "generated_for": "public static buyer artifact",
-  "deterministic_timestamp_explained": "Static artifact uses deterministic metadata for reproducible verification, not live freshness.",
-  "evidence_lines": [
+  "build": "82",
+  "case": "Blue Wattle",
+  "period": "September close",
+  "items": [
     {
-      "name": "May bank statement",
+      "name": "September payroll variance support",
       "status": "accepted",
-      "owner": "Reviewer Amara",
-      "why": "Correct period and entity; supports close packet.",
-      "next": "Include, do not chase"
+      "owner": "Reviewer Priya",
+      "next_action": "Ready for manager packet"
     },
     {
-      "name": "Stripe payout export",
+      "name": "Bank reconciliation for operating account",
       "status": "waiting-review",
-      "owner": "Reviewer Amara",
-      "why": "Arrived, but payout fees need reviewer decision.",
-      "next": "Hold from chase and packet until decision"
+      "owner": "Reviewer Priya",
+      "next_action": "Human decision required before packet"
     },
     {
-      "name": "Loan statement",
-      "status": "rejected-problem",
-      "owner": "Client",
-      "why": "Wrong period supplied; May still needed.",
-      "next": "Chase with reviewer reason"
+      "name": "GST adjustment workpaper",
+      "status": "rejected/problem",
+      "owner": "Client owner Mina",
+      "next_action": "Chase September workpaper only"
     },
     {
-      "name": "Director approval note",
-      "status": "requested-missing",
-      "owner": "Client",
-      "why": "Not received.",
-      "next": "Chase"
-    },
-    {
-      "name": "Supplier invoice 1042",
-      "status": "accepted",
-      "owner": "Reviewer Amara",
-      "why": "Accepted and linked to expense accrual.",
-      "next": "Include"
-    },
-    {
-      "name": "Fuel receipt scan",
-      "status": "waiting-review",
-      "owner": "Reviewer Amara",
-      "why": "Unreadable image; reviewer must reject or request re-upload.",
-      "next": "Hold"
-    },
-    {
-      "name": "Payroll summary",
-      "status": "requested-missing",
-      "owner": "Client",
-      "why": "Needed for wages reconciliation.",
-      "next": "Chase"
-    },
-    {
-      "name": "Rent invoice duplicate",
-      "status": "duplicate-superseded",
-      "owner": "System state",
-      "why": "Duplicate of accepted rent invoice; must not be chased twice.",
-      "next": "Exclude as superseded"
-    },
-    {
-      "name": "ATO payment receipt",
-      "status": "rejected-problem",
-      "owner": "Client",
-      "why": "Wrong entity ABN on receipt.",
-      "next": "Chase corrected copy"
-    },
-    {
-      "name": "Credit card statement",
-      "status": "requested-missing",
-      "owner": "Client",
-      "why": "Still blocking reconciliation.",
-      "next": "Chase"
+      "name": "Director loan statement",
+      "status": "requested/missing",
+      "owner": "Client owner Mina",
+      "next_action": "Upload statement"
     }
-  ],
-  "build81_addition": "before/after visible case proof with timestamps plus conversion-ready pilot packet"
+  ]
 }

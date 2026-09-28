@@ -1,12 +1,12 @@
 {
-  "builder": "evidence-assistant-build81-pilot-conversion-before-after-builder",
-  "builder_version": "81.0.0",
-  "build": "81",
-  "generated_at": "1970-01-01T00:00:00.000Z",
+  "builder": "evidence-assistant-build82-buyer-native-pilot-wrapper-builder",
+  "builder_version": "82.0.0",
+  "build": "82",
+  "generated_at": "2026-09-28T10:45:00.000Z",
   "public_buyer_artifact": true,
-  "target": "pilot conversion packet plus before/after case proof after Build 80 audit blockers",
+  "target": "buyer-native first screen, explicit pilot CTA, canonical Blue Wattle case, sanitized proof, pilot pack and competitive table",
   "artifact_boundary": "Read-only immutable static buyer walkthrough plus supervised-pilot conversion packet. No backend, forms, email, integrations, client data, public mutable SaaS claim, strict-header claim, paid validation or ROI guarantee.",
-  "comparison_boundary": "Claude partial capture, ChatGPT blocked/unverified, spreadsheet baseline projection, Evidence Assistant static projection plus local workflow tests; no blanket superiority claim.",
+  "comparison_boundary": "Claude partial capture, ChatGPT blocked/unverified, competitor comparison table; no blanket superiority claim.",
   "buyer_route": [
     "Start",
     "Walkthrough",
@@ -22,151 +22,151 @@
     "public fetch-back gate"
   ],
   "excluded_from_public": [
-    "build81-browser-proof/",
-    "build81-local-verifier-pack/",
+    "build82-browser-proof/",
+    "build82-local-verifier-pack/",
     "audit-only/",
     "raw-comparison-registry.json"
   ],
   "files": [
     {
       "name": "STATIC_DEPLOYMENT.md",
-      "bytes": 607,
-      "sha256": "552e3c09832b8405c0778861ef19d183233a4409c8508880f6b10ef169ed37cb"
+      "bytes": 309,
+      "sha256": "4603889ff036322fcae853e7db83ac9692785d494f5943e669ff4b396dc495f9"
     },
     {
       "name": "ai-capture-slots.html",
-      "bytes": 7028,
-      "sha256": "794b92564ed62f5480f950c256aa754a3f329ebd0b8a1a71a3699877ee03e29d"
+      "bytes": 7026,
+      "sha256": "dfd78ea3743f7c38f926e970cbfc166da3e558495acae197f8dceb664f83172a"
     },
     {
       "name": "appendix.html",
-      "bytes": 6904,
-      "sha256": "93e0ef6b2d9fdce381bc020cc8fb1204543b7462590c19b7548cb71cce624412"
+      "bytes": 6902,
+      "sha256": "5afacbed78757ef70cd77f24a13f2817461450f64eb170d1884964a1fcbd5415"
     },
     {
       "name": "before-after-proof.html",
-      "bytes": 7498,
-      "sha256": "e328dfff7a7da7efe37efb9917cd240b90d52744c6bfd226d707a66dbd2f94d6"
+      "bytes": 7497,
+      "sha256": "7a41325c15d7400c9b3896e2536d891f4ad42246863d1a36cf7f11564c3fa809"
     },
     {
       "name": "browser-proof-public.json",
-      "bytes": 4673,
-      "sha256": "2a052624cf9e607ec3b26edb1f395a21073bac7d7f1afcc6ea9000deaa009c29"
+      "bytes": 6451,
+      "sha256": "3e7a68a298e96d5f56755eeac5f9e56be4068b54531930814c540cb0406483ad"
     },
     {
       "name": "canonical-case-state.json",
-      "bytes": 2449,
-      "sha256": "80d636387f74d23665ec1706341bf348ae42a3b2b7245d9e60b81dd0cbcbcb11"
+      "bytes": 815,
+      "sha256": "53cf59c2bf841299cf198e201c9985cd51c6ab2fcc5b3cb86401f015ffa81670"
     },
     {
       "name": "canonical-proof-status.json",
-      "bytes": 1921,
-      "sha256": "e94aa12eaa09d4f33636596aefe895719aee3c49934edfc9fbf144a121f4d5f6"
+      "bytes": 471,
+      "sha256": "c8d2e5f69a060344fda2d5794543e157f6ae273fd9f94bf4903e87b6c99c8f5e"
     },
     {
       "name": "chatgpt-comparison.html",
-      "bytes": 7431,
-      "sha256": "913f61205d9833cbbf48657e9e5e7d82173fcb2b75982e865655cdb3ecc5c227"
+      "bytes": 5320,
+      "sha256": "5bd87edd1878ff07fe48b0bf5827d77cae95118f28d551306db6f98ebc567150"
     },
     {
       "name": "comparison-evidence.html",
-      "bytes": 7136,
-      "sha256": "12d1349d2c069fae5062d8191228f30b31f3d3d24076d46a8ebd423b7ffdc31a"
+      "bytes": 7134,
+      "sha256": "1b2714a996b1ba8adee9e0b55d332c3fc934b4b70c64f230fb7b536ccad25e71"
     },
     {
       "name": "comparison-protocol.html",
-      "bytes": 7038,
-      "sha256": "926425f19fb26bb7ece3cce84e59080f383cb36a3e364ef2317f365ae2762306"
+      "bytes": 7036,
+      "sha256": "f096b9caac8b7f7c2801f93ae33877bc4381711e343e1d0518ad2aa9e93b7953"
     },
     {
       "name": "current-comparison-prompt.json",
-      "bytes": 582,
-      "sha256": "9f3b36693a54bd7bbeb635236cb9fb38731fc9eeae8001b75b09c5d672073849"
+      "bytes": 572,
+      "sha256": "dffbb02e89ddcd779ee55beae364bc7308f25b85c933b45ae1988481b5b1633e"
     },
     {
       "name": "hosting-boundary.html",
-      "bytes": 6951,
-      "sha256": "56b8c098d4b16ff79dcad5e6aea43e95b86597896f936cf789fd00d42fc6b943"
+      "bytes": 6949,
+      "sha256": "dff5851fe16b312f700141d07dacd4acf789b1fe1105f0cb806d311b61e0bc06"
     },
     {
       "name": "index.html",
-      "bytes": 7798,
-      "sha256": "70826994a0f4a3cda0652f3353a7fa93ad81cee4150cb76fe63890124661450d"
+      "bytes": 5872,
+      "sha256": "6c328590c9d555197b5851510d2656e216a27d594cfd1d0b8e3b16c891b73da2"
     },
     {
       "name": "measurement-scorecard.html",
-      "bytes": 6676,
-      "sha256": "46bcdf93c6ce2ed53db4e57c62286dc90e3c0c4c00d75b235f37b33d891cae12"
+      "bytes": 6674,
+      "sha256": "db18c1991370e045bcd351bf48b5f4ddc25f83863d5e0a1c3909a974214897c5"
     },
     {
       "name": "next-step.html",
-      "bytes": 9035,
-      "sha256": "273bd1292b7f9284b3465b7f959b12d0464d1759b6a93df0a4fc307ff30ff37d"
+      "bytes": 5193,
+      "sha256": "ddd8b9654d97c7e07ef7b9ce57ab139d823e67f4743e24d56609d4a255ce01cf"
     },
     {
       "name": "operator-route.html",
-      "bytes": 10669,
-      "sha256": "38f4a8be658d46da006d3f43bc91b2e2ba43291d967d62f49b32af7d435b6e81"
+      "bytes": 5968,
+      "sha256": "99f54d83c96598fa7e24c7cea49a006f8fbf748159c12644d033c5121668c942"
     },
     {
       "name": "pilot-agreement.html",
-      "bytes": 6657,
-      "sha256": "05299f3b729da93d1b78b19938876c2e62761faac727fd13955ad8832e72c472"
+      "bytes": 6655,
+      "sha256": "f554d54f93c990c65e09a812d2a7db6d7c9008f6663faf6c02a97a02c943fab7"
     },
     {
       "name": "pilot-conversion.html",
-      "bytes": 7128,
-      "sha256": "05a1875d9c20bb05c692ed7d7eafb7685b0928c5b154846e30cd1a89fdba1fcc"
+      "bytes": 7127,
+      "sha256": "41f019ec136b40fc9463eb7e3f747d0b0211d9582bbbce57b0143d9bbfad16b3"
     },
     {
       "name": "pilot-onboarding.html",
-      "bytes": 6668,
-      "sha256": "a1499a88a6e9afef674c575c746038567b83f2db4d7ecafe91c6d3b803e7ad1e"
+      "bytes": 6666,
+      "sha256": "0c4b2e18194ec322625cfa96927e0eac4ba1e814c565fd2d815b5888dd85491a"
     },
     {
       "name": "pilot-package.html",
-      "bytes": 8874,
-      "sha256": "8bd696bd77f648a79f895ce1a0416dade84f3b319527b19fd230240b3d6c626f"
+      "bytes": 5168,
+      "sha256": "10b88bbcfacd5a303e092641d05b31219ffd12e45e5912eb8576129ec47a4088"
     },
     {
       "name": "pilot-setup-packet.md",
-      "bytes": 1004,
-      "sha256": "df045547556102ffccd9a7cc19cbc0fa0a06e68992017272150e52db596bfe48"
+      "bytes": 970,
+      "sha256": "4684e8aed88adf1d2fda3209d71b6cd2bebf38dcc381ac3cb91f18e0b061ee53"
     },
     {
       "name": "proof-index-desktop.png",
-      "bytes": 105113,
-      "sha256": "388dad9e8b0b7ef176cd0b272b162ee0adbdb9df972479debc9a9916be926c14"
+      "bytes": 91998,
+      "sha256": "9a5dab174355b2b91e3fb04892ef9c72f0bf70305106a8cc0e908841499cd2ae"
     },
     {
       "name": "proof-index-mobile.png",
-      "bytes": 150905,
-      "sha256": "986cc4552436f196c5d40b8ded93705a4114bcb567f97fc79653cfdc3d31af36"
+      "bytes": 151897,
+      "sha256": "4be6d4fd74e61724e878d2fb7c307e1217dff7699c4947eb050204cc35b2c006"
     },
     {
       "name": "proof-operator-route-desktop.png",
-      "bytes": 96896,
-      "sha256": "74fe8eca08e74764e4f054f8681004f4ba538c6132da6ce1b375232545ad4855"
+      "bytes": 97041,
+      "sha256": "ef483d40deccd2d523e6ec0c734992119ada7d1d6b0818b07f23a94dc824cf1d"
     },
     {
       "name": "public-comparison-verifier.json",
-      "bytes": 7806,
-      "sha256": "1c84f1bb46e921f69ec5b506067a3f85d18f6c705999189bd20c5d128ef7d13a"
+      "bytes": 495,
+      "sha256": "359842e3952ad6081caf0097a988d3601a5018142ba61b9ce7d46eb26eadadce"
     },
     {
       "name": "simulation.html",
-      "bytes": 6477,
-      "sha256": "b8b5da7fb3d1f5d91abde20cbdee106d44bac80b28ff911deab06e84153dac08"
+      "bytes": 6475,
+      "sha256": "606eff98adb6940286778a9031859b0912872c4f428128bcec4886ed6bc9be85"
     },
     {
       "name": "ten-line-scenario.html",
-      "bytes": 6403,
-      "sha256": "ea55a3e24286720e44e27e360f2ed8852c4d1a966bf1d26768d66d8f6c24f5a0"
+      "bytes": 6401,
+      "sha256": "a4bcdb7708e8fa409dc49e36d4599d81e0d62a1105aa848b69b28eaf0e57c344"
     },
     {
       "name": "visual-proof.html",
-      "bytes": 6516,
-      "sha256": "0d7b07daccc1c3f402912405ce62ae3db798d7b12d7d64e62dfa48e98376bcb1"
+      "bytes": 6514,
+      "sha256": "a45204938c7e0ab716f0596f5a0434d8a3128e385a2d7377e846503c1a9c166b"
     }
   ]
 }
