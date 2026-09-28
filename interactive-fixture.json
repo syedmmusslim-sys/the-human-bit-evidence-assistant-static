@@ -1,35 +1,52 @@
 {
-  "build": "85",
+  "build": "86",
   "case": "Blue Wattle close readiness",
+  "period": "June 2026",
+  "prepared_by": "Mason Ng, staff operator",
+  "reviewed_by": "Amara Lee, reviewer",
+  "generated_from": "deterministic browser state; synthetic sample only",
   "items": [
     {
       "id": "PAY-001",
       "name": "Payroll variance support",
       "status": "waiting-review",
       "owner": "Reviewer",
-      "blocker": "Needs reviewer decision before packet."
+      "due": "Today 3pm",
+      "blocker": "Needs reviewer decision before packet.",
+      "consequence": "Cannot include payroll variance support in manager packet yet."
     },
     {
       "id": "BAS-002",
       "name": "BAS export",
       "status": "rejected-problem",
       "owner": "Staff",
-      "blocker": "Wrong period: May instead of June."
+      "due": "Today 5pm",
+      "blocker": "Wrong period: May instead of June.",
+      "consequence": "Client/staff chase remains open."
     },
     {
       "id": "LOAN-003",
       "name": "Loan statement",
       "status": "missing",
       "owner": "Client",
-      "blocker": "Not received."
+      "due": "Tomorrow 10am",
+      "blocker": "Not received.",
+      "consequence": "Close remains blocked until client responds."
     }
   ],
+  "roles": {
+    "staff": "Intake evidence, see blockers, approve chase only after review state is clear; cannot accept evidence.",
+    "reviewer": "Accept or reject evidence with a reason; creates the only packet-inclusion path.",
+    "manager": "Reads close decision, unresolved blockers, accepted evidence, audit trail, and event-chain proof."
+  },
   "invariants": {
     "reviewer_only_acceptance": true,
     "no_auto_accept": true,
     "no_auto_send": true,
     "waiting_or_rejected_or_missing_items_excluded_from_packet": true,
-    "approved_chase_cannot_resend": true
+    "approved_chase_cannot_resend": true,
+    "state_snapshot_export": true,
+    "event_chain_hash": true
   },
   "metrics": {
     "sample_only": true,

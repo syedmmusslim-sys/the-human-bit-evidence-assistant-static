@@ -1,14 +1,17 @@
 {
-  "build": "85",
+  "build": "86",
   "defensible_advantages": [
+    "outcome-first close cockpit",
     "role-gated acceptance",
     "refusal events",
-    "duplicate-send refusal",
-    "shared state packet and chase"
+    "same-state packet and chase rules",
+    "deterministic state snapshot",
+    "event-chain hash"
   ],
   "forbidden_claims": [
     "better than ChatGPT",
     "production-ready",
-    "guaranteed ROI"
+    "guaranteed ROI",
+    "real client data approved"
   ]
 }

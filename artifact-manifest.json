@@ -1,97 +1,107 @@
 {
-  "build": "85",
-  "builder_version": "85.0.0",
-  "target": "Build 85 interactive enforced replay sandbox with role-gated state transitions, failed-state proof, measurement panel, safer pilot request path, and same-input AI comparison.",
+  "build": "86",
+  "builder_version": "86.0.0",
+  "target": "Build 86 guided close-outcome cockpit with 5-click demo, role lenses, stronger commercial pilot offer, realistic manager artifacts, deterministic state snapshot, and event-chain hash proof.",
   "files": [
     {
       "name": "STATIC_DEPLOYMENT.md",
       "bytes": 116,
-      "sha256": "1e9fed94e6c0819b9f283a8c72a1b4e3a050dc3a0521b2f6d7aba08b6b1aef93"
+      "sha256": "7eac63e2fd5e88a7cff606453cf3a6a0235a1a1351860439da90a8d968a5b242"
     },
     {
       "name": "blocker-only-chase-draft.txt",
-      "bytes": 335,
-      "sha256": "51d5d8107e056a3bc824d95382a31f80cb6ece5446cd6345db5e301c0aafbc97"
+      "bytes": 352,
+      "sha256": "7eb44474045ad065f3bdaa9963883dae37d1b7f6d7495b8ce5f48d3c7bcf1ee4"
     },
     {
       "name": "browser-proof-public.json",
-      "bytes": 7009,
-      "sha256": "8069a64c3188994b26f8ceec78179d75f8d868ead2412c7a061e08e8e150f04a"
+      "bytes": 7312,
+      "sha256": "6993c91685af251cf2fade4b82a9568cfe58faf20182b2e1ae016323df122e60"
     },
     {
       "name": "buyer-artifacts.html",
-      "bytes": 3633,
-      "sha256": "16ea40574fab1596aeaac2d040364fdc7f289adc0b8980efae44398d8604fc3b"
+      "bytes": 3845,
+      "sha256": "1116f61ac12295c362d62d04a3797e602f004ea3980fb5ad90d62d02b927f5f0"
     },
     {
       "name": "canonical-proof-status.json",
-      "bytes": 121,
-      "sha256": "1b8d8f77c188424bb711294a16097da6e7119c58998d35b94511e32087926a01"
+      "bytes": 191,
+      "sha256": "34ecdc88fffc561be5db4dadc44ea4c51a1e475fead2791e131b60ed87d90c69"
+    },
+    {
+      "name": "close-cockpit.html",
+      "bytes": 4903,
+      "sha256": "f2a09ec6a196336e5d2e02bf6408189a9ea590b6c300c54f9951771984def6ae"
     },
     {
       "name": "generic-ai-comparison.html",
-      "bytes": 3925,
-      "sha256": "6a53613c15ba7d02e0d1fc727ee00fddad9bef5d390fa375b06309dd3ba09d7e"
+      "bytes": 4182,
+      "sha256": "ce572d103ea765ad9f1d7cbce2a2c897334e66b108680a7e7a467091fe58bfe6"
     },
     {
       "name": "index.html",
-      "bytes": 4697,
-      "sha256": "0fb750b75a0e19d3bb702a8fe391a2d6356048416fd0c006b1e8a40e23a62b93"
+      "bytes": 4556,
+      "sha256": "17cb091f6ea2a26e3ecfda8eed873631328db1bf40bde36fe38180bd39abf5c5"
     },
     {
       "name": "interactive-fixture.json",
-      "bytes": 1194,
-      "sha256": "9ae80da3c6f2a18da2096d0f22a27ded4fe4bb173719886f9dfd0f12fd0efbe6"
+      "bytes": 2090,
+      "sha256": "394665fbe034d48e630b6de8216c6457dc305816b1198af7d4a11d3840c9b25f"
     },
     {
       "name": "interactive-sandbox.html",
-      "bytes": 5466,
-      "sha256": "ba2bf18bc6f2dd85b060ebda28079f88649bf19f029de94b7a3f610d5ea37bbc"
+      "bytes": 5637,
+      "sha256": "c9537da2d65fc51f405e62adad776ea85b1b53e34fdacfe52b11e24c4f531eb8"
     },
     {
       "name": "next-step.html",
-      "bytes": 3373,
-      "sha256": "bff04e67550a6556181473901900aca6f1bf9d4ace84a508bbec3eea239c12f1"
+      "bytes": 3537,
+      "sha256": "2dac8eb1de8f8e7873cfb770f84d9d8a3b4795b8f58c51615da186386332aefa"
     },
     {
       "name": "pilot-package.html",
-      "bytes": 3881,
-      "sha256": "ffd1b1d493ac11aec1e52ab93ec25e46999a3b5d9e7d4368cd5fe5ce38047652"
+      "bytes": 4800,
+      "sha256": "bb116aae9ff697d8a90e4b549bedacf6b2519fe8a0abfcf492a06f1deb6002f4"
+    },
+    {
+      "name": "proof-close-cockpit-desktop.png",
+      "bytes": 79377,
+      "sha256": "f5372681358e934e4b83bf429173b026ccba103f2e451cb73590c8350592392c"
     },
     {
       "name": "proof-index-desktop.png",
-      "bytes": 91356,
-      "sha256": "dd29ffe70eba2a5c2b976ba3a97e8d2ef3cb9821ebe6aea689b3bba27a5236fb"
+      "bytes": 77479,
+      "sha256": "f50a98febe35dd50646370394854cec0de8f7f318e20d77a7bd3d65e2e1e5942"
     },
     {
       "name": "proof-interactive-sandbox-desktop.png",
-      "bytes": 72822,
-      "sha256": "b123223a7723d2cb9504a20464749e6c41a559d53b9a9b30d57c0bd696192ad7"
+      "bytes": 59324,
+      "sha256": "c6b863260505bd7cba951462ded9343a6ba7b1dd8b785744e55d04ba5c976051"
     },
     {
       "name": "proof-interactive-sandbox-mobile.png",
-      "bytes": 139911,
-      "sha256": "2c08bc20eed3b0e1371142fc6805f6e5502141c2d32254d955136cc6381fb5ea"
+      "bytes": 121698,
+      "sha256": "a56ede0f74ae770f4409c8f3d553d5b431f3c194d148ec28b2ae4d3e25a91a80"
     },
     {
       "name": "public-comparison-verifier.json",
-      "bytes": 272,
-      "sha256": "4279129e15d5019f3758857dd65a2e669767eab1ac6206486449c933e8c57783"
+      "bytes": 374,
+      "sha256": "f60e2f68b773862d3e43dbfa232ad3dc1ba5de7a1b97de666c3f93d8cba19dd2"
     },
     {
       "name": "reviewer-decision-log.md",
-      "bytes": 315,
-      "sha256": "244d62d7e9d7b0de775e68e576e1a0e547b05c5ad2af1d1d901a513d8051cbf7"
+      "bytes": 626,
+      "sha256": "ecb6b5a4132d494192482c0a39d8be52dae35d21431050a00a02c30864e6d3f2"
     },
     {
       "name": "sample-manager-packet.md",
-      "bytes": 326,
-      "sha256": "9b2906d488dd178d9ede0e0d2910fe9da8dd72a4581132cd4da1a779f71793db"
+      "bytes": 1371,
+      "sha256": "86e31416de241e8a4e72c17707a3e23fa9d16d4c192d55bbdd1ba29a9453fa4c"
     },
     {
       "name": "sandbox.js",
-      "bytes": 3848,
-      "sha256": "3ee4ec9e986106ca44f98ea89c5c52a6501a24365239b9a58fb11084f253b8f1"
+      "bytes": 6478,
+      "sha256": "05a25fb6b1af8bcb0280a5b650c222da030a7cbc730c1750efc51916fc966252"
     }
   ]
 }

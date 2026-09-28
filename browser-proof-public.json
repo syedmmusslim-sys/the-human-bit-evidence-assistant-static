@@ -1,74 +1,78 @@
 {
-  "build": "85",
+  "build": "86",
   "browser": "chromium-family headless browser (local path withheld)",
   "started_at": "withheld in public artifact; see local proof if needed",
   "screenshots": [
     {
       "file": "index-desktop.png",
-      "bytes": 91356
+      "bytes": 77479
+    },
+    {
+      "file": "close-cockpit-desktop.png",
+      "bytes": 79377
     },
     {
       "file": "interactive-sandbox-desktop.png",
-      "bytes": 72822
+      "bytes": 59324
     },
     {
       "file": "interactive-sandbox-mobile.png",
-      "bytes": 139911
+      "bytes": 121698
     }
   ],
   "checks": [
     {
-      "name": "Build85 first viewport is interactive sandbox CTA with honest boundary",
+      "name": "Build86 first viewport is outcome-first cannot-close cockpit CTA with honest boundary",
       "passed": true,
-      "detail": "{\"title\":\"Start here — Evidence Assistant Build 85\",\"h1\":\"Try the enforced close workflow: click reviewer gates, chase approval, and packet updates.\",\"nav\":[\"Start\",\"Interactive sandbox\",\"Buyer artifacts\",\"AI comparison\",\"Pilot package\",\"Next step\"],\"text\":\"The Human Bit · Evidence Assistant\\nStart\\nInteractive sandbox\\nBuyer artifacts\\nAI comparison\\nPilot package\\nNext step\\n\\nPublic static demo · synthetic Blue Wattle case · no client data\\n\\nTry the enforced close workflow: click reviewer gates, chase approval, and packet updates.\\n\\nBuild 85 moves beyond replay. It lets a buyer test the workflow-control advantage: non-reviewers are refused, waiting-review evidence stays out of the packe"
+      "detail": "{\"title\":\"Start here — Evidence Assistant Build 86\",\"h1\":\"Can Blue Wattle close? Not yet — 2 blockers remain.\",\"nav\":[\"Start\",\"Close cockpit\",\"5-click guided demo\",\"Artifacts\",\"AI comparison\",\"Pilot offer\",\"Next step\"],\"text\":\"The Human Bit · Evidence Assistant\\nStart\\nClose cockpit\\n5-click guided demo\\nArtifacts\\nAI comparison\\nPilot offer\\nNext step\\n\\nPublic static demo · synthetic Blue Wattle case · no client data\\n\\nCan Blue Wattle close? Not yet — 2 blockers remain.\\n\\nStart with the close outcome, then use five guided clicks to see which owner unblocks each item, what changes in the manager packet, and what the product refuses to do.\\n\\nOpen the close cockpit Run the 5-click demo\\n\\n"
     },
     {
-      "name": "Build85 buyer nav includes Interactive sandbox, artifacts, AI, pilot",
+      "name": "Build86 buyer nav includes close cockpit, guided demo, AI, pilot",
       "passed": true,
-      "detail": "[\"Start\",\"Interactive sandbox\",\"Buyer artifacts\",\"AI comparison\",\"Pilot package\",\"Next step\"]"
+      "detail": "[\"Start\",\"Close cockpit\",\"5-click guided demo\",\"Artifacts\",\"AI comparison\",\"Pilot offer\",\"Next step\"]"
     },
     {
-      "name": "Build85 sandbox initial state shows waiting/rejected/missing and no auto-accept",
+      "name": "Build86 close cockpit shows blockers, owners, due times, and next safe actions",
       "passed": true,
-      "detail": "The Human Bit · Evidence Assistant\nStart\nInteractive sandbox\nBuyer artifacts\nAI comparison\nPilot package\nNext step\n\nBuild 85 interactive enforced replay sandbox\n\nClick the workflow gates a prompt cannot enforce.\n\nUse the buttons below to prove reviewer-only acceptance, blocker-only chase, no auto-send, duplicate-send refusal, and packet updates from shared state.\n\nFailed-state examples are intentional: try “non-reviewer accept” and “send again” to see refusal events in the audit log.\nActions\n\nReviewer accepts PAY-001\n\nReviewer rejects PAY-001\n\nNon-reviewer tries to accept LOAN-003\n\nStaff approves blocker-only chase\n\nTry to send chase again\n\nReset sample state\n\nEvidence state\nPAY-001 — Payrol"
+      "detail": "The Human Bit · Evidence Assistant\nStart\nClose cockpit\n5-click guided demo\nArtifacts\nAI comparison\nPilot offer\nNext step\n\nOutcome-first case cockpit\n\nCan Blue Wattle close? Not yet — 2 blockers remain.\n\nThe product spine is the close decision: blocker, owner, due time, consequence, and next safe action. The proof cockpit is secondary.\n\nAccepted\n\nAfter reviewer approval, PAY-001 moves to the manager packet and disappears from chase copy.\n\nWaiting review\n\nPAY-001 starts as waiting-review. Staff can view it but cannot accept it.\n\nBlocked\n\nBAS-002 and LOAN-003 keep the case at “cannot close” until corrected/received/reviewed.\n\nRequirement\tStatus\tOwner\tDue\tWhy close is blocked\tNext safe action\nPA"
     },
     {
-      "name": "Build85 non-reviewer accept is refused and state unchanged",
+      "name": "Build86 sandbox initial state shows waiting/rejected/missing, guided steps, and snapshot/hash",
       "passed": true,
-      "detail": "oval; sample only)\n- Please fix/send BAS export: Wrong period: May instead of June.\n- Please fix/send Loan statement: Not received.\n\nWe are not asking again for accepted items. Waiting-review evidence is not chased until a reviewer decides.\nSample measurement panel — not measured pilot ROI\nMetric\tBaseline sample\tCurrent sample\tPilot rule\nDuplicate re-asks\t2\t0\tCount duplicate client asks in one close cycle.\nReviewer rework touches\t5\t2\tReviewer logs every avoidable re-check.\nTime to manager handoff\t36h\t18h\tTimestamp first intake to packet handoff.\nManager confidence\tLow\tMedium-high\tManager scores whether exclusions are clear.\n\nThese numbers are synthetic hypotheses until a governed pilot captu"
+      "detail": "The Human Bit · Evidence Assistant\nStart\nClose cockpit\n5-click guided demo\nArtifacts\nAI comparison\nPilot offer\nNext step\n\nGuided 5-click demo path\n\nDo these 5 clicks; each step has an expected result.\n\n1 view cannot-close → 2 try non-reviewer accept → 3 reviewer accepts → 4 approve blocker-only chase → 5 read packet + audit hash.\n\nFailed-state examples are intentional: non-reviewer accept and duplicate send are refused and added to the audit log.\nStep 1\n\nView cannot-close state\n\nStatus: pending\n\nStep 2\n\nTry non-reviewer accept: expect refusal\n\nStatus: pending\n\nStep 3\n\nReviewer accepts PAY-001: expect packet update\n\nStatus: pending\n\nStep 4\n\nApprove chase: expect blockers only\n\nStatus: pending"
     },
     {
-      "name": "Build85 reviewer accept updates packet and removes item from chase",
+      "name": "Build86 non-reviewer accept is refused and step completion visible",
       "passed": true,
-      "detail": "The Human Bit · Evidence Assistant\nStart\nInteractive sandbox\nBuyer artifacts\nAI comparison\nPilot package\nNext step\n\nBuild 85 interactive enforced replay sandbox\n\nClick the workflow gates a prompt cannot enforce.\n\nUse the buttons below to prove reviewer-only acceptance, blocker-only chase, no auto-send, duplicate-send refusal, and packet updates from shared state.\n\nFailed-state examples are intentional: try “non-reviewer accept” and “send again” to see refusal events in the audit log.\nActions\n\nReviewer accepts PAY-001\n\nReviewer rejects PAY-001\n\nNon-reviewer tries to accept LOAN-003\n\nStaff approves blocker-only chase\n\nTry to send chase again\n\nReset sample state\n\nEvidence state\nPAY-001 — Payrol"
+      "detail": ":[{\"id\":\"EV-86-001\",\"msg\":\"Staff intake received three evidence items; nothing is auto-accepted.\",\"prev\":\"GENESIS-BUILD-86\"},{\"id\":\"EV-86-002\",\"msg\":\"Viewed cannot-close cockpit: blockers, owners, due times, and consequences are visible.\",\"prev\":\"c790be6cce32bd356bb2bf0c0cf9b5e9d65114a9de6a1db5a9ace22519c03159\"},{\"id\":\"EV-86-003\",\"msg\":\"Refused non-reviewer accept attempt on LOAN-003; no state changed.\",\"prev\":\"717c646d28ea3c07748c48b58cc2cce9a092def0a44286e76b694401366d5414\"}]}\nEvent-chain hash proof\nevent_chain_sha256=36617e65fc9fdda4ded87a7c226c49ae465bcfda84236997da1f08f3aa4cbf86\nlast_event=EV-86-003\nSample measurement panel — not measured pilot ROI\nMetric\tBaseline sample\tCurrent sample\t"
     },
     {
-      "name": "Build85 staff approval sends only unresolved blockers and excludes accepted/waiting-review",
+      "name": "Build86 reviewer accept updates manager packet and chase exclusions",
       "passed": true,
-      "detail": "od: May instead of June.; LOAN-003 missing — Not received.\nBlocker-only chase draft\nClient chase draft (requires staff approval; sample only)\n- Please fix/send BAS export: Wrong period: May instead of June.\n- Please fix/send Loan statement: Not received.\n\nWe are not asking again for accepted items. Waiting-review evidence is not chased until a reviewer decides.\nSample measurement panel — not measured pilot ROI\nMetric\tBaseline sample\tCurrent sample\tPilot rule\nDuplicate re-asks\t2\t0\tCount duplicate client asks in one close cycle.\nReviewer rework touches\t5\t2\tReviewer logs every avoidable re-check.\nTime to manager handoff\t36h\t18h\tTimestamp first intake to packet handoff.\nManager confidence\tLow\tMe"
+      "detail": "The Human Bit · Evidence Assistant\nStart\nClose cockpit\n5-click guided demo\nArtifacts\nAI comparison\nPilot offer\nNext step\n\nGuided 5-click demo path\n\nDo these 5 clicks; each step has an expected result.\n\n1 view cannot-close → 2 try non-reviewer accept → 3 reviewer accepts → 4 approve blocker-only chase → 5 read packet + audit hash.\n\nFailed-state examples are intentional: non-reviewer accept and duplicate send are refused and added to the audit log.\nStep 1\n\nView cannot-close state\n\nStatus: complete\n\nStep 2\n\nTry non-reviewer accept: expect refusal\n\nStatus: complete\n\nStep 3\n\nReviewer accepts PAY-001: expect packet update\n\nStatus: complete\n\nStep 4\n\nApprove chase: expect blockers only\n\nStatus: pend"
     },
     {
-      "name": "Build85 duplicate send is refused visibly",
+      "name": "Build86 guided path reaches packet, blocker-only chase, snapshot and audit hash",
       "passed": true,
-      "detail": "ent panel — not measured pilot ROI\nMetric\tBaseline sample\tCurrent sample\tPilot rule\nDuplicate re-asks\t2\t0\tCount duplicate client asks in one close cycle.\nReviewer rework touches\t5\t2\tReviewer logs every avoidable re-check.\nTime to manager handoff\t36h\t18h\tTimestamp first intake to packet handoff.\nManager confidence\tLow\tMedium-high\tManager scores whether exclusions are clear.\n\nThese numbers are synthetic hypotheses until a governed pilot captures firm-specific baselines.\n\nAudit log\nEV-85-001 — Staff intake received three evidence items; nothing is auto-accepted.\nEV-85-002 — Refused non-reviewer accept attempt on LOAN-003; no state changed.\nEV-85-003 — Reviewer accepted PAY-001; packet includes "
+      "detail": "ockpit: blockers, owners, due times, and consequences are visible.\",\"prev\":\"c790be6cce32bd356bb2bf0c0cf9b5e9d65114a9de6a1db5a9ace22519c03159\"},{\"id\":\"EV-86-003\",\"msg\":\"Refused non-reviewer accept attempt on LOAN-003; no state changed.\",\"prev\":\"717c646d28ea3c07748c48b58cc2cce9a092def0a44286e76b694401366d5414\"},{\"id\":\"EV-86-004\",\"msg\":\"Reviewer accepted PAY-001; packet includes it and chase excludes it.\",\"prev\":\"36617e65fc9fdda4ded87a7c226c49ae465bcfda84236997da1f08f3aa4cbf86\"},{\"id\":\"EV-86-005\",\"msg\":\"Staff approved blocker-only chase; accepted and waiting-review items were excluded.\",\"prev\":\"3a04a0608edf7467afe57465947abfc0305ad65f62bc1529bd274325ce1792d8\"},{\"id\":\"EV-86-006\",\"msg\":\"Manager r"
     },
     {
-      "name": "Build85 keyboard-visible controls have accessible names",
+      "name": "Build86 keyboard-visible controls have accessible names",
       "passed": true,
-      "detail": "[\"Start\",\"Interactive sandbox\",\"Buyer artifacts\",\"AI comparison\",\"Pilot package\",\"Next step\",\"Reviewer accepts PAY-001\",\"Reviewer rejects PAY-001\",\"Non-reviewer tries to accept LOAN-003\",\"Staff approves blocker-only chase\",\"Try to send chase again\",\"Reset sample state\"]"
+      "detail": "[\"Start\",\"Close cockpit\",\"5-click guided demo\",\"Artifacts\",\"AI comparison\",\"Pilot offer\",\"Next step\",\"Step 1: view cannot-close state\",\"Step 2: non-reviewer tries to accept LOAN-003\",\"Step 3: reviewer accepts PAY-001\",\"Step 4: staff approves blocker-only chase\",\"Step 5: read manager packet and audit trail\",\"Try duplicate send again\",\"Reset sample state\"]"
     },
     {
-      "name": "Build85 desktop has no horizontal overflow",
+      "name": "Build86 desktop has no horizontal overflow",
       "passed": true,
       "detail": "{\"scrollW\":1265,\"clientW\":1265}"
     },
     {
-      "name": "Build85 mobile sandbox has no horizontal overflow and keeps h1 visible",
+      "name": "Build86 mobile sandbox has no horizontal overflow and keeps h1 visible",
       "passed": true,
-      "detail": "{\"scrollW\":390,\"clientW\":390,\"h1\":\"Click the workflow gates a prompt cannot enforce.\",\"visible\":true}"
+      "detail": "{\"scrollW\":390,\"clientW\":390,\"h1\":\"Do these 5 clicks; each step has an expected result.\",\"visible\":true}"
     },
     {
-      "name": "Build85 browser run produced no console errors",
+      "name": "Build86 browser run produced no console errors",
       "passed": true,
       "detail": ""
     }

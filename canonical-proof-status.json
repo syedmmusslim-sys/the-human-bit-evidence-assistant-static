@@ -1,6 +1,8 @@
 {
-  "build": "85",
-  "status": "interactive sandbox built locally",
+  "build": "86",
+  "status": "guided close-outcome cockpit built locally",
   "bounded_claims": true,
-  "no_client_data": true
+  "no_client_data": true,
+  "state_snapshot_export": true,
+  "event_chain_hash": true
 }
