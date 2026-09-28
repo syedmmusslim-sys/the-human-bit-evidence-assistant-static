@@ -7,7 +7,7 @@
   "target": "single consolidated build toward 10/10",
   "artifact_boundary": "Read-only immutable static buyer walkthrough plus supervised-pilot offer. No backend, no forms, no email, no integrations, no client data, no public mutable SaaS claim.",
   "commercial_boundary": "Pilot/pricing/ROI are hypotheses until buyer validation and measured outcomes exist.",
-  "comparison_boundary": "No fabricated Claude/ChatGPT captures and no model-output superiority claim; comparison protocol only until same-input captures are attached.",
+  "comparison_boundary": "Partial same-input evidence: real Claude capture hash, deterministic spreadsheet baseline and Evidence Assistant projection are attached; ChatGPT capture blocked, not fabricated; no blanket superiority claim.",
   "hosting_boundary": "GitHub Pages durable mirror allowed after fetch-back; strict-header proof requires controllable host returning required headers.",
   "evidence_line_count": 10,
   "public_fetchback_required": true,
@@ -31,13 +31,18 @@
     },
     {
       "name": "chatgpt-comparison.html",
-      "bytes": 6679,
-      "sha256": "1b7911aac215b3c56f7a6a8ad5d26552c1bf6c330332028f39d758a8d6efa267"
+      "bytes": 6849,
+      "sha256": "3de7d16c2cfdba3d93ce11cadbf21f8e4d6ef7291d435c188ebb1ae01dd86242"
+    },
+    {
+      "name": "comparison-evidence.html",
+      "bytes": 7020,
+      "sha256": "3eea866a8e94349b4aa790ad4f4dd768be22c4241619dc7649e298acd06e5e6f"
     },
     {
       "name": "comparison-protocol.html",
-      "bytes": 6534,
-      "sha256": "9b0d488dea408cf5c37fd0f98b818966f49b1482ba8e286f00816ba3e95e6274"
+      "bytes": 6704,
+      "sha256": "748a02c8d01e755ae9cbf37b56d8a4341724f8c9a59eacf4c23d68c2048991a6"
     },
     {
       "name": "current-comparison-prompt.json",
@@ -46,28 +51,38 @@
     },
     {
       "name": "hosting-boundary.html",
-      "bytes": 6156,
-      "sha256": "b952197c337ff7e0d9aece4ffa63af70cdacfe3097daec5660b4e4ff4a177d48"
+      "bytes": 6326,
+      "sha256": "f373bed9959536f39ff661b82560e4a3b1bcde8c05cbde98cec333545380d561"
     },
     {
       "name": "index.html",
-      "bytes": 6587,
-      "sha256": "5cfcb2240b1a74c2942f8c76f0b1e471a9391bc349bc0fe18976ecc5c2980a32"
+      "bytes": 6757,
+      "sha256": "31133cb73bb59ef854562713ea6cad31ecfed8622acdcd76f2d0da1a17ff4bda"
+    },
+    {
+      "name": "measurement-scorecard.html",
+      "bytes": 6469,
+      "sha256": "797d388ef2d716c2afdbd86a0bf2726919b749cc6c25d72396298fd9e001be8f"
+    },
+    {
+      "name": "pilot-agreement.html",
+      "bytes": 6569,
+      "sha256": "df03199bfed8263539dfd580dcc0bf1b3d6527e3e6e85917e7f26ce3c1ea108d"
     },
     {
       "name": "pilot-package.html",
-      "bytes": 7619,
-      "sha256": "2765871e42e9f2734d69400339df4964f7d7b66cbf44b5c0304272245eb21cac"
+      "bytes": 7789,
+      "sha256": "d38f6c69d7d5b596298ffc18622d77fd912d8a89a27b9f0a95589620a096f839"
     },
     {
       "name": "simulation.html",
-      "bytes": 7555,
-      "sha256": "103411443273bc594f47f8951e3749077a69e53073378815838001eb3f167ff7"
+      "bytes": 7725,
+      "sha256": "3ac67de0e2cedb3e5052bfd2f484b07f12a681ea8188a3f62c9905e5a4613ebf"
     },
     {
       "name": "ten-line-scenario.html",
-      "bytes": 8201,
-      "sha256": "a9305084c46de95c89546971a98e6ae00c0bdb587df50b4a770033480efc84fb"
+      "bytes": 8371,
+      "sha256": "1e95f595e3919536702e75ab581803b878c43605e261fdd0a39d3f65b11b1b1e"
     }
   ]
 }
