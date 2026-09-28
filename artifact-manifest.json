@@ -1,100 +1,122 @@
 {
-  "builder": "evidence-assistant-build77-proof-and-capture-builder",
-  "builder_version": "77.0.0",
-  "build": "77",
+  "builder": "evidence-assistant-build79-hardening-builder",
+  "builder_version": "79.0.0",
+  "build": "79",
   "generated_at": "1970-01-01T00:00:00.000Z",
   "public_buyer_artifact": true,
-  "target": "buyer-conversion current build: collapsed pilot route, pilot setup handoff, browser visual/a11y gate and public partial same-input verifier",
-  "artifact_boundary": "Read-only immutable static buyer walkthrough plus supervised-pilot offer. No backend, no forms, no email, no integrations, no client data, no public mutable SaaS claim.",
-  "commercial_boundary": "Pilot/pricing/ROI are hypotheses until buyer validation and measured outcomes exist.",
-  "comparison_boundary": "Partial same-input evidence is attached: raw Claude capture, deterministic spreadsheet baseline, Evidence Assistant projection, and blocked ChatGPT record; no blanket superiority claim.",
-  "hosting_boundary": "GitHub Pages durable mirror allowed after fetch-back; strict-header proof requires controllable host returning required headers.",
-  "evidence_line_count": 10,
-  "browser_visual_gate_required": true,
-  "public_fetchback_required": true,
-  "strict_header_required_for_strict_hosting_claim": true,
+  "target": "hardening release: every public page route-normalised and proof identity canonicalised",
+  "artifact_boundary": "Read-only immutable static buyer walkthrough plus supervised-pilot offer. No backend, forms, email, integrations, client data, public mutable SaaS claim, paid validation or ROI guarantee.",
+  "comparison_boundary": "Canonical proof status: Claude partial capture, ChatGPT blocked/unverified, spreadsheet baseline projection, Evidence Assistant static projection plus local workflow tests; no blanket superiority claim.",
+  "buyer_route": [
+    "Start",
+    "Walkthrough",
+    "Pilot package",
+    "Comparison",
+    "Boundaries",
+    "Next step"
+  ],
+  "proof_status_source": "canonical-proof-status.json",
+  "publish_order": [
+    "static gate",
+    "browser visual gate",
+    "public fetch-back gate"
+  ],
   "excluded_from_public": [
-    "build77-browser-proof/",
-    "build77-local-verifier-pack/",
+    "build79-browser-proof/",
+    "build79-local-verifier-pack/",
     "audit-only/",
-    "capture-registry-summary.json",
     "raw-comparison-registry.json"
   ],
   "files": [
     {
       "name": "STATIC_DEPLOYMENT.md",
-      "bytes": 519,
-      "sha256": "a7d98649bdf3e9096b533af17ff6bf88fd826f25c30d1e84a35028b96b7f75a9"
+      "bytes": 473,
+      "sha256": "2da91334e43089b8dcd8ab0d2e1a6be772209dedaf53047b6a949e29d51ae4e1"
     },
     {
       "name": "ai-capture-slots.html",
-      "bytes": 6626,
-      "sha256": "6ebf55720db9a66356aabb65f327538ae6f62f5ac158343d28b24e99de882948"
+      "bytes": 6993,
+      "sha256": "898e37778f190331e0f6b6145c832f84d207c6d90c9f8d303563ed437df330fb"
     },
     {
       "name": "appendix.html",
-      "bytes": 6106,
-      "sha256": "fa04968fdca2b07763b5858f585ab8d306b0d4fc1224b1ded4fa41bf8ea59594"
+      "bytes": 6869,
+      "sha256": "96b362f46e024fd1dc66df67aebad7216a3857db8286fa1e420fad062b59e293"
     },
     {
       "name": "browser-proof-public.json",
-      "bytes": 4716,
-      "sha256": "da14d923248e2c2c34c4ffc7f5a90b72653da3867152db13a04bc5228b837629"
+      "bytes": 4620,
+      "sha256": "69355a339930b6600714c7d9d329d918244b844aa8f7142c534105154f9cf3a4"
     },
     {
       "name": "canonical-case-state.json",
-      "bytes": 2369,
-      "sha256": "23754fd8a10e34ad187665e2ab967dee208d44920e1af46e7db87e8e8f531a7a"
+      "bytes": 2356,
+      "sha256": "001fafcebf268c11d7305fae203a4df1d611e8101f5b55c139b66e8876021cec"
+    },
+    {
+      "name": "canonical-proof-status.json",
+      "bytes": 1891,
+      "sha256": "f954c67e537e66babd795f64e52b2e6e5060a1154fe769ffcde8749376c51d0a"
     },
     {
       "name": "chatgpt-comparison.html",
-      "bytes": 6666,
-      "sha256": "edf122148c55de5fb9d9a15f1f37459ba15a23749308af26677b614f1c8ddb15"
+      "bytes": 7396,
+      "sha256": "6a06154fb2cb4da96f09e8955cbadcab59f72f5f462aa76e943266aaea048b0f"
     },
     {
       "name": "comparison-evidence.html",
-      "bytes": 6817,
-      "sha256": "ed9c39dbc860a10c31cee88f8358dc07d24707cd05c0c77f5110e76800241afb"
+      "bytes": 7101,
+      "sha256": "975cead8bdabd870bd51395cf1ba193287f6891a71387240e37998131942b26a"
     },
     {
       "name": "comparison-protocol.html",
-      "bytes": 6094,
-      "sha256": "fcd44710c95e978ab00da4277f73ef9eb320988e895a21e5ce36629dfb25edf0"
+      "bytes": 7003,
+      "sha256": "105c2ebe237862e29f96605eb9b427842c5fb0d5821ead111d9e63875010abf8"
     },
     {
       "name": "current-comparison-prompt.json",
-      "bytes": 495,
-      "sha256": "bee2a811c23621f561fe8bc5ee00aedf70798ae7eed4bc7ffda46acd14295dba"
+      "bytes": 572,
+      "sha256": "95bbb9ca291988ea225c2d3fbfe5dd37b51bdf20965808d7c7083b6111c86b1b"
     },
     {
       "name": "hosting-boundary.html",
-      "bytes": 6123,
-      "sha256": "05fe9f78647ce7ba6a207eb3a09657fe90424a57eb648c9fb0af6b5057105721"
+      "bytes": 6557,
+      "sha256": "934006fbf991acd3a2851519e1a14dba96b2162187b5ef10c51e550aaef896c3"
     },
     {
       "name": "index.html",
-      "bytes": 6574,
-      "sha256": "5c4bd2c7efd72f02ca6aefebe6921c490a169df00fd02e07cad456ce3e115f51"
+      "bytes": 7741,
+      "sha256": "d147e91b53a79e7fa80bd26192391e3596b5eb4067714e6327913e17bba2a6e0"
     },
     {
       "name": "measurement-scorecard.html",
-      "bytes": 6286,
-      "sha256": "2a3a09121e032681015394d5cf25742fa1ad7022a712a3b39d84ed7cc571c195"
+      "bytes": 6641,
+      "sha256": "6772a8754c4cbff57d3b8bbc18d4c377003c3dc161c644aeb15d6dd52318f820"
+    },
+    {
+      "name": "next-step.html",
+      "bytes": 7089,
+      "sha256": "fc507e69788cbbe66eb98f27eb5d2b5e955ddb0a9fb5d9db7462532fca616692"
+    },
+    {
+      "name": "operator-route.html",
+      "bytes": 8353,
+      "sha256": "e6605330f034282082d904ce8aa8e3b6c3a2338ad9d4da3e7c42127fd3bf6035"
     },
     {
       "name": "pilot-agreement.html",
-      "bytes": 6386,
-      "sha256": "a1c12974cbcb67d14f2c07d2719854884c960dc2db96aa2beec4cdadd2413d3a"
+      "bytes": 6622,
+      "sha256": "72af159ff5ef747031aa32d32453249cd4e811892d7e9ff8a9d97af708a246a3"
     },
     {
       "name": "pilot-onboarding.html",
-      "bytes": 7144,
-      "sha256": "0a5d05af8a3861b71b75cf58866d37d3646f4c1566b9cb7121cc1e7d3675345b"
+      "bytes": 6633,
+      "sha256": "b39f3cfe4e077a81ccbb9b736c317173b3210daba06c5bd00f80e8cfe00a77e0"
     },
     {
       "name": "pilot-package.html",
-      "bytes": 7606,
-      "sha256": "736bfb10a0d5a910ba4b481ee0ae3af31b9e7427e67023e09cb5805206a39bf2"
+      "bytes": 6928,
+      "sha256": "527bfd67cc01115100d0b670ee476e51d238942a07dddd4d488a3065d620eb44"
     },
     {
       "name": "pilot-setup-packet.md",
@@ -103,38 +125,38 @@
     },
     {
       "name": "proof-index-desktop.png",
-      "bytes": 110486,
-      "sha256": "6b6416d1a3c145d1116e9a5612558bdafe04b7955af272423b161894a182742f"
+      "bytes": 98333,
+      "sha256": "30261a58491db4fe0ba6e6cfd20ab33de3126078bbbc33168b634c20d139458a"
     },
     {
       "name": "proof-index-mobile.png",
-      "bytes": 151530,
-      "sha256": "664e2fe3d60940daa26257cba497ed01b039f06f1a06088b46083f0d65d6180e"
+      "bytes": 152512,
+      "sha256": "d56d2cb74d7707aaffd0bd4b5dc771bc004b729d493b989a0b3bed40e8309a60"
     },
     {
-      "name": "proof-simulation-desktop.png",
-      "bytes": 102733,
-      "sha256": "1b1b0031703d5e95fd1579a26047c4caf0d35d3e2971fd5c94b93109161d5711"
+      "name": "proof-operator-route-desktop.png",
+      "bytes": 111813,
+      "sha256": "add0c31548d6976b846e95ce5fa77af6f625d52546e15d33c326f2ebe536f4fe"
     },
     {
       "name": "public-comparison-verifier.json",
-      "bytes": 7827,
-      "sha256": "23cc53dff6e05a0f752602d8c3cd88fcc184d14bfdfd512ac4a33afa242f6c7e"
+      "bytes": 7760,
+      "sha256": "e1fb3764d387e23d96cb0467dcf0b442be10d1bbd75f3eda8e224de986d62d1b"
     },
     {
       "name": "simulation.html",
-      "bytes": 7542,
-      "sha256": "c2f36b0b8619a1cde08aab0aac3697f160e31f4c0316aa423daeea4c0432b4d5"
+      "bytes": 6442,
+      "sha256": "128ab2f9916fe6ce7a70b759f7ece2bf5312f72a5abbbbd2a540cba63a53ea40"
     },
     {
       "name": "ten-line-scenario.html",
-      "bytes": 8168,
-      "sha256": "f5e415bd9104dda3d685e562ed356561c63eec1143dbbe066f42a40ad448f13a"
+      "bytes": 6368,
+      "sha256": "c8fdf8ed74e5d2876e2deb222a38c298efd4696aa36b42b433f3cfcbe25b9eb3"
     },
     {
       "name": "visual-proof.html",
-      "bytes": 6128,
-      "sha256": "0b22b3cbf1de84de554c8528fd73a675638d3595a2735fb712211a135637d74d"
+      "bytes": 6481,
+      "sha256": "1ea5d13f65a1b9466862115fc9215e056e003799e4e729ed2ffa3809973e180e"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "build": "77",
+  "build": "79",
   "generated_for": "public static buyer artifact",
   "deterministic_timestamp_explained": "Static artifact uses deterministic metadata for reproducible verification, not live freshness.",
   "evidence_lines": [
@@ -74,5 +74,5 @@
       "next": "Chase"
     }
   ],
-  "build77_addition": "collapsed buyer route, browser proof gate and public partial same-input verifier"
+  "build79_addition": "all public pages route-normalised; public verifier identity updated"
 }

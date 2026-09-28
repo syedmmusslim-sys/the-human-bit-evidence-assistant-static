@@ -1,0 +1,51 @@
+{
+  "build": "79",
+  "generated_at": "1970-01-01T00:00:00.000Z",
+  "canonical_status_model": true,
+  "public_artifact_boundary": "read-only public static buyer walkthrough; no mutable SaaS claim",
+  "proof_assets": {
+    "public_browser_assets": "published only after Build79 browser visual gate runs",
+    "local_only_browser_assets": "build78-browser-proof/ remains excluded",
+    "missing_public_references_allowed": false
+  },
+  "comparison": {
+    "claude": {
+      "status": "partial_verified_capture",
+      "prompt_sha256": "a618dd17bcf16f2ac8f726864baeae272a8ee412e6523aa631fa3ccd39c91904",
+      "raw_result_sha256": "fbf24f9457e3a04ec810427444b8d5ffea242b082d731bb740c085ceac805249",
+      "claim": "real capture exists; not a scored blanket superiority proof"
+    },
+    "chatgpt": {
+      "status": "empty_unverified_blocked",
+      "blocker": "no capture channel/API key available",
+      "claim": "no ChatGPT output is fabricated"
+    },
+    "spreadsheet": {
+      "status": "baseline_projection_attached",
+      "claim": "can track statuses but does not enforce reviewer gates, audit persistence or stale-state prevention"
+    },
+    "evidence_assistant": {
+      "status": "static_projection_public_plus_local_workbench_tests",
+      "claim": "workflow-control advantage demonstrated in static route/tests; public artifact is not mutable SaaS"
+    }
+  },
+  "buyer_route": [
+    "Start",
+    "Walkthrough",
+    "Pilot package",
+    "Comparison",
+    "Boundaries",
+    "Next step"
+  ],
+  "appendix_pages": [
+    "appendix.html",
+    "visual-proof.html",
+    "comparison-protocol.html",
+    "comparison-evidence.html",
+    "ai-capture-slots.html",
+    "measurement-scorecard.html",
+    "pilot-agreement.html"
+  ],
+  "no_10_10_claim": true,
+  "build79_addition": "route-normalised hardening; prior proof identity removed; all public pages use current nav or appendix framing"
+}

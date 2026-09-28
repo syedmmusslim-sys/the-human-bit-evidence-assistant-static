@@ -1,69 +1,69 @@
 {
-  "build": "77",
+  "build": "79",
   "browser": "C:\\Users\\Hermes\\AppData\\Local\\ms-playwright\\chromium_headless_shell-1228\\chrome-headless-shell-win64\\chrome-headless-shell.exe",
-  "started_at": "2026-09-28T09:19:14.036Z",
+  "started_at": "2026-09-28T09:29:54.311Z",
   "screenshots": [
     {
-      "file": "C:\\HermesWorkspace\\product-research\\evidence-assistant\\build77-browser-proof\\index-desktop.png",
-      "bytes": 110486
+      "file": "C:\\HermesWorkspace\\product-research\\evidence-assistant\\build79-browser-proof\\index-desktop.png",
+      "bytes": 98333
     },
     {
-      "file": "C:\\HermesWorkspace\\product-research\\evidence-assistant\\build77-browser-proof\\simulation-desktop.png",
-      "bytes": 102733
+      "file": "C:\\HermesWorkspace\\product-research\\evidence-assistant\\build79-browser-proof\\operator-route-desktop.png",
+      "bytes": 111813
     },
     {
-      "file": "C:\\HermesWorkspace\\product-research\\evidence-assistant\\build77-browser-proof\\index-mobile.png",
-      "bytes": 151530
+      "file": "C:\\HermesWorkspace\\product-research\\evidence-assistant\\build79-browser-proof\\index-mobile.png",
+      "bytes": 152512
     }
   ],
   "checks": [
     {
-      "name": "Build77 first viewport says supervised pilot package",
+      "name": "Build79 first viewport says supervised pilot package",
       "passed": true,
-      "detail": "{\"title\":\"Start here — Evidence Assistant\",\"h1\":\"One supervised pilot package: see why the close cannot be signed off, what changes when a reviewer decides, and what a firm would buy next.\",\"nav\":[\"Start\",\"Pilot\",\"Watch it work\",\"Compare\",\"Agreement\",\"Scorecard\",\"Pilot setup\",\"Diligence\"],\"text\":\"The Human Bit · Evidence Assistant\\nBuild 77 public buyer artifact · static/read-only · pilot-ready package, not mutable SaaS\\nacceptedwaiting reviewrejected/problemrequested/missing\\nStart\\nPilot\\nWatc"
+      "detail": "{\"title\":\"Start here — Evidence Assistant\",\"h1\":\"One close-readiness route a partner can understand in two minutes.\",\"nav\":[\"Start\",\"Walkthrough\",\"Pilot package\",\"Comparison\",\"Boundaries\",\"Next step\"],\"text\":\"The Human Bit · Evidence Assistant\\nBuild 79 public buyer artifact · single buyer route · canonical proof status · static/read-only\\nacceptedwaiting reviewrejected/problemrequested/missing\\nStart\\nWalkthrough\\nPilot package\\nComparison\\nBoundaries\\nNext step\\ncannot close\\nstaff sorts\\nrevi"
     },
     {
-      "name": "Build77 buyer nav is collapsed to buyer route plus setup/diligence",
+      "name": "Build79 buyer nav is collapsed to six-step buyer route",
       "passed": true,
-      "detail": "[\"Start\",\"Pilot\",\"Watch it work\",\"Compare\",\"Agreement\",\"Scorecard\",\"Pilot setup\",\"Diligence\"]"
+      "detail": "[\"Start\",\"Walkthrough\",\"Pilot package\",\"Comparison\",\"Boundaries\",\"Next step\"]"
     },
     {
-      "name": "Build77 no forms and disabled static CTA remains non-mutating",
+      "name": "Build79 no forms and disabled static CTA remains non-mutating",
       "passed": true,
       "detail": "[]"
     },
     {
-      "name": "Build77 capture slots visible with partial evidence and honest gaps",
+      "name": "Build79 comparison visible with canonical partial evidence and honest gaps",
       "passed": true,
-      "detail": "The Human Bit · Evidence Assistant\nPublic supervised-pilot package · static/read-only preview · proof available in diligence\nacceptedwaiting reviewrejected/problemrequested/missing\nStart\nPilot\nWatch it work\nCompare\nAgreement\nScorecard\nPilot setup\nDiligence\n1 decide if pilot fits\n2 watch close consequence\n3 prepare pilot setup\nSame-input evidence is visible — and the remaining gaps are explicit.\n\nBuild 77 makes the comparison gap inspectable instead of implying it is solved. Claude has a raw capture; spreadsheet/operator and Evidence Assistant projections are attached; a sanitized public verifi"
+      "detail": "The Human Bit · Evidence Assistant\nBuild 79 public buyer artifact · route-normalised · canonical proof status · static/read-only\nacceptedwaiting reviewrejected/problemrequested/missing\nStart\nWalkthrough\nPilot package\nComparison\nBoundaries\nNext step\ncannot close\nstaff sorts\nreviewer decides\nchase blockers\nmanager handoff\nComparison claim: workflow-control evidence, not blanket AI superiority.\n\nBuild 79 enforces one canonical status model across every shipped comparison/proof page. ChatGPT remains blocked/unverified; Claude has a partial real capture; spreadsheet/operator is a baseline; Evidence"
     },
     {
-      "name": "Build77 simulation still shows chase consequence and packet lock",
+      "name": "Build79 operator route shows role sequence and handoff",
       "passed": true,
-      "detail": "The Human Bit · Evidence Assistant\nBuild 77 public buyer artifact · static/read-only · pilot-ready package, not mutable SaaS\nacceptedwaiting reviewrejected/problemrequested/missing\nStart\nPilot\nWatch it work\nCompare\nAgreement\nScorecard\nPilot setup\nDiligence\n1 qualify pilot\n2 watch consequence\n3 compare AI/tracker\n4 verify boundary\n5 decide next meeting\nWatch the workflow consequence without fake mutation.\n\nThese are pre-rendered states. They show what must happen in the real product before a buyer can trust it: reviewer decisions change chase scope and packet readiness.\n\nStaff opens blockers\n\nB"
+      "detail": "The Human Bit · Evidence Assistant\nBuild 79 public buyer artifact · single buyer route · canonical proof status · static/read-only\nacceptedwaiting reviewrejected/problemrequested/missing\nStart\nWalkthrough\nPilot package\nComparison\nBoundaries\nNext step\ncannot close\nstaff sorts\nreviewer decides\nchase only blockers\nmanager handoff\nThe route: cannot close → sorted evidence → reviewer decision → blocker chase → manager handoff.\n\nThis page is the one-screen product spine the prior artifact lacked. It shows each role, status, blocker and next action without asking the buyer to assemble proof pages.\n\n1"
     },
     {
-      "name": "Build77 pilot setup gives an embedded static handoff path",
+      "name": "Build79 pilot setup gives an embedded static handoff path",
       "passed": true,
-      "detail": "The Human Bit · Evidence Assistant\nPublic supervised-pilot package · static/read-only preview · proof available in diligence\nacceptedwaiting reviewrejected/problemrequested/missing\nStart\nPilot\nWatch it work\nCompare\nAgreement\nScorecard\nPilot setup\nDiligence\n1 decide if pilot fits\n2 watch close consequence\n3 prepare pilot setup\nPrepare the pilot without entering client data here.\n\nThis static setup pack turns interest into a concrete next step: who joins, which two close cycles are tested, what baseline is measured, and what must be approved before any real client data appears.\n\n1. Confirm fit\nF"
+      "detail": "The Human Bit · Evidence Assistant\nBuild 79 public buyer artifact · route-normalised · canonical proof status · static/read-only\nacceptedwaiting reviewrejected/problemrequested/missing\nStart\nWalkthrough\nPilot package\nComparison\nBoundaries\nNext step\ncannot close\nstaff sorts\nreviewer decides\nchase blockers\nmanager handoff\nAppendix: pilot setup without entering client data here.\n\nThis public page is a setup checklist, not a form. Copy the required context into the private pilot workspace only after approval.\n\nQualification note\n\nWhich monthly-close evidence category currently creates repeated cha"
     },
     {
-      "name": "Build77 mobile viewport has no horizontal overflow and keeps h1 visible",
+      "name": "Build79 mobile viewport has no horizontal overflow and keeps h1 visible",
       "passed": true,
-      "detail": "{\"scrollW\":390,\"clientW\":390,\"h1\":\"One supervised pilot package: see why the close cannot be signed off, what changes when a reviewer decides, and what a firm would buy next.\",\"visible\":true}"
+      "detail": "{\"scrollW\":390,\"clientW\":390,\"h1\":\"One close-readiness route a partner can understand in two minutes.\",\"visible\":true}"
     },
     {
-      "name": "Build77 rendered links/buttons have accessible names",
+      "name": "Build79 rendered links/buttons have accessible names",
       "passed": true,
       "detail": ""
     },
     {
-      "name": "Build77 browser run produced no console errors",
+      "name": "Build79 browser run produced no console errors",
       "passed": true,
       "detail": ""
     }
   ],
-  "finished_at": "2026-09-28T09:19:15.297Z",
+  "finished_at": "2026-09-28T09:29:55.451Z",
   "result": {
     "passed": 9,
     "failed": 0
