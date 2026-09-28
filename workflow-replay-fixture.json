@@ -1,0 +1,85 @@
+{
+  "build": "83",
+  "case": "Blue Wattle",
+  "period": "September close",
+  "claim_boundary": "sanitized static replay; no production mutability claim",
+  "events": [
+    {
+      "id": "EV-001",
+      "time": "08:10",
+      "actor": "Staff Mina",
+      "action": "intake_received",
+      "item": "September payroll variance support",
+      "before": "requested/missing",
+      "after": "waiting-review",
+      "packet": "excluded until reviewer acceptance"
+    },
+    {
+      "id": "EV-002",
+      "time": "08:12",
+      "actor": "Staff Mina",
+      "action": "intake_received",
+      "item": "Bank reconciliation for operating account",
+      "before": "requested/missing",
+      "after": "waiting-review",
+      "packet": "excluded until reviewer acceptance"
+    },
+    {
+      "id": "EV-003",
+      "time": "08:16",
+      "actor": "Reviewer Priya",
+      "action": "accepted",
+      "item": "September payroll variance support",
+      "before": "waiting-review",
+      "after": "accepted",
+      "packet": "included in manager packet"
+    },
+    {
+      "id": "EV-004",
+      "time": "08:18",
+      "actor": "Reviewer Priya",
+      "action": "accepted",
+      "item": "Bank reconciliation for operating account",
+      "before": "waiting-review",
+      "after": "accepted",
+      "packet": "included in manager packet"
+    },
+    {
+      "id": "EV-005",
+      "time": "08:21",
+      "actor": "Reviewer Priya",
+      "action": "rejected",
+      "item": "GST adjustment workpaper",
+      "before": "waiting-review",
+      "after": "rejected/problem",
+      "packet": "excluded; rejection reason becomes chase blocker"
+    },
+    {
+      "id": "EV-006",
+      "time": "08:23",
+      "actor": "System draft, staff approved",
+      "action": "blocker_only_chase_generated",
+      "item": "GST adjustment workpaper; Director loan statement",
+      "before": "unresolved blockers open",
+      "after": "approved draft ready for simulated send",
+      "packet": "chase references unresolved blockers only"
+    },
+    {
+      "id": "EV-007",
+      "time": "08:26",
+      "actor": "Manager Sam",
+      "action": "packet_handoff",
+      "item": "Blue Wattle close packet",
+      "before": "mixed inbox thread",
+      "after": "can/cannot close because packet",
+      "packet": "accepted items included; unresolved blockers explicit"
+    }
+  ],
+  "invariants": {
+    "reviewer_only_acceptance": true,
+    "no_auto_accept": true,
+    "no_auto_send": true,
+    "accepted_items_enter_packet": true,
+    "waiting_or_rejected_or_missing_items_excluded_from_packet": true
+  }
+}

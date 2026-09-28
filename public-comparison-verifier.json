@@ -1,21 +1,18 @@
 {
-  "build": "82",
-  "claim_boundary": "Build 82 canonical workflow-control evidence, not blanket AI superiority",
-  "evidence_assistant_projection": {
-    "method": "Build 82 static public route plus local gates"
-  },
-  "chatgpt_status": "empty_unverified_blocked",
-  "claude_status": "partial_verified_capture",
-  "competitive_set": [
-    "Karbon",
-    "TaxDome",
-    "Canopy",
-    "Financial Cents",
-    "Dext",
-    "Hubdoc",
-    "email",
-    "spreadsheet",
-    "Claude",
-    "ChatGPT"
+  "build": "83",
+  "claim_boundary": "workflow-control proof, not blanket AI superiority",
+  "same_input_fixture": "workflow-replay-fixture.json",
+  "defensible_advantages": [
+    "event IDs",
+    "before/after state",
+    "reviewer-only acceptance",
+    "blocker-only chase",
+    "packet inclusion/exclusion",
+    "audit trail"
+  ],
+  "forbidden_claims": [
+    "better than ChatGPT",
+    "fully automated acceptance",
+    "production SaaS live"
   ]
 }

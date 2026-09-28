@@ -1,18 +1,18 @@
 {
-  "build": "82",
+  "build": "83",
   "public_buyer_artifact": true,
   "proof_hygiene": "sanitized_public_json_no_local_paths",
   "comparison": {
     "chatgpt": {
-      "status": "empty_unverified_blocked"
+      "status": "same_input_capability_acknowledged"
     },
     "claude": {
-      "status": "partial_verified_capture"
+      "status": "same_input_capability_acknowledged"
     },
     "evidence_assistant": {
-      "status": "static_public_projection_plus_local_workflow_tests"
+      "status": "static_replay_fixture_plus_artifact_bundle"
     }
   },
   "case": "Blue Wattle",
-  "boundary": "static public artifact; no mutable SaaS enforcement claim"
+  "boundary": "static public replay artifact; no mutable SaaS enforcement claim"
 }

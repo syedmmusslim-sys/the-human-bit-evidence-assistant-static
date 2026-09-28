@@ -1,31 +1,32 @@
 {
-  "build": "82",
+  "build": "83",
   "case": "Blue Wattle",
   "period": "September close",
+  "state_source": "workflow-replay-fixture.json",
   "items": [
     {
       "name": "September payroll variance support",
       "status": "accepted",
-      "owner": "Reviewer Priya",
-      "next_action": "Ready for manager packet"
+      "packet_inclusion": "included",
+      "event": "EV-003"
     },
     {
       "name": "Bank reconciliation for operating account",
-      "status": "waiting-review",
-      "owner": "Reviewer Priya",
-      "next_action": "Human decision required before packet"
+      "status": "accepted",
+      "packet_inclusion": "included",
+      "event": "EV-004"
     },
     {
       "name": "GST adjustment workpaper",
       "status": "rejected/problem",
-      "owner": "Client owner Mina",
-      "next_action": "Chase September workpaper only"
+      "packet_inclusion": "excluded",
+      "event": "EV-005"
     },
     {
       "name": "Director loan statement",
       "status": "requested/missing",
-      "owner": "Client owner Mina",
-      "next_action": "Upload statement"
+      "packet_inclusion": "excluded",
+      "event": "open-blocker"
     }
   ]
 }
