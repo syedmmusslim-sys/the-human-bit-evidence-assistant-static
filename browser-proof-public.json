@@ -1,11 +1,11 @@
 {
-  "build": "83",
+  "build": "84",
   "browser": "chromium-family headless browser (local path withheld)",
   "started_at": "withheld in public artifact; see local proof if needed",
   "screenshots": [
     {
       "file": "index-desktop.png",
-      "bytes": 86087
+      "bytes": 96816
     },
     {
       "file": "workflow-replay-desktop.png",
@@ -13,52 +13,52 @@
     },
     {
       "file": "index-mobile.png",
-      "bytes": 150700
+      "bytes": 139969
     }
   ],
   "checks": [
     {
-      "name": "Build83 first viewport is buyer-first replay with demo CTA",
+      "name": "Build84 first viewport is buyer-first replay with demo CTA",
       "passed": true,
-      "detail": "{\"title\":\"Start here — Evidence Assistant\",\"h1\":\"Replay the close workflow — not just the sales claim.\",\"nav\":[\"Start\",\"2-minute replay\",\"Buyer artifacts\",\"AI comparison\",\"Pilot package\",\"Next step\"],\"text\":\"The Human Bit · Evidence Assistant\\nA supervised close-readiness workflow: controlled state, reviewer gates, blocker-only chase, and manager packet proof.\\n\\nStart the 2-minute demo Request supervised pilot\\n\\nStart\\n2-minute replay\\nBuyer artifacts\\nAI comparison\\nPilot package\\nNext step\\nreceived\\nreviewer decides\\nchase blockers\\npacket handoff\\naudit trail\\nReplay the close workflow — not just the sales claim.\\n\\nBuyer outcome: replay the Blue Wattle close case from client evidence "
+      "detail": "{\"title\":\"Start here — Evidence Assistant\",\"h1\":\"Replay the close workflow: see which evidence is accepted, rejected, or still blocking close.\",\"nav\":[\"Start\",\"2-minute replay\",\"Buyer artifacts\",\"AI comparison\",\"Pilot package\",\"Next step\"],\"text\":\"The Human Bit · Evidence Assistant\\nA supervised close-readiness workflow: controlled state, reviewer gates, blocker-only chase, and manager packet proof.\\n\\nStart the 2-minute demo Request supervised pilot\\n\\nStart\\n2-minute replay\\nBuyer artifacts\\nAI comparison\\nPilot package\\nNext step\\nreceived\\nreviewer decides\\nchase blockers\\npacket handoff\\naudit trail\\nReplay the close workflow: see which evidence is accepted, rejected, or still blocking "
     },
     {
-      "name": "Build83 buyer nav is replay/artifact/AI route",
+      "name": "Build84 buyer nav is replay/artifact/AI route",
       "passed": true,
       "detail": "[\"Start\",\"2-minute replay\",\"Buyer artifacts\",\"AI comparison\",\"Pilot package\",\"Next step\"]"
     },
     {
-      "name": "Build83 no forms on static public artifact",
+      "name": "Build84 no forms on static public artifact",
       "passed": true,
-      "detail": "{\"title\":\"Start here — Evidence Assistant\",\"h1\":\"Replay the close workflow — not just the sales claim.\",\"nav\":[\"Start\",\"2-minute replay\",\"Buyer artifacts\",\"AI comparison\",\"Pilot package\",\"Next step\"],\"text\":\"The Human Bit · Evidence Assistant\\nA supervised close-readiness workflow: controlled state, reviewer gates, blocker-only chase, and manager packet proof.\\n\\nStart the 2-minute demo Request supervised pilot\\n\\nStart\\n2-minute replay\\nBuyer artifacts\\nAI comparison\\nPilot package\\nNext step\\nreceived\\nreviewer decides\\nchase blockers\\npacket handoff\\naudit trail\\nReplay the close workflow — not just the sales claim.\\n\\nBuyer outcome: replay the Blue Wattle close case from client evidence "
+      "detail": "{\"title\":\"Start here — Evidence Assistant\",\"h1\":\"Replay the close workflow: see which evidence is accepted, rejected, or still blocking close.\",\"nav\":[\"Start\",\"2-minute replay\",\"Buyer artifacts\",\"AI comparison\",\"Pilot package\",\"Next step\"],\"text\":\"The Human Bit · Evidence Assistant\\nA supervised close-readiness workflow: controlled state, reviewer gates, blocker-only chase, and manager packet proof.\\n\\nStart the 2-minute demo Request supervised pilot\\n\\nStart\\n2-minute replay\\nBuyer artifacts\\nAI comparison\\nPilot package\\nNext step\\nreceived\\nreviewer decides\\nchase blockers\\npacket handoff\\naudit trail\\nReplay the close workflow: see which evidence is accepted, rejected, or still blocking "
     },
     {
-      "name": "Build83 replay visibly shows event IDs, actors, before/after and packet rules",
+      "name": "Build84 replay visibly shows event IDs, actors, before/after and packet rules",
       "passed": true,
       "detail": "The Human Bit · Evidence Assistant\nA supervised close-readiness workflow: controlled state, reviewer gates, blocker-only chase, and manager packet proof.\n\nStart the 2-minute demo Request supervised pilot\n\nStart\n2-minute replay\nBuyer artifacts\nAI comparison\nPilot package\nNext step\nreceived\nreviewer decides\nchase blockers\npacket handoff\naudit trail\nBlue Wattle replay: intake → review → blocker chase → packet.\n\nThis public replay shows the moat: persistent case state, actor-specific decisions, before/after status and packet inclusion rules. A generic prompt can draft a table; it cannot prove who decided what, when, or what was excluded.\n\n1EV-001 · intake_received\n\n08:10 · Staff Mina · September"
     },
     {
-      "name": "Build83 artifact page presents packet, chase and decision log",
+      "name": "Build84 artifact page presents packet, chase and decision log",
       "passed": true,
       "detail": "The Human Bit · Evidence Assistant\nA supervised close-readiness workflow: controlled state, reviewer gates, blocker-only chase, and manager packet proof.\n\nStart the 2-minute demo Request supervised pilot\n\nStart\n2-minute replay\nBuyer artifacts\nAI comparison\nPilot package\nNext step\nreceived\nreviewer decides\nchase blockers\npacket handoff\naudit trail\nThe packet, chase and decision log are concrete — not just a promise.\n\nDownloadable, buyer-readable artifacts from the same Blue Wattle replay. They answer what changed, who decided, what still blocks close and why this is safer than a generic prompt.\n\nManager packet\n\nOpen sample manager packet\n\nShows accepted evidence, excluded blockers and can/can"
     },
     {
-      "name": "Build83 AI comparison is bounded to workflow control",
+      "name": "Build84 AI comparison is bounded to workflow control",
       "passed": true,
       "detail": "The Human Bit · Evidence Assistant\nA supervised close-readiness workflow: controlled state, reviewer gates, blocker-only chase, and manager packet proof.\n\nStart the 2-minute demo Request supervised pilot\n\nStart\n2-minute replay\nBuyer artifacts\nAI comparison\nPilot package\nNext step\nreceived\nreviewer decides\nchase blockers\npacket handoff\naudit trail\nWhat a prompt can draft vs what the workflow can prove.\n\nThis page uses the same Blue Wattle input to keep the comparison bounded and fair. A generic AI can draft a summary, checklist and chase email if the user supplies clean facts. Evidence Assistant wins only where controlled workflow proof matters.\n\nSame input\tGeneric AI can produce\tEvidence Ass"
     },
     {
-      "name": "Build83 mobile viewport has no horizontal overflow and keeps h1 visible",
+      "name": "Build84 mobile viewport has no horizontal overflow and keeps h1 visible",
       "passed": true,
-      "detail": "{\"scrollW\":390,\"clientW\":390,\"h1\":\"Replay the close workflow — not just the sales claim.\",\"visible\":true}"
+      "detail": "{\"scrollW\":390,\"clientW\":390,\"h1\":\"Replay the close workflow: see which evidence is accepted, rejected, or still blocking close.\",\"visible\":true}"
     },
     {
-      "name": "Build83 rendered links/buttons have accessible names",
+      "name": "Build84 rendered links/buttons have accessible names",
       "passed": true,
       "detail": ""
     },
     {
-      "name": "Build83 browser run produced no console errors",
+      "name": "Build84 browser run produced no console errors",
       "passed": true,
       "detail": ""
     }

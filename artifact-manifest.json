@@ -1,10 +1,10 @@
 {
-  "builder": "evidence-assistant-build83-replayable-workflow-proof-bundle-builder",
-  "builder_version": "83.0.0",
-  "build": "83",
-  "generated_at": "2026-09-28T11:35:00.000Z",
+  "builder": "evidence-assistant-build84-audit-fix-replay-link-and-pilot-request-builder",
+  "builder_version": "84.0.0",
+  "build": "84",
+  "generated_at": "2026-09-28T12:25:00.000Z",
   "public_buyer_artifact": true,
-  "target": "replayable workflow proof bundle, downloadable buyer artifacts, same-input AI comparison, buyer-first 2-minute demo wrapper",
+  "target": "audit fixes for replay fixture link, first-10-seconds clarity, safe no-client-data pilot request, replayable workflow proof bundle, downloadable buyer artifacts, same-input AI comparison",
   "artifact_boundary": "Read-only immutable static replay and buyer artifact pack. No backend, forms, email, integrations, client data, public mutable SaaS claim, paid validation or ROI guarantee.",
   "comparison_boundary": "Same-input generic AI capabilities acknowledged; defensible claim limited to workflow control, provenance, role gates and auditability.",
   "buyer_route": [
@@ -22,8 +22,8 @@
     "public fetch-back gate"
   ],
   "excluded_from_public": [
-    "build83-browser-proof/",
-    "build83-local-verifier-pack/",
+    "build84-browser-proof/",
+    "build84-local-verifier-pack/",
     "audit-only/",
     "raw-comparison-registry.json"
   ],
@@ -31,7 +31,7 @@
     {
       "name": "STATIC_DEPLOYMENT.md",
       "bytes": 299,
-      "sha256": "142adfa2a9dfbcd816bae62a46529b8c6d69cebc25aaf96ce1826adbf9cb76bd"
+      "sha256": "3e04e3f0ef3b2a9dc8016446e8cf982f2b115321bd342abf4cb4b472b5eec47d"
     },
     {
       "name": "blocker-only-chase-draft.txt",
@@ -40,8 +40,8 @@
     },
     {
       "name": "browser-proof-public.json",
-      "bytes": 5602,
-      "sha256": "160d448f2eda3db452b311d4d104f6e89c149ae7180594615cbf3c99a88349e4"
+      "bytes": 5628,
+      "sha256": "3df0bd8ba8cd1c7dca754bb2404e4ba53fe66aaee459851586b0f5f31ba11f94"
     },
     {
       "name": "buyer-artifacts.html",
@@ -51,12 +51,12 @@
     {
       "name": "canonical-case-state.json",
       "bytes": 804,
-      "sha256": "ef4b93c9983ce90788dad9116071564dc277dea08058690434d23d97369a6aa6"
+      "sha256": "755ebfd12adb87ca270c5066872ddf7454d2dfe81b0b48c0885c293dc3e2a8e4"
     },
     {
       "name": "canonical-proof-status.json",
       "bytes": 508,
-      "sha256": "1c50a80638ce166a9018a14f19b5730220f53429beaf36d3799bf32f0a1e2c82"
+      "sha256": "0645765fa99e669bc77d04a08485db229582ef610f360780863c2dcbacf69c91"
     },
     {
       "name": "generic-ai-comparison.html",
@@ -65,13 +65,13 @@
     },
     {
       "name": "index.html",
-      "bytes": 5753,
-      "sha256": "0f94f4115d843547055a9c49e508e97e40966844613c5d1ee8366358594e794e"
+      "bytes": 5794,
+      "sha256": "1c66de8634dea7b78ca454dd2cfd4b4d203f607374b9224c62f0fb54862c32a0"
     },
     {
       "name": "next-step.html",
-      "bytes": 4719,
-      "sha256": "c470d726ecce7c3c047a43e819e4ea67fdb44d8b45ba7fc0f36d1e95bc43674f"
+      "bytes": 4858,
+      "sha256": "9162fdfb91165a307e6ba5161b7a5bb6cc2558911c5e008940be16d5a5055704"
     },
     {
       "name": "pilot-package.html",
@@ -80,13 +80,13 @@
     },
     {
       "name": "proof-index-desktop.png",
-      "bytes": 86087,
-      "sha256": "930ddcaeb82fed444ec7c657063a9412c329298aaccf9aa46f5373b2f51f9f2b"
+      "bytes": 96816,
+      "sha256": "ab48bc0307150e093f37d9418b6ff1db9bb00e913eec38736b6bcb124cd0d369"
     },
     {
       "name": "proof-index-mobile.png",
-      "bytes": 150700,
-      "sha256": "82e89dad70afbdb796b0349d5224bd68b6de666ad7837f39d0c5c362da1146b7"
+      "bytes": 139969,
+      "sha256": "ce77c37dbc375fc05df70f04e77b52b03f5705cc5992adbf4a54d1227d4fef56"
     },
     {
       "name": "proof-operator-route-desktop.png",
@@ -101,7 +101,12 @@
     {
       "name": "public-comparison-verifier.json",
       "bytes": 472,
-      "sha256": "abf8f58325506d8b57d0ac23d22f71138566d4458d7ee23b3c740a883d39a2d1"
+      "sha256": "c20f30d5d69408c990cfb46b6b52c24fcd6fd79f4cd2e24bed82195e41b387fc"
+    },
+    {
+      "name": "replay-fixture.json",
+      "bytes": 2649,
+      "sha256": "436d6afff6bc4d48e69e223451f917d847c822871334ea8c72b1eb0e16299d02"
     },
     {
       "name": "reviewer-decision-log.md",
@@ -116,12 +121,12 @@
     {
       "name": "workflow-replay-fixture.json",
       "bytes": 2649,
-      "sha256": "6f37c62d82b3966eaf07870cf92d4dc5793539daf59236100bcb1e861e5c7c43"
+      "sha256": "436d6afff6bc4d48e69e223451f917d847c822871334ea8c72b1eb0e16299d02"
     },
     {
       "name": "workflow-replay.html",
-      "bytes": 7354,
-      "sha256": "5da30e5d0cd67c1f530350427e196575e98321bf00b65d71c9a4e2fe84857ff4"
+      "bytes": 7448,
+      "sha256": "81e6e684352ec5d3210301f8b400b12cc2dd926ec00eccbeb40f9fcdcca2a1e3"
     }
   ]
 }

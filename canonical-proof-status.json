@@ -1,5 +1,5 @@
 {
-  "build": "83",
+  "build": "84",
   "public_buyer_artifact": true,
   "proof_hygiene": "sanitized_public_json_no_local_paths",
   "comparison": {
