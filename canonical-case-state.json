@@ -1,139 +1,77 @@
 {
-  "generated_at": "1970-01-01T00:00:00.000Z",
-  "source": "Build72 canonical static buyer-public walkthrough",
-  "prompt_sha256": "1028b787fbfef6c212489ff0e68e7ecdeaf44c8cf9aab647d60ba9668a69d0e1",
-  "state_snapshot_sha256": "448ff2a57562e7acd4d587362a4f164eec7b2a64423da0cc8da3b2e978bc04a1",
-  "case": {
-    "client_name": "Blue Wattle Plumbing",
-    "period": "2026-07",
-    "engagement_id": "eng_bwp_2026_07",
-    "requirements": [
-      {
-        "id": "req_bank_may",
-        "label": "Bank statement May",
-        "status": "accepted",
-        "owner": "Reviewer",
-        "reason": "Matches period and entity.",
-        "reviewer_note": "Reviewer accepted after entity/period check."
-      },
-      {
-        "id": "req_stripe_may",
-        "label": "Stripe payout export",
-        "status": "uploaded_pending_review",
-        "owner": "Reviewer",
-        "reason": "Received, but not accepted yet.",
-        "reviewer_note": "Entity appears aligned; period still needs reviewer confirmation."
-      },
-      {
-        "id": "req_loan_may",
-        "label": "Loan statement May",
-        "status": "rejected",
-        "owner": "Client via staff",
-        "reason": "Wrong period uploaded.",
-        "reviewer_note": "Rejected: supplied statement was for the wrong period."
-      },
-      {
-        "id": "req_director_approval",
-        "label": "Director approval note",
-        "status": "requested",
-        "owner": "Client via staff",
-        "reason": "Still absent.",
-        "reviewer_note": "No file or note supplied yet."
-      }
-    ],
-    "accepted": [
-      {
-        "id": "req_bank_may",
-        "label": "Bank statement May",
-        "status": "accepted",
-        "owner": "Reviewer",
-        "reason": "Matches period and entity.",
-        "reviewer_note": "Reviewer accepted after entity/period check."
-      }
-    ],
-    "waiting_review": [
-      {
-        "id": "req_stripe_may",
-        "label": "Stripe payout export",
-        "status": "uploaded_pending_review",
-        "owner": "Reviewer",
-        "reason": "Received, but not accepted yet.",
-        "reviewer_note": "Entity appears aligned; period still needs reviewer confirmation."
-      }
-    ],
-    "rejected_problem": [
-      {
-        "id": "req_loan_may",
-        "label": "Loan statement May",
-        "status": "rejected",
-        "owner": "Client via staff",
-        "reason": "Wrong period uploaded.",
-        "reviewer_note": "Rejected: supplied statement was for the wrong period."
-      }
-    ],
-    "unresolved_requested": [
-      {
-        "id": "req_director_approval",
-        "label": "Director approval note",
-        "status": "requested",
-        "owner": "Client via staff",
-        "reason": "Still absent.",
-        "reviewer_note": "No file or note supplied yet."
-      }
-    ],
-    "prompt": {
-      "generated_at": "1970-01-01T00:00:00.000Z",
-      "source": "Build72 canonical Blue Wattle static buyer-public walkthrough snapshot; no provider response included",
-      "prompt": "You are advising a bookkeeping/CAS staff member on one close-readiness case.\nClient: Blue Wattle Plumbing. Period: 2026-07.\nAccepted reviewer evidence IDs: req_bank_may.\nWaiting for reviewer IDs: req_stripe_may.\nUnresolved/rejected/requested IDs and statuses: req_loan_may=rejected, req_director_approval=requested.\nTask: draft what to chase, state whether the close is ready, and explain any safety caveats.",
-      "prompt_sha256": "1028b787fbfef6c212489ff0e68e7ecdeaf44c8cf9aab647d60ba9668a69d0e1",
-      "state_snapshot": {
-        "engagement_id": "eng_bwp_2026_07",
-        "client_name": "Blue Wattle Plumbing",
-        "period": "2026-07",
-        "accepted": [
-          "req_bank_may"
-        ],
-        "waiting_review": [
-          "req_stripe_may"
-        ],
-        "unresolved": [
-          {
-            "requirement_id": "req_loan_may",
-            "status": "rejected",
-            "label": "Loan statement May",
-            "priority": "blocking"
-          },
-          {
-            "requirement_id": "req_director_approval",
-            "status": "requested",
-            "label": "Director approval note",
-            "priority": "blocking"
-          }
-        ],
-        "counters": {
-          "evidence_items": 1,
-          "evidence_matches": 1,
-          "uploads": 3,
-          "magic_links": 0,
-          "deletion_requests": 0,
-          "permission_denied_events": 0,
-          "audit_events": 22
-        }
-      },
-      "state_snapshot_sha256": "448ff2a57562e7acd4d587362a4f164eec7b2a64423da0cc8da3b2e978bc04a1",
-      "target_capture_files": [
-        "comparison-captures\\claude-real-capture-slot.json",
-        "comparison-captures\\chatgpt-real-capture-slot.json"
-      ],
-      "hard_boundary": "Readiness context only; no Claude/ChatGPT response superiority claim without real dated same-prompt captures."
+  "build": "76",
+  "generated_for": "public static buyer artifact",
+  "deterministic_timestamp_explained": "Static artifact uses deterministic metadata for reproducible verification, not live freshness.",
+  "evidence_lines": [
+    {
+      "name": "May bank statement",
+      "status": "accepted",
+      "owner": "Reviewer Amara",
+      "why": "Correct period and entity; supports close packet.",
+      "next": "Include, do not chase"
+    },
+    {
+      "name": "Stripe payout export",
+      "status": "waiting-review",
+      "owner": "Reviewer Amara",
+      "why": "Arrived, but payout fees need reviewer decision.",
+      "next": "Hold from chase and packet until decision"
+    },
+    {
+      "name": "Loan statement",
+      "status": "rejected-problem",
+      "owner": "Client",
+      "why": "Wrong period supplied; May still needed.",
+      "next": "Chase with reviewer reason"
+    },
+    {
+      "name": "Director approval note",
+      "status": "requested-missing",
+      "owner": "Client",
+      "why": "Not received.",
+      "next": "Chase"
+    },
+    {
+      "name": "Supplier invoice 1042",
+      "status": "accepted",
+      "owner": "Reviewer Amara",
+      "why": "Accepted and linked to expense accrual.",
+      "next": "Include"
+    },
+    {
+      "name": "Fuel receipt scan",
+      "status": "waiting-review",
+      "owner": "Reviewer Amara",
+      "why": "Unreadable image; reviewer must reject or request re-upload.",
+      "next": "Hold"
+    },
+    {
+      "name": "Payroll summary",
+      "status": "requested-missing",
+      "owner": "Client",
+      "why": "Needed for wages reconciliation.",
+      "next": "Chase"
+    },
+    {
+      "name": "Rent invoice duplicate",
+      "status": "duplicate-superseded",
+      "owner": "System state",
+      "why": "Duplicate of accepted rent invoice; must not be chased twice.",
+      "next": "Exclude as superseded"
+    },
+    {
+      "name": "ATO payment receipt",
+      "status": "rejected-problem",
+      "owner": "Client",
+      "why": "Wrong entity ABN on receipt.",
+      "next": "Chase corrected copy"
+    },
+    {
+      "name": "Credit card statement",
+      "status": "requested-missing",
+      "owner": "Client",
+      "why": "Still blocking reconciliation.",
+      "next": "Chase"
     }
-  },
-  "counts": {
-    "accepted": 1,
-    "waiting_review": 1,
-    "rejected_problem": 1,
-    "unresolved_requested": 1,
-    "chase_includes": 2,
-    "chase_excludes": 2
-  }
+  ]
 }

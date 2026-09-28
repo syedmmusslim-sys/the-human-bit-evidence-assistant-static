@@ -1,59 +1,73 @@
 {
-  "builder": "evidence-assistant-build75-static-experience-builder",
-  "builder_version": "75.0.0",
-  "build": "75",
+  "builder": "evidence-assistant-build76-10-10-attempt-builder",
+  "builder_version": "76.0.0",
+  "build": "76",
   "generated_at": "1970-01-01T00:00:00.000Z",
   "public_buyer_artifact": true,
-  "artifact_boundary": "Read-only immutable static buyer walkthrough. No backend, no forms, no email, no integrations, no client data, no public mutable SaaS claim.",
-  "comparison_boundary": "No fabricated Claude/ChatGPT captures and no model-output superiority claim; comparison is workflow-control only.",
+  "target": "single consolidated build toward 10/10",
+  "artifact_boundary": "Read-only immutable static buyer walkthrough plus supervised-pilot offer. No backend, no forms, no email, no integrations, no client data, no public mutable SaaS claim.",
+  "commercial_boundary": "Pilot/pricing/ROI are hypotheses until buyer validation and measured outcomes exist.",
+  "comparison_boundary": "No fabricated Claude/ChatGPT captures and no model-output superiority claim; comparison protocol only until same-input captures are attached.",
+  "hosting_boundary": "GitHub Pages durable mirror allowed after fetch-back; strict-header proof requires controllable host returning required headers.",
   "evidence_line_count": 10,
   "public_fetchback_required": true,
+  "strict_header_required_for_strict_hosting_claim": true,
   "excluded_from_public": [
     "audit-only/",
     "capture-registry-summary.json",
     "raw-comparison-registry.json",
-    "build75-local-verifier-pack/"
+    "build76-local-verifier-pack/"
   ],
   "files": [
     {
       "name": "STATIC_DEPLOYMENT.md",
-      "bytes": 333,
-      "sha256": "a8280413ee2ec3d6f7b7f0f3c366b336fe85980d60fdc871fa485e81e65dff28"
-    },
-    {
-      "name": "buyer-proof-pack.html",
-      "bytes": 5836,
-      "sha256": "74e709266b77c863b28c170457a5b0db09ed9c90fcc8ad58fdc9933eb69a2253"
+      "bytes": 481,
+      "sha256": "278c53c72afc0bf18c85803f53f1a704e1d5812a6195f1607830c9cbaa9c4c00"
     },
     {
       "name": "canonical-case-state.json",
-      "bytes": 5028,
-      "sha256": "0ecf9c965f9d3fcb483f9da9f5d20d9104c36dd54f94eb1fd7cabcca8e562617"
+      "bytes": 2263,
+      "sha256": "e69b76220e9cca6b441f96151982713c55df97d45a8912ab4177017d4a606ab4"
     },
     {
       "name": "chatgpt-comparison.html",
-      "bytes": 6710,
-      "sha256": "049c8598ecc93c780d2208b8b521d40b3b970dc8b5b8471e1ca6956a57437bdd"
+      "bytes": 6679,
+      "sha256": "1b7911aac215b3c56f7a6a8ad5d26552c1bf6c330332028f39d758a8d6efa267"
+    },
+    {
+      "name": "comparison-protocol.html",
+      "bytes": 6534,
+      "sha256": "9b0d488dea408cf5c37fd0f98b818966f49b1482ba8e286f00816ba3e95e6274"
     },
     {
       "name": "current-comparison-prompt.json",
-      "bytes": 1867,
-      "sha256": "72e04c5881b70d86830646b83fa7c8adbc07cbf9b25e954afbf5ce7fb697b94f"
+      "bytes": 249,
+      "sha256": "efb36c504bdbe0980cfd3632188bad82e0d4117a906f4ff6cdcab4ae5a0e93ab"
+    },
+    {
+      "name": "hosting-boundary.html",
+      "bytes": 6156,
+      "sha256": "b952197c337ff7e0d9aece4ffa63af70cdacfe3097daec5660b4e4ff4a177d48"
     },
     {
       "name": "index.html",
-      "bytes": 6395,
-      "sha256": "2012314459a49e164174f8cd1057e12cbbac5a91bad2fd22a183a05ddf369d20"
+      "bytes": 6587,
+      "sha256": "5cfcb2240b1a74c2942f8c76f0b1e471a9391bc349bc0fe18976ecc5c2980a32"
     },
     {
-      "name": "role-walkthrough.html",
-      "bytes": 6095,
-      "sha256": "5f6586d33599c17b73d80a9a81c46723f02bfaaf752e69ce3030a1e3edfd0bdb"
+      "name": "pilot-package.html",
+      "bytes": 7619,
+      "sha256": "2765871e42e9f2734d69400339df4964f7d7b66cbf44b5c0304272245eb21cac"
+    },
+    {
+      "name": "simulation.html",
+      "bytes": 7555,
+      "sha256": "103411443273bc594f47f8951e3749077a69e53073378815838001eb3f167ff7"
     },
     {
       "name": "ten-line-scenario.html",
-      "bytes": 8082,
-      "sha256": "5161c290fdc2074876991cd77fc6dccf07e3056585231b5688231a174a84d898"
+      "bytes": 8201,
+      "sha256": "a9305084c46de95c89546971a98e6ae00c0bdb587df50b4a770033480efc84fb"
     }
   ]
 }
