@@ -1,0 +1,66 @@
+{
+  "build": "77",
+  "browser": "C:\\Users\\Hermes\\AppData\\Local\\ms-playwright\\chromium_headless_shell-1228\\chrome-headless-shell-win64\\chrome-headless-shell.exe",
+  "started_at": "2026-09-28T09:03:51.879Z",
+  "screenshots": [
+    {
+      "file": "C:\\HermesWorkspace\\product-research\\evidence-assistant\\build77-browser-proof\\index-desktop.png",
+      "bytes": 110260
+    },
+    {
+      "file": "C:\\HermesWorkspace\\product-research\\evidence-assistant\\build77-browser-proof\\simulation-desktop.png",
+      "bytes": 102573
+    },
+    {
+      "file": "C:\\HermesWorkspace\\product-research\\evidence-assistant\\build77-browser-proof\\index-mobile.png",
+      "bytes": 150446
+    }
+  ],
+  "checks": [
+    {
+      "name": "Build77 first viewport says supervised pilot package",
+      "passed": true,
+      "detail": "{\"title\":\"Start here — Evidence Assistant\",\"h1\":\"One supervised pilot package: see why the close cannot be signed off, what changes when a reviewer decides, and what a firm would buy next.\",\"nav\":[\"Start\",\"Pilot\",\"Watch it work\",\"Compare\",\"Agreement\",\"Scorecard\",\"Proof appendix\"],\"text\":\"The Human Bit · Evidence Assistant\\nBuild 77 public buyer artifact · static/read-only · pilot-ready package, not mutable SaaS\\nacceptedwaiting reviewrejected/problemrequested/missing\\nStart\\nPilot\\nWatch it work"
+    },
+    {
+      "name": "Build77 buyer nav is collapsed to buyer route plus proof appendix",
+      "passed": true,
+      "detail": "[\"Start\",\"Pilot\",\"Watch it work\",\"Compare\",\"Agreement\",\"Scorecard\",\"Proof appendix\"]"
+    },
+    {
+      "name": "Build77 no forms and disabled static CTA remains non-mutating",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "Build77 capture slots visible with partial evidence and honest gaps",
+      "passed": true,
+      "detail": "The Human Bit · Evidence Assistant\nBuild 77 public buyer artifact · static/read-only · browser proof plus partial same-input evidence\nacceptedwaiting reviewrejected/problemrequested/missing\nStart\nPilot\nWatch it work\nCompare\nAgreement\nScorecard\nProof appendix\n1 decide if pilot fits\n2 watch close consequence\n3 inspect proof appendix\nSame-input evidence is visible — and the remaining gaps are explicit.\n\nBuild 77 makes the comparison gap inspectable instead of implying it is solved. Claude has a raw capture; spreadsheet/operator and Evidence Assistant projections are attached; a sanitized public v"
+    },
+    {
+      "name": "Build77 simulation still shows chase consequence and packet lock",
+      "passed": true,
+      "detail": "The Human Bit · Evidence Assistant\nBuild 77 public buyer artifact · static/read-only · pilot-ready package, not mutable SaaS\nacceptedwaiting reviewrejected/problemrequested/missing\nStart\nPilot\nWatch it work\nCompare\nAgreement\nScorecard\nProof appendix\n1 qualify pilot\n2 watch consequence\n3 compare AI/tracker\n4 verify boundary\n5 decide next meeting\nWatch the workflow consequence without fake mutation.\n\nThese are pre-rendered states. They show what must happen in the real product before a buyer can trust it: reviewer decisions change chase scope and packet readiness.\n\nStaff opens blockers\n\nBefore: "
+    },
+    {
+      "name": "Build77 mobile viewport has no horizontal overflow and keeps h1 visible",
+      "passed": true,
+      "detail": "{\"scrollW\":390,\"clientW\":390,\"h1\":\"One supervised pilot package: see why the close cannot be signed off, what changes when a reviewer decides, and what a firm would buy next.\",\"visible\":true}"
+    },
+    {
+      "name": "Build77 rendered links/buttons have accessible names",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Build77 browser run produced no console errors",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "finished_at": "2026-09-28T09:03:52.957Z",
+  "result": {
+    "passed": 8,
+    "failed": 0
+  }
+}
