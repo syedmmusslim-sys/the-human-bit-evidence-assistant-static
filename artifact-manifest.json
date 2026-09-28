@@ -1,12 +1,12 @@
 {
-  "builder": "evidence-assistant-build80-stale-reference-hardening-builder",
-  "builder_version": "80.0.0",
-  "build": "80",
+  "builder": "evidence-assistant-build81-pilot-conversion-before-after-builder",
+  "builder_version": "81.0.0",
+  "build": "81",
   "generated_at": "1970-01-01T00:00:00.000Z",
   "public_buyer_artifact": true,
-  "target": "hardening release: stale prior-build proof references removed after previous audit",
-  "artifact_boundary": "Read-only immutable static buyer walkthrough plus supervised-pilot offer. No backend, forms, email, integrations, client data, public mutable SaaS claim, strict-header claim, paid validation or ROI guarantee.",
-  "comparison_boundary": "Canonical proof status: Claude partial capture, ChatGPT blocked/unverified, spreadsheet baseline projection, Evidence Assistant static projection plus local workflow tests; no blanket superiority claim.",
+  "target": "pilot conversion packet plus before/after case proof after Build 80 audit blockers",
+  "artifact_boundary": "Read-only immutable static buyer walkthrough plus supervised-pilot conversion packet. No backend, forms, email, integrations, client data, public mutable SaaS claim, strict-header claim, paid validation or ROI guarantee.",
+  "comparison_boundary": "Claude partial capture, ChatGPT blocked/unverified, spreadsheet baseline projection, Evidence Assistant static projection plus local workflow tests; no blanket superiority claim.",
   "buyer_route": [
     "Start",
     "Walkthrough",
@@ -22,141 +22,151 @@
     "public fetch-back gate"
   ],
   "excluded_from_public": [
-    "build80-browser-proof/",
-    "build80-local-verifier-pack/",
+    "build81-browser-proof/",
+    "build81-local-verifier-pack/",
     "audit-only/",
     "raw-comparison-registry.json"
   ],
   "files": [
     {
       "name": "STATIC_DEPLOYMENT.md",
-      "bytes": 488,
-      "sha256": "5acacf3b16f7d1178bdee44e676d24a4c5fe847aad9feb14cd8e4776346264dd"
+      "bytes": 607,
+      "sha256": "552e3c09832b8405c0778861ef19d183233a4409c8508880f6b10ef169ed37cb"
     },
     {
       "name": "ai-capture-slots.html",
-      "bytes": 6993,
-      "sha256": "92cd53925df690325192c3ee7cd1a3ce4614e1d06a8a94c55ecea79a3c646859"
+      "bytes": 7028,
+      "sha256": "794b92564ed62f5480f950c256aa754a3f329ebd0b8a1a71a3699877ee03e29d"
     },
     {
       "name": "appendix.html",
-      "bytes": 6869,
-      "sha256": "a3e6d08bf9b96e7decef1ddc7230e6012c72f6817018ed15bc4d85a933dce340"
+      "bytes": 6904,
+      "sha256": "93e0ef6b2d9fdce381bc020cc8fb1204543b7462590c19b7548cb71cce624412"
+    },
+    {
+      "name": "before-after-proof.html",
+      "bytes": 7498,
+      "sha256": "e328dfff7a7da7efe37efb9917cd240b90d52744c6bfd226d707a66dbd2f94d6"
     },
     {
       "name": "browser-proof-public.json",
-      "bytes": 4620,
-      "sha256": "3e4d62c5f30ee57f2039c18199d5a1ceefc72ec38a688ffbf3646b3761c6c7e7"
+      "bytes": 4673,
+      "sha256": "2a052624cf9e607ec3b26edb1f395a21073bac7d7f1afcc6ea9000deaa009c29"
     },
     {
       "name": "canonical-case-state.json",
-      "bytes": 2370,
-      "sha256": "b223743af104332e307e0bc61b00a8dfe3ffbc411c6271e4822cbaf7663b5bd6"
+      "bytes": 2449,
+      "sha256": "80d636387f74d23665ec1706341bf348ae42a3b2b7245d9e60b81dd0cbcbcb11"
     },
     {
       "name": "canonical-proof-status.json",
-      "bytes": 1873,
-      "sha256": "8d7d05b4fb0883de6badee805a17713100268b796dce01c7bb5bd17873652dbd"
+      "bytes": 1921,
+      "sha256": "e94aa12eaa09d4f33636596aefe895719aee3c49934edfc9fbf144a121f4d5f6"
     },
     {
       "name": "chatgpt-comparison.html",
-      "bytes": 7396,
-      "sha256": "6adbeef69031e332a7ca9fc2f8df71bf3bdca1aef019276cab6719695dcc6236"
+      "bytes": 7431,
+      "sha256": "913f61205d9833cbbf48657e9e5e7d82173fcb2b75982e865655cdb3ecc5c227"
     },
     {
       "name": "comparison-evidence.html",
-      "bytes": 7101,
-      "sha256": "76940b878751ffbe806b3a1c92bee778a9bd40edbec93556e310eca0c49bfa00"
+      "bytes": 7136,
+      "sha256": "12d1349d2c069fae5062d8191228f30b31f3d3d24076d46a8ebd423b7ffdc31a"
     },
     {
       "name": "comparison-protocol.html",
-      "bytes": 7003,
-      "sha256": "5eab6325f941c87280ead28bcc2dd146579c642106ade3601b04594fa067883c"
+      "bytes": 7038,
+      "sha256": "926425f19fb26bb7ece3cce84e59080f383cb36a3e364ef2317f365ae2762306"
     },
     {
       "name": "current-comparison-prompt.json",
-      "bytes": 572,
-      "sha256": "17ca77913ad280616125e6347b4265f80c499eef1291e617a395ade555dbc1ae"
+      "bytes": 582,
+      "sha256": "9f3b36693a54bd7bbeb635236cb9fb38731fc9eeae8001b75b09c5d672073849"
     },
     {
       "name": "hosting-boundary.html",
-      "bytes": 6557,
-      "sha256": "8f598bf64dd695f413c729761325841875a233cb0858f732fe94144d8262edd5"
+      "bytes": 6951,
+      "sha256": "56b8c098d4b16ff79dcad5e6aea43e95b86597896f936cf789fd00d42fc6b943"
     },
     {
       "name": "index.html",
-      "bytes": 7741,
-      "sha256": "885007a8d99408911e5cbb5a8739362787befee1d03e6475a98f1250ac083aad"
+      "bytes": 7798,
+      "sha256": "70826994a0f4a3cda0652f3353a7fa93ad81cee4150cb76fe63890124661450d"
     },
     {
       "name": "measurement-scorecard.html",
-      "bytes": 6641,
-      "sha256": "aeedca9150ce356d601625ac5464c38539c4d4d7c5e3441ebb7107d90d2204ee"
+      "bytes": 6676,
+      "sha256": "46bcdf93c6ce2ed53db4e57c62286dc90e3c0c4c00d75b235f37b33d891cae12"
     },
     {
       "name": "next-step.html",
-      "bytes": 7089,
-      "sha256": "e2e24a73a0d183981483ce5da1f5b7c3fef9ce40d1e41d533d1751d1c94f1b54"
+      "bytes": 9035,
+      "sha256": "273bd1292b7f9284b3465b7f959b12d0464d1759b6a93df0a4fc307ff30ff37d"
     },
     {
       "name": "operator-route.html",
-      "bytes": 8353,
-      "sha256": "5da8a4c756f54beb2fae6af931033a8246186c5c0143700bf45f3a65d1993874"
+      "bytes": 10669,
+      "sha256": "38f4a8be658d46da006d3f43bc91b2e2ba43291d967d62f49b32af7d435b6e81"
     },
     {
       "name": "pilot-agreement.html",
-      "bytes": 6622,
-      "sha256": "b14f1b616a7ae642a8e4118489b74450e17fe375ba86a50e5e2dedee07b00923"
+      "bytes": 6657,
+      "sha256": "05299f3b729da93d1b78b19938876c2e62761faac727fd13955ad8832e72c472"
+    },
+    {
+      "name": "pilot-conversion.html",
+      "bytes": 7128,
+      "sha256": "05a1875d9c20bb05c692ed7d7eafb7685b0928c5b154846e30cd1a89fdba1fcc"
     },
     {
       "name": "pilot-onboarding.html",
-      "bytes": 6633,
-      "sha256": "18f1e14ca4726e9bfed2379bf0b02db32e812b8ab72a14fa15cdde3d04a5968b"
+      "bytes": 6668,
+      "sha256": "a1499a88a6e9afef674c575c746038567b83f2db4d7ecafe91c6d3b803e7ad1e"
     },
     {
       "name": "pilot-package.html",
-      "bytes": 6928,
-      "sha256": "ca7288840ebd7f63d844472cfdefd6f2146a78c11715d57ddb5054fa94251488"
+      "bytes": 8874,
+      "sha256": "8bd696bd77f648a79f895ce1a0416dade84f3b319527b19fd230240b3d6c626f"
     },
     {
       "name": "pilot-setup-packet.md",
-      "bytes": 970,
-      "sha256": "4684e8aed88adf1d2fda3209d71b6cd2bebf38dcc381ac3cb91f18e0b061ee53"
+      "bytes": 1004,
+      "sha256": "df045547556102ffccd9a7cc19cbc0fa0a06e68992017272150e52db596bfe48"
     },
     {
       "name": "proof-index-desktop.png",
-      "bytes": 98383,
-      "sha256": "eb2de94527686b970aec3d5f42c212c71959599f7f22fcc3e194e11cc339cd3e"
+      "bytes": 105113,
+      "sha256": "388dad9e8b0b7ef176cd0b272b162ee0adbdb9df972479debc9a9916be926c14"
     },
     {
       "name": "proof-index-mobile.png",
-      "bytes": 152963,
-      "sha256": "90201158b98469820e0a41fd8605015f2bac9952b251ee0dc0e96c4d3fe12b42"
+      "bytes": 150905,
+      "sha256": "986cc4552436f196c5d40b8ded93705a4114bcb567f97fc79653cfdc3d31af36"
     },
     {
       "name": "proof-operator-route-desktop.png",
-      "bytes": 111844,
-      "sha256": "3b108cad357e62d503d3fe3c8470a941fae128be481a9c4ac56062c7467d2d8f"
+      "bytes": 96896,
+      "sha256": "74fe8eca08e74764e4f054f8681004f4ba538c6132da6ce1b375232545ad4855"
     },
     {
       "name": "public-comparison-verifier.json",
-      "bytes": 7760,
-      "sha256": "6248d734128ad7c1b81685989e85c47fb904410cec4279180331ae4a2cf706a1"
+      "bytes": 7806,
+      "sha256": "1c84f1bb46e921f69ec5b506067a3f85d18f6c705999189bd20c5d128ef7d13a"
     },
     {
       "name": "simulation.html",
-      "bytes": 6442,
-      "sha256": "ef58008aabeaae4cbca1364ad5b89ef5a132bb1603721d1df2e26ee3c9bf5ab3"
+      "bytes": 6477,
+      "sha256": "b8b5da7fb3d1f5d91abde20cbdee106d44bac80b28ff911deab06e84153dac08"
     },
     {
       "name": "ten-line-scenario.html",
-      "bytes": 6368,
-      "sha256": "7b1f4983322d320adb3aed373cba8190719bbb409d19a68d28f427b0a96353d9"
+      "bytes": 6403,
+      "sha256": "ea55a3e24286720e44e27e360f2ed8852c4d1a966bf1d26768d66d8f6c24f5a0"
     },
     {
       "name": "visual-proof.html",
-      "bytes": 6481,
-      "sha256": "e3c20d2893085f0e8b1db97fef15212602ede39b6b5609b8d8ef8a2d3b157c81"
+      "bytes": 6516,
+      "sha256": "0d7b07daccc1c3f402912405ce62ae3db798d7b12d7d64e62dfa48e98376bcb1"
     }
   ]
 }

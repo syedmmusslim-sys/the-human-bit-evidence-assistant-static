@@ -1,69 +1,69 @@
 {
   "build": "80",
   "browser": "C:\\Users\\Hermes\\AppData\\Local\\ms-playwright\\chromium_headless_shell-1228\\chrome-headless-shell-win64\\chrome-headless-shell.exe",
-  "started_at": "2026-09-28T09:35:45.913Z",
+  "started_at": "2026-09-28T10:12:57.036Z",
   "screenshots": [
     {
-      "file": "C:\\HermesWorkspace\\product-research\\evidence-assistant\\build80-browser-proof\\index-desktop.png",
-      "bytes": 98383
+      "file": "C:\\HermesWorkspace\\product-research\\evidence-assistant\\build81-browser-proof\\index-desktop.png",
+      "bytes": 105113
     },
     {
-      "file": "C:\\HermesWorkspace\\product-research\\evidence-assistant\\build80-browser-proof\\operator-route-desktop.png",
-      "bytes": 111844
+      "file": "C:\\HermesWorkspace\\product-research\\evidence-assistant\\build81-browser-proof\\operator-route-desktop.png",
+      "bytes": 96896
     },
     {
-      "file": "C:\\HermesWorkspace\\product-research\\evidence-assistant\\build80-browser-proof\\index-mobile.png",
-      "bytes": 152963
+      "file": "C:\\HermesWorkspace\\product-research\\evidence-assistant\\build81-browser-proof\\index-mobile.png",
+      "bytes": 150905
     }
   ],
   "checks": [
     {
-      "name": "Build80 first viewport says supervised pilot package",
+      "name": "Build81 first viewport says conversion and before-after proof",
       "passed": true,
-      "detail": "{\"title\":\"Start here — Evidence Assistant\",\"h1\":\"One close-readiness route a partner can understand in two minutes.\",\"nav\":[\"Start\",\"Walkthrough\",\"Pilot package\",\"Comparison\",\"Boundaries\",\"Next step\"],\"text\":\"The Human Bit · Evidence Assistant\\nBuild 80 public buyer artifact · single buyer route · canonical proof status · static/read-only\\nacceptedwaiting reviewrejected/problemrequested/missing\\nStart\\nWalkthrough\\nPilot package\\nComparison\\nBoundaries\\nNext step\\ncannot close\\nstaff sorts\\nrevi"
+      "detail": "{\"title\":\"Start here — Evidence Assistant\",\"h1\":\"One close-readiness route with a concrete pilot conversion packet and before/after proof.\",\"nav\":[\"Start\",\"Walkthrough\",\"Pilot package\",\"Comparison\",\"Boundaries\",\"Next step\"],\"text\":\"The Human Bit · Evidence Assistant\\nBuild 81 public buyer artifact · single buyer route · canonical proof status · static/read-only supervised-pilot conversion pack\\nacceptedwaiting reviewrejected/problemrequested/missing\\nStart\\nWalkthrough\\nPilot package\\nComparison"
     },
     {
-      "name": "Build80 buyer nav is collapsed to six-step buyer route",
+      "name": "Build81 buyer nav is collapsed to six-step buyer route",
       "passed": true,
       "detail": "[\"Start\",\"Walkthrough\",\"Pilot package\",\"Comparison\",\"Boundaries\",\"Next step\"]"
     },
     {
-      "name": "Build80 no forms and disabled static CTA remains non-mutating",
+      "name": "Build81 no forms and disabled static CTA remains non-mutating",
       "passed": true,
       "detail": "[]"
     },
     {
-      "name": "Build80 comparison visible with canonical partial evidence and honest gaps",
+      "name": "Build81 comparison visible with canonical partial evidence and honest gaps",
       "passed": true,
-      "detail": "The Human Bit · Evidence Assistant\nBuild 80 public buyer artifact · route-normalised · canonical proof status · static/read-only\nacceptedwaiting reviewrejected/problemrequested/missing\nStart\nWalkthrough\nPilot package\nComparison\nBoundaries\nNext step\ncannot close\nstaff sorts\nreviewer decides\nchase blockers\nmanager handoff\nComparison claim: workflow-control evidence, not blanket AI superiority.\n\nBuild 80 enforces one canonical status model across every shipped comparison/proof page. ChatGPT remains blocked/unverified; Claude has a partial real capture; spreadsheet/operator is a baseline; Evidence"
+      "detail": "The Human Bit · Evidence Assistant\nBuild 81 public buyer artifact · route-normalised · canonical proof status · static/read-only supervised-pilot conversion pack\nacceptedwaiting reviewrejected/problemrequested/missing\nStart\nWalkthrough\nPilot package\nComparison\nBoundaries\nNext step\ncannot close\nstaff sorts\nreviewer decides\nchase blockers\nmanager handoff\nComparison claim: workflow-control evidence, not blanket AI superiority.\n\nBuild 81 enforces one canonical status model across every shipped comparison/proof page. ChatGPT remains blocked/unverified; Claude has a partial real capture; spreadsheet"
     },
     {
-      "name": "Build80 operator route shows role sequence and handoff",
+      "name": "Build81 operator route shows role sequence, handoff and before-after proof",
       "passed": true,
-      "detail": "The Human Bit · Evidence Assistant\nBuild 80 public buyer artifact · single buyer route · canonical proof status · static/read-only\nacceptedwaiting reviewrejected/problemrequested/missing\nStart\nWalkthrough\nPilot package\nComparison\nBoundaries\nNext step\ncannot close\nstaff sorts\nreviewer decides\nchase only blockers\nmanager handoff\nThe route: cannot close → sorted evidence → reviewer decision → blocker chase → manager handoff.\n\nThis page is the one-screen product spine the prior artifact lacked. It shows each role, status, blocker and next action without asking the buyer to assemble proof pages.\n\n1"
+      "detail": "The Human Bit · Evidence Assistant\nBuild 81 public buyer artifact · single buyer route · canonical proof status · static/read-only supervised-pilot conversion pack\nacceptedwaiting reviewrejected/problemrequested/missing\nStart\nWalkthrough\nPilot package\nComparison\nBoundaries\nNext step\ncannot close\nstaff sorts\nreviewer decides\nchase only blockers\nmanager handoff\nThe route: cannot close → sorted evidence → reviewer decision → blocker chase → manager handoff.\n\nThis page is the one-screen product spine the prior artifact lacked. It shows each role, status, blocker and next action without asking the "
     },
     {
-      "name": "Build80 pilot setup gives an embedded static handoff path",
+      "name": "Build81 pilot conversion gives approval, effort, success and DPA path",
       "passed": true,
-      "detail": "The Human Bit · Evidence Assistant\nBuild 80 public buyer artifact · route-normalised · canonical proof status · static/read-only\nacceptedwaiting reviewrejected/problemrequested/missing\nStart\nWalkthrough\nPilot package\nComparison\nBoundaries\nNext step\ncannot close\nstaff sorts\nreviewer decides\nchase blockers\nmanager handoff\nAppendix: pilot setup without entering client data here.\n\nThis public page is a setup checklist, not a form. Copy the required context into the private pilot workspace only after approval.\n\nQualification note\n\nWhich monthly-close evidence category currently creates repeated cha"
+      "detail": "The Human Bit · Evidence Assistant\nBuild 81 public buyer artifact · single buyer route · canonical proof status · static/read-only supervised-pilot conversion pack\nacceptedwaiting reviewrejected/problemrequested/missing\nStart\nWalkthrough\nPilot package\nComparison\nBoundaries\nNext step\ncannot close\nstaff sorts\nreviewer decides\nchase only blockers\nmanager handoff\nBuild 81 pilot conversion packet: who approves, what happens, what is measured.\n\nThis is a static public handoff, not a form. A qualified firm can decide whether to request a supervised two-close-cycle concierge pilot without entering cli"
     },
     {
-      "name": "Build80 mobile viewport has no horizontal overflow and keeps h1 visible",
+      "name": "Build81 mobile viewport has no horizontal overflow and keeps h1 visible",
       "passed": true,
-      "detail": "{\"scrollW\":390,\"clientW\":390,\"h1\":\"One close-readiness route a partner can understand in two minutes.\",\"visible\":true}"
+      "detail": "{\"scrollW\":390,\"clientW\":390,\"h1\":\"One close-readiness route with a concrete pilot conversion packet and before/after proof.\",\"visible\":true}"
     },
     {
-      "name": "Build80 rendered links/buttons have accessible names",
+      "name": "Build81 rendered links/buttons have accessible names",
       "passed": true,
       "detail": ""
     },
     {
-      "name": "Build80 browser run produced no console errors",
+      "name": "Build81 browser run produced no console errors",
       "passed": true,
       "detail": ""
     }
   ],
-  "finished_at": "2026-09-28T09:35:47.199Z",
+  "finished_at": "2026-09-28T10:12:58.288Z",
   "result": {
     "passed": 9,
     "failed": 0

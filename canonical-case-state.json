@@ -1,5 +1,5 @@
 {
-  "build": "80",
+  "build": "81",
   "generated_for": "public static buyer artifact",
   "deterministic_timestamp_explained": "Static artifact uses deterministic metadata for reproducible verification, not live freshness.",
   "evidence_lines": [
@@ -74,5 +74,5 @@
       "next": "Chase"
     }
   ],
-  "build80_addition": "stale prior-build proof reference removed; public/header boundaries remain honest"
+  "build81_addition": "before/after visible case proof with timestamps plus conversion-ready pilot packet"
 }

@@ -1,6 +1,6 @@
 {
-  "build": "80",
-  "status": "build80_canonical_partial_capture_pack_with_chatgpt_blocked",
+  "build": "81",
+  "status": "build81_canonical_partial_capture_pack_with_chatgpt_blocked",
   "prompt": "Given the 10 evidence lines, identify accepted, held, chased, excluded lines and manager readiness; explain failure risks.",
   "capture_required_before_claim": true,
   "capture_slots_publicly_visible": true,
