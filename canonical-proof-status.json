@@ -1,9 +1,10 @@
 {
-  "build": "87",
-  "status": "buyer-ready pilot wrapper built locally",
+  "build": "88",
+  "status": "buyer-grade pilot workflow built locally",
   "bounded_claims": true,
   "no_client_data": true,
-  "state_snapshot_export": true,
-  "event_chain_hash_demo_only": true,
-  "no_client_files_first_request": true
+  "messy_case": true,
+  "rule_graph": true,
+  "same_input_ai_comparison": true,
+  "server_pilot_spec_only": true
 }

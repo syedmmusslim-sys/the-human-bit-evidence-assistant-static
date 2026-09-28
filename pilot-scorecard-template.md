@@ -1,13 +1,14 @@
-# Build 87 pilot scorecard template
+# Build 88 pilot scorecard
 
-Firm size: 20–50 person CAS/bookkeeping team.
-Price hypothesis: AUD $3k–$8k concierge pilot.
+Buyer: CAS/bookkeeping operations partner or head of client accounting who owns close quality and reviewer capacity in a 20–50 person firm.
+Fee: AUD $6,000 fixed concierge pilot
+Term: 3 weeks; 2 client closes; sample/redacted data only after DPA/security approval
 
-| Metric | Baseline method | Target | Pass/fail |
-|---|---|---|---|
-| Duplicate asks | Count prior two close cycles | 35% reduction | TBD |
-| Reviewer rework minutes | Time reviewer rework | 25% reduction | TBD |
-| Handoff speed | Hours after final reviewer decision | Same day | TBD |
-| Manager close clarity | Manager states can/cannot close because... | Under 2 minutes | TBD |
+| Metric | Baseline | Pass threshold |
+|---|---|---|
+| Duplicate asks | 18 across prior two closes | reduce by 6+ |
+| Reviewer rework | 7.5 hours | reduce by 2+ hours |
+| Manager handoff delay | 26 hours | under 8 hours after final decision |
+| Close clarity | 4 unclear close calls | manager states blockers/owners/actions in under 2 minutes |
 
-Stop/cancel if baseline cannot be captured, client-data controls are not agreed, or scorecard shows no improvement.
+Expansion: If 3 of 4 metrics pass, propose AUD $2,000–$4,000/month team plan or integration discovery; cancel if scorecard not measurable.

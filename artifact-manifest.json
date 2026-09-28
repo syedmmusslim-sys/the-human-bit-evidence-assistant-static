@@ -1,132 +1,117 @@
 {
-  "build": "87",
-  "builder_version": "87.0.0",
-  "target": "Build 87 buyer-ready pilot wrapper with safe walkthrough CTA, role-specific entry views, consistent 3-to-2 blocker state story, manager-grade packet fields, commercial pilot economics, generic-AI failure-mode refusal, and technical readiness boundary.",
+  "build": "88",
+  "builder_version": "88.0.0",
+  "target": "Build 88 buyer-grade pilot workflow: one guided sequence, messy accounting case, dependency/rule graph, same-input AI comparison, fixed-fee pilot offer, and server-side pilot spec/tests.",
   "files": [
     {
       "name": "STATIC_DEPLOYMENT.md",
-      "bytes": 159,
-      "sha256": "6a9c9606daaa45cb540dcc7627fd63003e221a2e684eacfb2b285aaab591265e"
-    },
-    {
-      "name": "blocker-only-chase-draft.txt",
-      "bytes": 361,
-      "sha256": "5e44a59e4f16fc9e1e0b25f37100e9744ecc74a46c2851e7e5d16c9d3a7d1224"
+      "bytes": 162,
+      "sha256": "4fece3d568b3f73469cda8695fe21760a9c814a84b57a6cb88af9c4bd770d2c3"
     },
     {
       "name": "browser-proof-public.json",
-      "bytes": 11544,
-      "sha256": "d9f61507b49ddcc628290ec287d3f5eb0d06733a024600fbaf1f4f44cc8941db"
+      "bytes": 9888,
+      "sha256": "1dfa4be2b9fc3d8502c969e9c66e554e5cd518fb1a706920a27156501a698a2d"
     },
     {
       "name": "buyer-artifacts.html",
-      "bytes": 3594,
-      "sha256": "f649ae751ed8587a389e45b7e6eed3432b8b4aa91511e31d983d9f7db6cff9c7"
+      "bytes": 3419,
+      "sha256": "e46d91b7ec9df235c6d3acdbb9c16e3263895fabd732ac4cb09212bdd1bafc62"
     },
     {
       "name": "canonical-proof-status.json",
-      "bytes": 239,
-      "sha256": "1e68ba9ad399fdf4a15bd81304717d2476785fc3269b0dca2c9ae932cf3ad166"
+      "bytes": 242,
+      "sha256": "586bd43b7357acfe94cb55af0582ed7a1af6c9c9c4f4aa83445cd7c15f47b429"
     },
     {
-      "name": "close-cockpit.html",
-      "bytes": 4440,
-      "sha256": "46276061c28982e0cbb2bc2e6482e65cc2eb6f78e3e96763ebe5265e946a7e0b"
-    },
-    {
-      "name": "generic-ai-comparison.html",
-      "bytes": 4590,
-      "sha256": "f7f96d60845c0e91be64da2d410a4d5a47c4eb657aa0c602e5b6a0485b276070"
+      "name": "guided-demo.html",
+      "bytes": 4757,
+      "sha256": "94d351b00580c9922c1ce3feeb6c57705d42dc82557898755729e273550ef6a8"
     },
     {
       "name": "index.html",
-      "bytes": 4712,
-      "sha256": "bdcadf15400a03e22e3c5e144c4ceaf8b54c7f0329c1e4c2c3b0d107208b9cf4"
+      "bytes": 4577,
+      "sha256": "89985b27e8d90b2eb5a8a2c43507f5fb91cefbf51ce7c06f97670ee65ffe2b8c"
     },
     {
       "name": "interactive-fixture.json",
-      "bytes": 4098,
-      "sha256": "1884ce192f9e3039ae78b213d233b9fdc197f03a08500b0cd75b78db84deb82f"
+      "bytes": 4885,
+      "sha256": "93b4e63db29d04f3042a95e42e2e342c4c5b5f5f7db8ee92a94c10b97366bb4c"
     },
     {
-      "name": "interactive-sandbox.html",
-      "bytes": 5055,
-      "sha256": "132f9e47fa047e2cc7b09528e539e026601749f3ad65ad4bf0570050be3c8207"
+      "name": "messy-case.html",
+      "bytes": 5556,
+      "sha256": "9d48d7f565fecbc69062707c905dab45ee6aff510aeea4a1e4f61d12a226d8f2"
     },
     {
-      "name": "manager-view.html",
-      "bytes": 4265,
-      "sha256": "010e1b208ae20efcc4bdfeb579b6958fb1e36a559192a53258c17b7e32c70c5a"
-    },
-    {
-      "name": "pilot-economics.html",
-      "bytes": 4755,
-      "sha256": "714f682322763ebde890522fab95376c4847f51c09502b44c80e68b30a353c1f"
+      "name": "pilot-offer.html",
+      "bytes": 4297,
+      "sha256": "6a9e85dfb53d7a3f76adf3a02b9518c3963372ad25b0cfffea03212dca584867"
     },
     {
       "name": "pilot-scorecard-template.md",
-      "bytes": 633,
-      "sha256": "1d1cf96e603f7cf24a7267c38fcd84c73acaf031a3a82ebf574cf3051479cf1e"
+      "bytes": 782,
+      "sha256": "9463c20dfe93972e89d87d6571c1486a830096dcdb86e9309fbf84495e8d1e14"
+    },
+    {
+      "name": "proof-guided-demo-desktop.png",
+      "bytes": 78326,
+      "sha256": "ba010cfbfdb6d13a598d06ca326bcc62b475d16c678f1463bd1681aad9698d4f"
     },
     {
       "name": "proof-index-desktop.png",
-      "bytes": 92424,
-      "sha256": "522794e56202d99a4faeda7b1ece2c431f673a030159cce850725ec0db8cc776"
+      "bytes": 96370,
+      "sha256": "f728844da0a966b31dd37a5319693bb732221aff8a92fb643b3caee05020bac2"
     },
     {
       "name": "proof-index-mobile.png",
-      "bytes": 142020,
-      "sha256": "c9a15a14818199eca8f5610987374e1fc0b312e5cebccd4f3944588e8bb81321"
+      "bytes": 136536,
+      "sha256": "789844f0ff132fe367d10b834c8f493e767de41c3fca99f235afdc275452f97a"
     },
     {
-      "name": "proof-interactive-sandbox-desktop.png",
-      "bytes": 68289,
-      "sha256": "0a84aa5f1ef21e112091d1c0d22a920ac78beadf294480bde1adb50ed6cd6998"
-    },
-    {
-      "name": "proof-walkthrough-desktop.png",
-      "bytes": 79368,
-      "sha256": "cfaf76e28846fbb7b31e2f414f1d9e35d81f1fb5fb8e7da0365f807c20cc6af5"
+      "name": "proof-messy-case-desktop.png",
+      "bytes": 88763,
+      "sha256": "d52c0db9e1c9124cbb6eb9d1bbd2458b54ce2f1c9a50955687d62b866368cb51"
     },
     {
       "name": "public-comparison-verifier.json",
-      "bytes": 491,
-      "sha256": "263ee2079c0ca2a555b1cb8be09cec6d7be06d17aea4162540271cf0d5bb5e14"
+      "bytes": 435,
+      "sha256": "f6bde3d9d6ef5428ad4b116a2ac6006c3beba5b97119b3ddfabbc49dd93b9e50"
     },
     {
-      "name": "reviewer-decision-log.md",
-      "bytes": 425,
-      "sha256": "5efb0e0669bf39a5be21f65ab57e964611f0f587c458a54da9b7323a500c7d0f"
+      "name": "rule-backed-chase-draft.txt",
+      "bytes": 421,
+      "sha256": "757f4e56f652baf6325c9a31c9fa46b8c47a658b68ffda72789a1d96c4e15079"
     },
     {
-      "name": "reviewer-view.html",
-      "bytes": 4237,
-      "sha256": "92061debda123d44b02b91877588dccbe518a8fea4f7f59a75735b60aad3e06b"
+      "name": "rule-graph.html",
+      "bytes": 5152,
+      "sha256": "206639c07102e35ff6c8522a2458bdfa57ea01d7d3c1259bf7a5aa9b738e7d35"
+    },
+    {
+      "name": "same-input-ai-comparison.html",
+      "bytes": 4540,
+      "sha256": "7d58287262cd3e2fc00321fc5c04f180178c424a0a825669c1b24bf7ff0096d9"
     },
     {
       "name": "sample-manager-packet.md",
-      "bytes": 2008,
-      "sha256": "5ba79b4918dee4eb9e1d2b80c4045fd9758a7dd73948039cc244d103a2a3a249"
+      "bytes": 827,
+      "sha256": "e9e234194687716b2fe33d67b6a6f172a021305fbef6563adbef1bf37bbe1266"
     },
     {
-      "name": "sandbox.js",
-      "bytes": 8296,
-      "sha256": "da1e66d948c7a9c7d921f333c8d059e605007af85bd10ce91eb8dea372045314"
+      "name": "sandbox88.js",
+      "bytes": 8768,
+      "sha256": "bbac35c119612eedb042bcc463de788615447d87ef90e3749b97ec45af09fd2c"
     },
     {
-      "name": "staff-view.html",
-      "bytes": 4283,
-      "sha256": "08dded182ff10109f4685417fac0c9d73efc345d0e2209ec40f0f9991c721caa"
+      "name": "server-pilot-spec.html",
+      "bytes": 4676,
+      "sha256": "c7c2138465314fd33616669f6b85da91969b64561aba87fda2ee9ea91022fe62"
     },
     {
-      "name": "technical-readiness.html",
-      "bytes": 4252,
-      "sha256": "6a885b83fde2962fd0f4bd75e92a2815896593fb3d0e9e5e2e066b73a4e83dee"
-    },
-    {
-      "name": "walkthrough-request.html",
-      "bytes": 5126,
-      "sha256": "e4dd7b38fdb28a688b5333da6be9e7d42a7b46563274044c37e7976ae77d2272"
+      "name": "server-pilot-test-plan.md",
+      "bytes": 422,
+      "sha256": "2597cf0df7fdea0cd2f08ee2247baa6930b65bc60c70804550189938e96e88cf"
     }
   ]
 }

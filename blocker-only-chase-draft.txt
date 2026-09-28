@@ -1,7 +1,0 @@
-Build 87 blocker-only chase draft (sample only)
-
-Please fix/send only unresolved blockers (2 after reviewer accepts PAY-001):
-- BAS-002 BAS export: wrong period, please provide June.
-- LOAN-003 Director loan statement: not received.
-
-We are not asking again for PAY-001 because it was accepted by reviewer. Staff approval is required before any simulated send.
