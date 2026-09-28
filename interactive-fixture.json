@@ -1,10 +1,16 @@
 {
-  "build": "86",
+  "build": "87",
   "case": "Blue Wattle close readiness",
   "period": "June 2026",
+  "client_context": "Blue Wattle Pty Ltd — 28-employee trades services group, June month-end close, payroll/BAS/loan evidence required before manager handoff.",
   "prepared_by": "Mason Ng, staff operator",
   "reviewed_by": "Amara Lee, reviewer",
   "generated_from": "deterministic browser state; synthetic sample only",
+  "blocker_count": {
+    "initial": 3,
+    "after_reviewer_accepts_PAY_001": 2,
+    "definition": "blocked means not packet-ready; waiting-review, rejected/problem, and missing all block close until resolved"
+  },
   "items": [
     {
       "id": "PAY-001",
@@ -12,6 +18,9 @@
       "status": "waiting-review",
       "owner": "Reviewer",
       "due": "Today 3pm",
+      "ageing": "4 hours",
+      "source_system": "Payroll export + client explanation",
+      "risk": "High materiality; payroll variance is 14% above prior month",
       "blocker": "Needs reviewer decision before packet.",
       "consequence": "Cannot include payroll variance support in manager packet yet."
     },
@@ -21,23 +30,44 @@
       "status": "rejected-problem",
       "owner": "Staff",
       "due": "Today 5pm",
+      "ageing": "1 day",
+      "source_system": "ATO portal export supplied by client",
+      "risk": "Wrong period can overstate GST control evidence",
       "blocker": "Wrong period: May instead of June.",
       "consequence": "Client/staff chase remains open."
     },
     {
       "id": "LOAN-003",
-      "name": "Loan statement",
+      "name": "Director loan statement",
       "status": "missing",
       "owner": "Client",
       "due": "Tomorrow 10am",
+      "ageing": "2 days",
+      "source_system": "Client bank/loan portal",
+      "risk": "Related-party balance cannot be reconciled",
       "blocker": "Not received.",
       "consequence": "Close remains blocked until client responds."
     }
   ],
   "roles": {
-    "staff": "Intake evidence, see blockers, approve chase only after review state is clear; cannot accept evidence.",
-    "reviewer": "Accept or reject evidence with a reason; creates the only packet-inclusion path.",
-    "manager": "Reads close decision, unresolved blockers, accepted evidence, audit trail, and event-chain proof."
+    "staff": {
+      "job": "Keep close moving without overstepping review authority.",
+      "allowed": "Intake evidence, see blockers, approve blocker-only chase after reviewing unresolved state.",
+      "blocked": "Cannot accept evidence or include waiting-review items in the packet.",
+      "refusal": "Staff accept attempts produce a refusal event and no state change."
+    },
+    "reviewer": {
+      "job": "Make the evidence decision that changes packet readiness.",
+      "allowed": "Accept or reject PAY-001 with reason and audit event.",
+      "blocked": "Cannot silently send client chases or hide unresolved items.",
+      "refusal": "Duplicate or unsupported decision is logged instead of overwriting history."
+    },
+    "manager": {
+      "job": "Read whether close can proceed and why.",
+      "allowed": "Review packet, unresolved blockers, risk/materiality, owner trail, ageing, prior-period comparison, sign-off fields.",
+      "blocked": "Cannot treat demo hash as compliance-grade audit assurance.",
+      "refusal": "Packet labels unresolved blockers and demo boundary."
+    }
   },
   "invariants": {
     "reviewer_only_acceptance": true,
@@ -46,25 +76,27 @@
     "waiting_or_rejected_or_missing_items_excluded_from_packet": true,
     "approved_chase_cannot_resend": true,
     "state_snapshot_export": true,
-    "event_chain_hash": true
+    "event_chain_hash_demo_only": true,
+    "no_client_files_first_request": true
   },
   "metrics": {
     "sample_only": true,
+    "firm_size": "20–50 person CAS/bookkeeping firm",
+    "baseline_capture": "two prior close cycles: duplicate asks, reviewer rework minutes, manager handoff time, late-close count",
     "duplicate_reasks": {
-      "baseline": 2,
-      "current": 0
+      "baseline": 14,
+      "target": "<=9",
+      "pilot_threshold": "35% reduction"
     },
-    "reviewer_rework": {
-      "baseline": 5,
-      "current": 2
+    "reviewer_rework_minutes": {
+      "baseline": 420,
+      "target": "<=300",
+      "pilot_threshold": "25% reduction"
     },
-    "time_to_handoff_hours": {
+    "manager_handoff_hours": {
       "baseline": 36,
-      "current": 18
+      "target": "same day after reviewer decisions complete"
     },
-    "manager_confidence": {
-      "baseline": "low",
-      "current": "medium-high"
-    }
+    "price_hypothesis": "AUD $3k–$8k concierge pilot; stop if no measurable close-readiness improvement"
   }
 }

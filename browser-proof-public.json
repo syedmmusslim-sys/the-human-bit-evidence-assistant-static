@@ -1,85 +1,110 @@
 {
-  "build": "86",
+  "build": "87",
   "browser": "chromium-family headless browser (local path withheld)",
   "started_at": "withheld in public artifact; see local proof if needed",
   "screenshots": [
     {
       "file": "index-desktop.png",
-      "bytes": 77479
+      "bytes": 92424
     },
     {
-      "file": "close-cockpit-desktop.png",
-      "bytes": 79377
+      "file": "walkthrough-desktop.png",
+      "bytes": 79368
     },
     {
       "file": "interactive-sandbox-desktop.png",
-      "bytes": 59324
+      "bytes": 68289
     },
     {
-      "file": "interactive-sandbox-mobile.png",
-      "bytes": 121698
+      "file": "index-mobile.png",
+      "bytes": 142020
     }
   ],
   "checks": [
     {
-      "name": "Build86 first viewport is outcome-first cannot-close cockpit CTA with honest boundary",
+      "name": "Build87 first viewport has 3-to-2 blocker story, safe walkthrough CTA, honest boundary",
       "passed": true,
-      "detail": "{\"title\":\"Start here — Evidence Assistant Build 86\",\"h1\":\"Can Blue Wattle close? Not yet — 2 blockers remain.\",\"nav\":[\"Start\",\"Close cockpit\",\"5-click guided demo\",\"Artifacts\",\"AI comparison\",\"Pilot offer\",\"Next step\"],\"text\":\"The Human Bit · Evidence Assistant\\nStart\\nClose cockpit\\n5-click guided demo\\nArtifacts\\nAI comparison\\nPilot offer\\nNext step\\n\\nPublic static demo · synthetic Blue Wattle case · no client data\\n\\nCan Blue Wattle close? Not yet — 2 blockers remain.\\n\\nStart with the close outcome, then use five guided clicks to see which owner unblocks each item, what changes in the manager packet, and what the product refuses to do.\\n\\nOpen the close cockpit Run the 5-click demo\\n\\n"
+      "detail": "{\"title\":\"Start here — Evidence Assistant Build 87\",\"h1\":\"Can Blue Wattle close? Not yet — 3 blockers before review; 2 blockers after PAY-001 is accepted.\",\"nav\":[\"Start\",\"Run safe walkthrough\",\"Staff view\",\"Reviewer view\",\"Manager view\",\"Close cockpit\",\"5-click guided demo\",\"Artifacts\",\"AI failure mode\",\"Pilot economics\",\"Technical readiness\"],\"text\":\"The Human Bit · Evidence Assistant\\nStart\\nRun safe walkthrough\\nStaff view\\nReviewer view\\nManager view\\nClose cockpit\\n5-click guided demo\\nArtifacts\\nAI failure mode\\nPilot economics\\nTechnical readiness\\n\\nBuild 87 public pilot wrapper · synthetic Blue Wattle case · no client data\\n\\nCan Blue Wattle close? Not yet — 3 blockers before revie"
     },
     {
-      "name": "Build86 buyer nav includes close cockpit, guided demo, AI, pilot",
+      "name": "Build87 buyer nav includes walkthrough, role views, AI, economics, tech",
       "passed": true,
-      "detail": "[\"Start\",\"Close cockpit\",\"5-click guided demo\",\"Artifacts\",\"AI comparison\",\"Pilot offer\",\"Next step\"]"
+      "detail": "[\"Start\",\"Run safe walkthrough\",\"Staff view\",\"Reviewer view\",\"Manager view\",\"Close cockpit\",\"5-click guided demo\",\"Artifacts\",\"AI failure mode\",\"Pilot economics\",\"Technical readiness\"]"
     },
     {
-      "name": "Build86 close cockpit shows blockers, owners, due times, and next safe actions",
+      "name": "Build87 walkthrough page proves fit checklist, attendees, no-client-files, timeline",
       "passed": true,
-      "detail": "The Human Bit · Evidence Assistant\nStart\nClose cockpit\n5-click guided demo\nArtifacts\nAI comparison\nPilot offer\nNext step\n\nOutcome-first case cockpit\n\nCan Blue Wattle close? Not yet — 2 blockers remain.\n\nThe product spine is the close decision: blocker, owner, due time, consequence, and next safe action. The proof cockpit is secondary.\n\nAccepted\n\nAfter reviewer approval, PAY-001 moves to the manager packet and disappears from chase copy.\n\nWaiting review\n\nPAY-001 starts as waiting-review. Staff can view it but cannot accept it.\n\nBlocked\n\nBAS-002 and LOAN-003 keep the case at “cannot close” until corrected/received/reviewed.\n\nRequirement\tStatus\tOwner\tDue\tWhy close is blocked\tNext safe action\nPA"
+      "detail": "The Human Bit · Evidence Assistant\nStart\nRun safe walkthrough\nStaff view\nReviewer view\nManager view\nClose cockpit\n5-click guided demo\nArtifacts\nAI failure mode\nPilot economics\nTechnical readiness\nRun a safe walkthrough — not a data transfer.\n\nUse this as the commercial next step: a 15–30 minute sample-data walkthrough before any client files are discussed.\n\nFirm-fit checklist\n20–50 person CAS/bookkeeping firm or close team.\nRecurring evidence chases across portal/email/shared drives.\nManager cannot quickly say “can/cannot close because…”.\nReviewer rework and duplicate asks are visible enough to measure.\nRequired attendees\nPartner/sponsor who owns close quality.\nStaff operator who chases evid"
     },
     {
-      "name": "Build86 sandbox initial state shows waiting/rejected/missing, guided steps, and snapshot/hash",
+      "name": "Build87 staff-view.html has allowed/blocked/refusal role proof",
       "passed": true,
-      "detail": "The Human Bit · Evidence Assistant\nStart\nClose cockpit\n5-click guided demo\nArtifacts\nAI comparison\nPilot offer\nNext step\n\nGuided 5-click demo path\n\nDo these 5 clicks; each step has an expected result.\n\n1 view cannot-close → 2 try non-reviewer accept → 3 reviewer accepts → 4 approve blocker-only chase → 5 read packet + audit hash.\n\nFailed-state examples are intentional: non-reviewer accept and duplicate send are refused and added to the audit log.\nStep 1\n\nView cannot-close state\n\nStatus: pending\n\nStep 2\n\nTry non-reviewer accept: expect refusal\n\nStatus: pending\n\nStep 3\n\nReviewer accepts PAY-001: expect packet update\n\nStatus: pending\n\nStep 4\n\nApprove chase: expect blockers only\n\nStatus: pending"
+      "detail": "The Human Bit · Evidence Assistant\nStart\nRun safe walkthrough\nStaff view\nReviewer view\nManager view\nClose cockpit\n5-click guided demo\nArtifacts\nAI failure mode\nPilot economics\nTechnical readiness\n\nRole-specific entry over the same Blue Wattle state\n\nStaff view: chase unresolved blockers without accepting evidence\n\nJob: Keep close moving without overstepping review authority.\n\nAllowed action\n\nIntake evidence, see blockers, approve blocker-only chase after reviewing unresolved state.\n\nBlocked action\n\nCannot accept evidence or include waiting-review items in the packet.\n\nRefusal / audit proof\n\nStaff accept attempts produce a refusal event and no state change.\n\nSame-state proof: PAY-001 is waiti"
     },
     {
-      "name": "Build86 non-reviewer accept is refused and step completion visible",
+      "name": "Build87 reviewer-view.html has allowed/blocked/refusal role proof",
       "passed": true,
-      "detail": ":[{\"id\":\"EV-86-001\",\"msg\":\"Staff intake received three evidence items; nothing is auto-accepted.\",\"prev\":\"GENESIS-BUILD-86\"},{\"id\":\"EV-86-002\",\"msg\":\"Viewed cannot-close cockpit: blockers, owners, due times, and consequences are visible.\",\"prev\":\"c790be6cce32bd356bb2bf0c0cf9b5e9d65114a9de6a1db5a9ace22519c03159\"},{\"id\":\"EV-86-003\",\"msg\":\"Refused non-reviewer accept attempt on LOAN-003; no state changed.\",\"prev\":\"717c646d28ea3c07748c48b58cc2cce9a092def0a44286e76b694401366d5414\"}]}\nEvent-chain hash proof\nevent_chain_sha256=36617e65fc9fdda4ded87a7c226c49ae465bcfda84236997da1f08f3aa4cbf86\nlast_event=EV-86-003\nSample measurement panel — not measured pilot ROI\nMetric\tBaseline sample\tCurrent sample\t"
+      "detail": "The Human Bit · Evidence Assistant\nStart\nRun safe walkthrough\nStaff view\nReviewer view\nManager view\nClose cockpit\n5-click guided demo\nArtifacts\nAI failure mode\nPilot economics\nTechnical readiness\n\nRole-specific entry over the same Blue Wattle state\n\nReviewer view: one decision changes packet readiness\n\nJob: Make the evidence decision that changes packet readiness.\n\nAllowed action\n\nAccept or reject PAY-001 with reason and audit event.\n\nBlocked action\n\nCannot silently send client chases or hide unresolved items.\n\nRefusal / audit proof\n\nDuplicate or unsupported decision is logged instead of overwriting history.\n\nSame-state proof: PAY-001 is waiting-review before reviewer action. BAS-002 and LOA"
     },
     {
-      "name": "Build86 reviewer accept updates manager packet and chase exclusions",
+      "name": "Build87 manager-view.html has allowed/blocked/refusal role proof",
       "passed": true,
-      "detail": "The Human Bit · Evidence Assistant\nStart\nClose cockpit\n5-click guided demo\nArtifacts\nAI comparison\nPilot offer\nNext step\n\nGuided 5-click demo path\n\nDo these 5 clicks; each step has an expected result.\n\n1 view cannot-close → 2 try non-reviewer accept → 3 reviewer accepts → 4 approve blocker-only chase → 5 read packet + audit hash.\n\nFailed-state examples are intentional: non-reviewer accept and duplicate send are refused and added to the audit log.\nStep 1\n\nView cannot-close state\n\nStatus: complete\n\nStep 2\n\nTry non-reviewer accept: expect refusal\n\nStatus: complete\n\nStep 3\n\nReviewer accepts PAY-001: expect packet update\n\nStatus: complete\n\nStep 4\n\nApprove chase: expect blockers only\n\nStatus: pend"
+      "detail": "The Human Bit · Evidence Assistant\nStart\nRun safe walkthrough\nStaff view\nReviewer view\nManager view\nClose cockpit\n5-click guided demo\nArtifacts\nAI failure mode\nPilot economics\nTechnical readiness\n\nRole-specific entry over the same Blue Wattle state\n\nManager view: can/cannot close with risk and sign-off fields\n\nJob: Read whether close can proceed and why.\n\nAllowed action\n\nReview packet, unresolved blockers, risk/materiality, owner trail, ageing, prior-period comparison, sign-off fields.\n\nBlocked action\n\nCannot treat demo hash as compliance-grade audit assurance.\n\nRefusal / audit proof\n\nPacket labels unresolved blockers and demo boundary.\n\nSame-state proof: PAY-001 is waiting-review before rev"
     },
     {
-      "name": "Build86 guided path reaches packet, blocker-only chase, snapshot and audit hash",
+      "name": "Build87 sandbox initial state shows 3 blockers and demo-only hash",
       "passed": true,
-      "detail": "ockpit: blockers, owners, due times, and consequences are visible.\",\"prev\":\"c790be6cce32bd356bb2bf0c0cf9b5e9d65114a9de6a1db5a9ace22519c03159\"},{\"id\":\"EV-86-003\",\"msg\":\"Refused non-reviewer accept attempt on LOAN-003; no state changed.\",\"prev\":\"717c646d28ea3c07748c48b58cc2cce9a092def0a44286e76b694401366d5414\"},{\"id\":\"EV-86-004\",\"msg\":\"Reviewer accepted PAY-001; packet includes it and chase excludes it.\",\"prev\":\"36617e65fc9fdda4ded87a7c226c49ae465bcfda84236997da1f08f3aa4cbf86\"},{\"id\":\"EV-86-005\",\"msg\":\"Staff approved blocker-only chase; accepted and waiting-review items were excluded.\",\"prev\":\"3a04a0608edf7467afe57465947abfc0305ad65f62bc1529bd274325ce1792d8\"},{\"id\":\"EV-86-006\",\"msg\":\"Manager r"
+      "detail": "The Human Bit · Evidence Assistant\nStart\nRun safe walkthrough\nStaff view\nReviewer view\nManager view\nClose cockpit\n5-click guided demo\nArtifacts\nAI failure mode\nPilot economics\nTechnical readiness\n5-click guided demo: 3 blockers → reviewer accepts PAY-001 → 2 blockers remain.\n\nEach action has one expected consequence and refusal events are visible.\n\nIntentional failed state: non-reviewer accept is refused; duplicate send is refused.\nStep 1\n\npending\n\nStep 2\n\npending\n\nStep 3\n\npending\n\nStep 4\n\npending\n\nStep 5\n\npending\n\nAudit log\nEV-87-001 Staff intake received three not-packet-ready items; close has 3 blockers before review.\nActions\n\nStep 1: view 3-blocker cannot-close state\n\nStep 2: staff tries"
     },
     {
-      "name": "Build86 keyboard-visible controls have accessible names",
+      "name": "Build87 non-reviewer accept is refused with no state change",
       "passed": true,
-      "detail": "[\"Start\",\"Close cockpit\",\"5-click guided demo\",\"Artifacts\",\"AI comparison\",\"Pilot offer\",\"Next step\",\"Step 1: view cannot-close state\",\"Step 2: non-reviewer tries to accept LOAN-003\",\"Step 3: reviewer accepts PAY-001\",\"Step 4: staff approves blocker-only chase\",\"Step 5: read manager packet and audit trail\",\"Try duplicate send again\",\"Reset sample state\"]"
+      "detail": "r-only chase draft\nPlease fix/send only unresolved blockers (3):\n- PAY-001 Payroll variance support: Needs reviewer decision before packet. Owner: Reviewer. Due: Today 3pm\n- BAS-002 BAS export: Wrong period: May instead of June. Owner: Staff. Due: Today 5pm\n- LOAN-003 Director loan statement: Not received. Owner: Client. Due: Tomorrow 10am\n\nWe are not asking again for accepted items. Staff approval is required before any simulated send.\nDeterministic state snapshot\n{\"blockers\":3,\"items\":[{\"id\":\"PAY-001\",\"status\":\"waiting-review\",\"owner\":\"Reviewer\",\"blocker\":\"Needs reviewer decision before packet.\"},{\"id\":\"BAS-002\",\"status\":\"rejected-problem\",\"owner\":\"Staff\",\"blocker\":\"Wrong period: May inste"
     },
     {
-      "name": "Build86 desktop has no horizontal overflow",
+      "name": "Build87 reviewer accept changes blockers from 3 to 2 and packet/chase state",
       "passed": true,
-      "detail": "{\"scrollW\":1265,\"clientW\":1265}"
+      "detail": "The Human Bit · Evidence Assistant\nStart\nRun safe walkthrough\nStaff view\nReviewer view\nManager view\nClose cockpit\n5-click guided demo\nArtifacts\nAI failure mode\nPilot economics\nTechnical readiness\n5-click guided demo: 3 blockers → reviewer accepts PAY-001 → 2 blockers remain.\n\nEach action has one expected consequence and refusal events are visible.\n\nIntentional failed state: non-reviewer accept is refused; duplicate send is refused.\nStep 1\n\ncomplete\n\nStep 2\n\ncomplete\n\nStep 3\n\ncomplete\n\nStep 4\n\npending\n\nStep 5\n\npending\n\nAudit log\nEV-87-001 Staff intake received three not-packet-ready items; close has 3 blockers before review.\nEV-87-002 Step 1 viewed by buyer; current blocker count=3.\nEV-87-003"
     },
     {
-      "name": "Build86 mobile sandbox has no horizontal overflow and keeps h1 visible",
+      "name": "Build87 guided path reaches 2-blocker chase, before-after diff, event hash",
       "passed": true,
-      "detail": "{\"scrollW\":390,\"clientW\":390,\"h1\":\"Do these 5 clicks; each step has an expected result.\",\"visible\":true}"
+      "detail": "ST control evidence\nLOAN-003 missing owner=Client ageing=2 days risk=Related-party balance cannot be reconciled\nBefore/after diff: PAY-001 waiting-review before Step 3; accepted after reviewer action. BAS-002 and LOAN-003 remain blockers.\nSign-off fields: prepared_by=Mason Ng, staff operator; reviewed_by=Amara Lee, reviewer; manager_signoff=sample-only pending.\nBlocker-only chase draft\nPlease fix/send only unresolved blockers (2):\n- BAS-002 BAS export: Wrong period: May instead of June. Owner: Staff. Due: Today 5pm\n- LOAN-003 Director loan statement: Not received. Owner: Client. Due: Tomorrow 10am\n\nWe are not asking again for accepted items. Staff approval is required before any simulated se"
     },
     {
-      "name": "Build86 browser run produced no console errors",
+      "name": "Build87 AI failure-mode page visibly contrasts unsafe generic output and governed refusal",
+      "passed": true,
+      "detail": "The Human Bit · Evidence Assistant\nStart\nRun safe walkthrough\nStaff view\nReviewer view\nManager view\nClose cockpit\n5-click guided demo\nArtifacts\nAI failure mode\nPilot economics\nTechnical readiness\nGeneric AI failure mode: polished output that violates state.\n\nThis page answers “why not just Claude/ChatGPT?” with a concrete same-input failure: general AI can draft, but it does not enforce reviewer authority, packet inclusion, chase exclusion, or an append-only state trail.\n\nUnsafe generic-AI draft\nSubject: All evidence complete for Blue Wattle\n\nPayroll support, BAS export and director loan statement are ready for manager sign-off. No need to chase again.\n\nProblem: this polished draft incorrect"
+    },
+    {
+      "name": "Build87 technical page labels static proof and server-side requirements",
+      "passed": true,
+      "detail": "The Human Bit · Evidence Assistant\nStart\nRun safe walkthrough\nStaff view\nReviewer view\nManager view\nClose cockpit\n5-click guided demo\nArtifacts\nAI failure mode\nPilot economics\nTechnical readiness\nTechnical readiness: what the public demo proves — and what a real pilot still needs.\n\nBuild 87 reframes the event hash as a demo integrity trail and names the server-side path before client data.\n\nProved here\nStatic public artifact fetch-back.\nRole-specific refusal copy.\nSame-state packet/chase rules in the browser.\nDeterministic snapshot and event-chain hash demo.\nNo API, no client files, no integrations.\nRequired before real data\nAuthenticated users, tenant separation, roles and permissions.\nServ"
+    },
+    {
+      "name": "Build87 visible controls have accessible names",
+      "passed": true,
+      "detail": "[\"Start\",\"Run safe walkthrough\",\"Staff view\",\"Reviewer view\",\"Manager view\",\"Close cockpit\",\"5-click guided demo\",\"Artifacts\",\"AI failure mode\",\"Pilot economics\",\"Technical readiness\"]"
+    },
+    {
+      "name": "Build87 desktop has no horizontal overflow",
+      "passed": true,
+      "detail": "{\"scrollW\":1280,\"clientW\":1280}"
+    },
+    {
+      "name": "Build87 mobile start has no horizontal overflow and keeps h1 visible",
+      "passed": true,
+      "detail": "{\"scrollW\":390,\"clientW\":390,\"h1\":\"Can Blue Wattle close? Not yet — 3 blockers before review; 2 blockers after PAY-001 is accepted.\",\"visible\":true}"
+    },
+    {
+      "name": "Build87 browser run produced no console errors",
       "passed": true,
       "detail": ""
     }
   ],
   "finished_at": "withheld in public artifact; see local proof if needed",
   "result": {
-    "passed": 11,
+    "passed": 16,
     "failed": 0
   }
 }

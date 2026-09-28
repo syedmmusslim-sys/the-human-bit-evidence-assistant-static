@@ -1,107 +1,132 @@
 {
-  "build": "86",
-  "builder_version": "86.0.0",
-  "target": "Build 86 guided close-outcome cockpit with 5-click demo, role lenses, stronger commercial pilot offer, realistic manager artifacts, deterministic state snapshot, and event-chain hash proof.",
+  "build": "87",
+  "builder_version": "87.0.0",
+  "target": "Build 87 buyer-ready pilot wrapper with safe walkthrough CTA, role-specific entry views, consistent 3-to-2 blocker state story, manager-grade packet fields, commercial pilot economics, generic-AI failure-mode refusal, and technical readiness boundary.",
   "files": [
     {
       "name": "STATIC_DEPLOYMENT.md",
-      "bytes": 116,
-      "sha256": "7eac63e2fd5e88a7cff606453cf3a6a0235a1a1351860439da90a8d968a5b242"
+      "bytes": 159,
+      "sha256": "6a9c9606daaa45cb540dcc7627fd63003e221a2e684eacfb2b285aaab591265e"
     },
     {
       "name": "blocker-only-chase-draft.txt",
-      "bytes": 352,
-      "sha256": "7eb44474045ad065f3bdaa9963883dae37d1b7f6d7495b8ce5f48d3c7bcf1ee4"
+      "bytes": 361,
+      "sha256": "5e44a59e4f16fc9e1e0b25f37100e9744ecc74a46c2851e7e5d16c9d3a7d1224"
     },
     {
       "name": "browser-proof-public.json",
-      "bytes": 7312,
-      "sha256": "6993c91685af251cf2fade4b82a9568cfe58faf20182b2e1ae016323df122e60"
+      "bytes": 11544,
+      "sha256": "d9f61507b49ddcc628290ec287d3f5eb0d06733a024600fbaf1f4f44cc8941db"
     },
     {
       "name": "buyer-artifacts.html",
-      "bytes": 3845,
-      "sha256": "1116f61ac12295c362d62d04a3797e602f004ea3980fb5ad90d62d02b927f5f0"
+      "bytes": 3594,
+      "sha256": "f649ae751ed8587a389e45b7e6eed3432b8b4aa91511e31d983d9f7db6cff9c7"
     },
     {
       "name": "canonical-proof-status.json",
-      "bytes": 191,
-      "sha256": "34ecdc88fffc561be5db4dadc44ea4c51a1e475fead2791e131b60ed87d90c69"
+      "bytes": 239,
+      "sha256": "1e68ba9ad399fdf4a15bd81304717d2476785fc3269b0dca2c9ae932cf3ad166"
     },
     {
       "name": "close-cockpit.html",
-      "bytes": 4903,
-      "sha256": "f2a09ec6a196336e5d2e02bf6408189a9ea590b6c300c54f9951771984def6ae"
+      "bytes": 4440,
+      "sha256": "46276061c28982e0cbb2bc2e6482e65cc2eb6f78e3e96763ebe5265e946a7e0b"
     },
     {
       "name": "generic-ai-comparison.html",
-      "bytes": 4182,
-      "sha256": "ce572d103ea765ad9f1d7cbce2a2c897334e66b108680a7e7a467091fe58bfe6"
+      "bytes": 4590,
+      "sha256": "f7f96d60845c0e91be64da2d410a4d5a47c4eb657aa0c602e5b6a0485b276070"
     },
     {
       "name": "index.html",
-      "bytes": 4556,
-      "sha256": "17cb091f6ea2a26e3ecfda8eed873631328db1bf40bde36fe38180bd39abf5c5"
+      "bytes": 4712,
+      "sha256": "bdcadf15400a03e22e3c5e144c4ceaf8b54c7f0329c1e4c2c3b0d107208b9cf4"
     },
     {
       "name": "interactive-fixture.json",
-      "bytes": 2090,
-      "sha256": "394665fbe034d48e630b6de8216c6457dc305816b1198af7d4a11d3840c9b25f"
+      "bytes": 4098,
+      "sha256": "1884ce192f9e3039ae78b213d233b9fdc197f03a08500b0cd75b78db84deb82f"
     },
     {
       "name": "interactive-sandbox.html",
-      "bytes": 5637,
-      "sha256": "c9537da2d65fc51f405e62adad776ea85b1b53e34fdacfe52b11e24c4f531eb8"
+      "bytes": 5055,
+      "sha256": "132f9e47fa047e2cc7b09528e539e026601749f3ad65ad4bf0570050be3c8207"
     },
     {
-      "name": "next-step.html",
-      "bytes": 3537,
-      "sha256": "2dac8eb1de8f8e7873cfb770f84d9d8a3b4795b8f58c51615da186386332aefa"
+      "name": "manager-view.html",
+      "bytes": 4265,
+      "sha256": "010e1b208ae20efcc4bdfeb579b6958fb1e36a559192a53258c17b7e32c70c5a"
     },
     {
-      "name": "pilot-package.html",
-      "bytes": 4800,
-      "sha256": "bb116aae9ff697d8a90e4b549bedacf6b2519fe8a0abfcf492a06f1deb6002f4"
+      "name": "pilot-economics.html",
+      "bytes": 4755,
+      "sha256": "714f682322763ebde890522fab95376c4847f51c09502b44c80e68b30a353c1f"
     },
     {
-      "name": "proof-close-cockpit-desktop.png",
-      "bytes": 79377,
-      "sha256": "f5372681358e934e4b83bf429173b026ccba103f2e451cb73590c8350592392c"
+      "name": "pilot-scorecard-template.md",
+      "bytes": 633,
+      "sha256": "1d1cf96e603f7cf24a7267c38fcd84c73acaf031a3a82ebf574cf3051479cf1e"
     },
     {
       "name": "proof-index-desktop.png",
-      "bytes": 77479,
-      "sha256": "f50a98febe35dd50646370394854cec0de8f7f318e20d77a7bd3d65e2e1e5942"
+      "bytes": 92424,
+      "sha256": "522794e56202d99a4faeda7b1ece2c431f673a030159cce850725ec0db8cc776"
+    },
+    {
+      "name": "proof-index-mobile.png",
+      "bytes": 142020,
+      "sha256": "c9a15a14818199eca8f5610987374e1fc0b312e5cebccd4f3944588e8bb81321"
     },
     {
       "name": "proof-interactive-sandbox-desktop.png",
-      "bytes": 59324,
-      "sha256": "c6b863260505bd7cba951462ded9343a6ba7b1dd8b785744e55d04ba5c976051"
+      "bytes": 68289,
+      "sha256": "0a84aa5f1ef21e112091d1c0d22a920ac78beadf294480bde1adb50ed6cd6998"
     },
     {
-      "name": "proof-interactive-sandbox-mobile.png",
-      "bytes": 121698,
-      "sha256": "a56ede0f74ae770f4409c8f3d553d5b431f3c194d148ec28b2ae4d3e25a91a80"
+      "name": "proof-walkthrough-desktop.png",
+      "bytes": 79368,
+      "sha256": "cfaf76e28846fbb7b31e2f414f1d9e35d81f1fb5fb8e7da0365f807c20cc6af5"
     },
     {
       "name": "public-comparison-verifier.json",
-      "bytes": 374,
-      "sha256": "f60e2f68b773862d3e43dbfa232ad3dc1ba5de7a1b97de666c3f93d8cba19dd2"
+      "bytes": 491,
+      "sha256": "263ee2079c0ca2a555b1cb8be09cec6d7be06d17aea4162540271cf0d5bb5e14"
     },
     {
       "name": "reviewer-decision-log.md",
-      "bytes": 626,
-      "sha256": "ecb6b5a4132d494192482c0a39d8be52dae35d21431050a00a02c30864e6d3f2"
+      "bytes": 425,
+      "sha256": "5efb0e0669bf39a5be21f65ab57e964611f0f587c458a54da9b7323a500c7d0f"
+    },
+    {
+      "name": "reviewer-view.html",
+      "bytes": 4237,
+      "sha256": "92061debda123d44b02b91877588dccbe518a8fea4f7f59a75735b60aad3e06b"
     },
     {
       "name": "sample-manager-packet.md",
-      "bytes": 1371,
-      "sha256": "86e31416de241e8a4e72c17707a3e23fa9d16d4c192d55bbdd1ba29a9453fa4c"
+      "bytes": 2008,
+      "sha256": "5ba79b4918dee4eb9e1d2b80c4045fd9758a7dd73948039cc244d103a2a3a249"
     },
     {
       "name": "sandbox.js",
-      "bytes": 6478,
-      "sha256": "05a25fb6b1af8bcb0280a5b650c222da030a7cbc730c1750efc51916fc966252"
+      "bytes": 8296,
+      "sha256": "da1e66d948c7a9c7d921f333c8d059e605007af85bd10ce91eb8dea372045314"
+    },
+    {
+      "name": "staff-view.html",
+      "bytes": 4283,
+      "sha256": "08dded182ff10109f4685417fac0c9d73efc345d0e2209ec40f0f9991c721caa"
+    },
+    {
+      "name": "technical-readiness.html",
+      "bytes": 4252,
+      "sha256": "6a885b83fde2962fd0f4bd75e92a2815896593fb3d0e9e5e2e066b73a4e83dee"
+    },
+    {
+      "name": "walkthrough-request.html",
+      "bytes": 5126,
+      "sha256": "e4dd7b38fdb28a688b5333da6be9e7d42a7b46563274044c37e7976ae77d2272"
     }
   ]
 }

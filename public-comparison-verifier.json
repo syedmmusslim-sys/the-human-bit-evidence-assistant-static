@@ -1,17 +1,19 @@
 {
-  "build": "86",
+  "build": "87",
   "defensible_advantages": [
-    "outcome-first close cockpit",
-    "role-gated acceptance",
-    "refusal events",
-    "same-state packet and chase rules",
-    "deterministic state snapshot",
-    "event-chain hash"
+    "role-specific entry views",
+    "safe walkthrough no-client-files gate",
+    "state-count consistency 3 to 2 blockers",
+    "manager-grade packet fields",
+    "commercial pilot economics",
+    "generic-AI failure-mode refusal",
+    "technical readiness boundary"
   ],
   "forbidden_claims": [
     "better than ChatGPT",
     "production-ready",
     "guaranteed ROI",
-    "real client data approved"
+    "real client data approved",
+    "compliance-grade audit hash"
   ]
 }

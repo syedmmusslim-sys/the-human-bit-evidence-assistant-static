@@ -1,8 +1,9 @@
 {
-  "build": "86",
-  "status": "guided close-outcome cockpit built locally",
+  "build": "87",
+  "status": "buyer-ready pilot wrapper built locally",
   "bounded_claims": true,
   "no_client_data": true,
   "state_snapshot_export": true,
-  "event_chain_hash": true
+  "event_chain_hash_demo_only": true,
+  "no_client_files_first_request": true
 }
