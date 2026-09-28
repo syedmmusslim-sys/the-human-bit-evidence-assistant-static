@@ -1,7 +1,9 @@
 {
   "build": "77",
-  "status": "protocol_and_empty_capture_slots_no_verified_captures",
+  "status": "partial_real_capture_pack_with_chatgpt_blocked",
   "prompt": "Given the 10 evidence lines, identify accepted, held, chased, excluded lines and manager readiness; explain failure risks.",
   "capture_required_before_claim": true,
-  "capture_slots_publicly_visible": true
+  "capture_slots_publicly_visible": true,
+  "claude_prompt_sha256": "a618dd17bcf16f2ac8f726864baeae272a8ee412e6523aa631fa3ccd39c91904",
+  "claude_raw_result_sha256": "fbf24f9457e3a04ec810427444b8d5ffea242b082d731bb740c085ceac805249"
 }

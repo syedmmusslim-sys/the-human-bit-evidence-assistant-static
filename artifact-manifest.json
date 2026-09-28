@@ -4,10 +4,10 @@
   "build": "77",
   "generated_at": "1970-01-01T00:00:00.000Z",
   "public_buyer_artifact": true,
-  "target": "proof-focused build after Build 76: browser visual/a11y gate plus visible empty same-input capture slots",
+  "target": "proof-focused current build: browser visual/a11y gate plus partial same-input evidence and visible capture gaps",
   "artifact_boundary": "Read-only immutable static buyer walkthrough plus supervised-pilot offer. No backend, no forms, no email, no integrations, no client data, no public mutable SaaS claim.",
   "commercial_boundary": "Pilot/pricing/ROI are hypotheses until buyer validation and measured outcomes exist.",
-  "comparison_boundary": "Capture slots are visible but empty; no fabricated Claude/ChatGPT/Airtable captures and no model-output superiority claim.",
+  "comparison_boundary": "Partial same-input evidence is attached: raw Claude capture, deterministic spreadsheet baseline, Evidence Assistant projection, and blocked ChatGPT record; no blanket superiority claim.",
   "hosting_boundary": "GitHub Pages durable mirror allowed after fetch-back; strict-header proof requires controllable host returning required headers.",
   "evidence_line_count": 10,
   "browser_visual_gate_required": true,
@@ -23,13 +23,13 @@
   "files": [
     {
       "name": "STATIC_DEPLOYMENT.md",
-      "bytes": 506,
-      "sha256": "33aa5b540f4b301c2a78d97a174fab9b72a6367f517844a0aad3a4d0bb828410"
+      "bytes": 487,
+      "sha256": "fbd9c351b4c1f9eaed19f1ace2bf8b345b28f76720f60cc0ba0eca7ef1f0a3ed"
     },
     {
       "name": "ai-capture-slots.html",
-      "bytes": 6800,
-      "sha256": "64e14156bebaf9e332466d88341082bf1df5f258a90faf3452f2dfc709ecb02a"
+      "bytes": 6780,
+      "sha256": "3b7b6c720dd3b6d51f9bc34388895ef0cb134bb3b8bd707d5066335ee230b807"
     },
     {
       "name": "canonical-case-state.json",
@@ -44,7 +44,7 @@
     {
       "name": "comparison-evidence.html",
       "bytes": 7114,
-      "sha256": "356f656ef658f997b796dadaeb0f609d4e9fcc60f67350945643cbd7ec821555"
+      "sha256": "c48bc3db013b00ea94a0d00f8ae05f85e96fc0e0d6594e2625783221353b3da0"
     },
     {
       "name": "comparison-protocol.html",
@@ -53,8 +53,8 @@
     },
     {
       "name": "current-comparison-prompt.json",
-      "bytes": 310,
-      "sha256": "f64282d205d2b4f25e2c5eff2c99705ac4bc1a449fdae5c08a5df00bef65a9f0"
+      "bytes": 495,
+      "sha256": "bee2a811c23621f561fe8bc5ee00aedf70798ae7eed4bc7ffda46acd14295dba"
     },
     {
       "name": "hosting-boundary.html",
@@ -93,8 +93,8 @@
     },
     {
       "name": "visual-proof.html",
-      "bytes": 6079,
-      "sha256": "e72bb5023d461ea7b73076ba5623aae34be88818f4cc22fb37c0082a656967d5"
+      "bytes": 6071,
+      "sha256": "66fd4bf60019fd56c941455788a9eb05860ca5fd681e0146f4ec453d9e1a0d28"
     }
   ]
 }
