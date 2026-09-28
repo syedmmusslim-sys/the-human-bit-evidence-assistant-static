@@ -1,11 +1,11 @@
 {
-  "build": "79",
+  "build": "80",
   "generated_at": "1970-01-01T00:00:00.000Z",
   "canonical_status_model": true,
   "public_artifact_boundary": "read-only public static buyer walkthrough; no mutable SaaS claim",
   "proof_assets": {
-    "public_browser_assets": "published only after Build79 browser visual gate runs",
-    "local_only_browser_assets": "build78-browser-proof/ remains excluded",
+    "public_browser_assets": "published only after Build80 browser visual gate runs",
+    "local_only_browser_assets": "build80-browser-proof/ remains excluded",
     "missing_public_references_allowed": false
   },
   "comparison": {
@@ -47,5 +47,5 @@
     "pilot-agreement.html"
   ],
   "no_10_10_claim": true,
-  "build79_addition": "route-normalised hardening; prior proof identity removed; all public pages use current nav or appendix framing"
+  "build80_addition": "stale-reference hardening; public proof status no longer names prior build proof directories"
 }

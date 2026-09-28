@@ -1,11 +1,11 @@
 {
-  "builder": "evidence-assistant-build79-hardening-builder",
-  "builder_version": "79.0.0",
-  "build": "79",
+  "builder": "evidence-assistant-build80-stale-reference-hardening-builder",
+  "builder_version": "80.0.0",
+  "build": "80",
   "generated_at": "1970-01-01T00:00:00.000Z",
   "public_buyer_artifact": true,
-  "target": "hardening release: every public page route-normalised and proof identity canonicalised",
-  "artifact_boundary": "Read-only immutable static buyer walkthrough plus supervised-pilot offer. No backend, forms, email, integrations, client data, public mutable SaaS claim, paid validation or ROI guarantee.",
+  "target": "hardening release: stale prior-build proof references removed after previous audit",
+  "artifact_boundary": "Read-only immutable static buyer walkthrough plus supervised-pilot offer. No backend, forms, email, integrations, client data, public mutable SaaS claim, strict-header claim, paid validation or ROI guarantee.",
   "comparison_boundary": "Canonical proof status: Claude partial capture, ChatGPT blocked/unverified, spreadsheet baseline projection, Evidence Assistant static projection plus local workflow tests; no blanket superiority claim.",
   "buyer_route": [
     "Start",
@@ -22,101 +22,101 @@
     "public fetch-back gate"
   ],
   "excluded_from_public": [
-    "build79-browser-proof/",
-    "build79-local-verifier-pack/",
+    "build80-browser-proof/",
+    "build80-local-verifier-pack/",
     "audit-only/",
     "raw-comparison-registry.json"
   ],
   "files": [
     {
       "name": "STATIC_DEPLOYMENT.md",
-      "bytes": 473,
-      "sha256": "2da91334e43089b8dcd8ab0d2e1a6be772209dedaf53047b6a949e29d51ae4e1"
+      "bytes": 488,
+      "sha256": "5acacf3b16f7d1178bdee44e676d24a4c5fe847aad9feb14cd8e4776346264dd"
     },
     {
       "name": "ai-capture-slots.html",
       "bytes": 6993,
-      "sha256": "898e37778f190331e0f6b6145c832f84d207c6d90c9f8d303563ed437df330fb"
+      "sha256": "92cd53925df690325192c3ee7cd1a3ce4614e1d06a8a94c55ecea79a3c646859"
     },
     {
       "name": "appendix.html",
       "bytes": 6869,
-      "sha256": "96b362f46e024fd1dc66df67aebad7216a3857db8286fa1e420fad062b59e293"
+      "sha256": "a3e6d08bf9b96e7decef1ddc7230e6012c72f6817018ed15bc4d85a933dce340"
     },
     {
       "name": "browser-proof-public.json",
       "bytes": 4620,
-      "sha256": "69355a339930b6600714c7d9d329d918244b844aa8f7142c534105154f9cf3a4"
+      "sha256": "3e4d62c5f30ee57f2039c18199d5a1ceefc72ec38a688ffbf3646b3761c6c7e7"
     },
     {
       "name": "canonical-case-state.json",
-      "bytes": 2356,
-      "sha256": "001fafcebf268c11d7305fae203a4df1d611e8101f5b55c139b66e8876021cec"
+      "bytes": 2370,
+      "sha256": "b223743af104332e307e0bc61b00a8dfe3ffbc411c6271e4822cbaf7663b5bd6"
     },
     {
       "name": "canonical-proof-status.json",
-      "bytes": 1891,
-      "sha256": "f954c67e537e66babd795f64e52b2e6e5060a1154fe769ffcde8749376c51d0a"
+      "bytes": 1873,
+      "sha256": "8d7d05b4fb0883de6badee805a17713100268b796dce01c7bb5bd17873652dbd"
     },
     {
       "name": "chatgpt-comparison.html",
       "bytes": 7396,
-      "sha256": "6a06154fb2cb4da96f09e8955cbadcab59f72f5f462aa76e943266aaea048b0f"
+      "sha256": "6adbeef69031e332a7ca9fc2f8df71bf3bdca1aef019276cab6719695dcc6236"
     },
     {
       "name": "comparison-evidence.html",
       "bytes": 7101,
-      "sha256": "975cead8bdabd870bd51395cf1ba193287f6891a71387240e37998131942b26a"
+      "sha256": "76940b878751ffbe806b3a1c92bee778a9bd40edbec93556e310eca0c49bfa00"
     },
     {
       "name": "comparison-protocol.html",
       "bytes": 7003,
-      "sha256": "105c2ebe237862e29f96605eb9b427842c5fb0d5821ead111d9e63875010abf8"
+      "sha256": "5eab6325f941c87280ead28bcc2dd146579c642106ade3601b04594fa067883c"
     },
     {
       "name": "current-comparison-prompt.json",
       "bytes": 572,
-      "sha256": "95bbb9ca291988ea225c2d3fbfe5dd37b51bdf20965808d7c7083b6111c86b1b"
+      "sha256": "17ca77913ad280616125e6347b4265f80c499eef1291e617a395ade555dbc1ae"
     },
     {
       "name": "hosting-boundary.html",
       "bytes": 6557,
-      "sha256": "934006fbf991acd3a2851519e1a14dba96b2162187b5ef10c51e550aaef896c3"
+      "sha256": "8f598bf64dd695f413c729761325841875a233cb0858f732fe94144d8262edd5"
     },
     {
       "name": "index.html",
       "bytes": 7741,
-      "sha256": "d147e91b53a79e7fa80bd26192391e3596b5eb4067714e6327913e17bba2a6e0"
+      "sha256": "885007a8d99408911e5cbb5a8739362787befee1d03e6475a98f1250ac083aad"
     },
     {
       "name": "measurement-scorecard.html",
       "bytes": 6641,
-      "sha256": "6772a8754c4cbff57d3b8bbc18d4c377003c3dc161c644aeb15d6dd52318f820"
+      "sha256": "aeedca9150ce356d601625ac5464c38539c4d4d7c5e3441ebb7107d90d2204ee"
     },
     {
       "name": "next-step.html",
       "bytes": 7089,
-      "sha256": "fc507e69788cbbe66eb98f27eb5d2b5e955ddb0a9fb5d9db7462532fca616692"
+      "sha256": "e2e24a73a0d183981483ce5da1f5b7c3fef9ce40d1e41d533d1751d1c94f1b54"
     },
     {
       "name": "operator-route.html",
       "bytes": 8353,
-      "sha256": "e6605330f034282082d904ce8aa8e3b6c3a2338ad9d4da3e7c42127fd3bf6035"
+      "sha256": "5da8a4c756f54beb2fae6af931033a8246186c5c0143700bf45f3a65d1993874"
     },
     {
       "name": "pilot-agreement.html",
       "bytes": 6622,
-      "sha256": "72af159ff5ef747031aa32d32453249cd4e811892d7e9ff8a9d97af708a246a3"
+      "sha256": "b14f1b616a7ae642a8e4118489b74450e17fe375ba86a50e5e2dedee07b00923"
     },
     {
       "name": "pilot-onboarding.html",
       "bytes": 6633,
-      "sha256": "b39f3cfe4e077a81ccbb9b736c317173b3210daba06c5bd00f80e8cfe00a77e0"
+      "sha256": "18f1e14ca4726e9bfed2379bf0b02db32e812b8ab72a14fa15cdde3d04a5968b"
     },
     {
       "name": "pilot-package.html",
       "bytes": 6928,
-      "sha256": "527bfd67cc01115100d0b670ee476e51d238942a07dddd4d488a3065d620eb44"
+      "sha256": "ca7288840ebd7f63d844472cfdefd6f2146a78c11715d57ddb5054fa94251488"
     },
     {
       "name": "pilot-setup-packet.md",
@@ -125,38 +125,38 @@
     },
     {
       "name": "proof-index-desktop.png",
-      "bytes": 98333,
-      "sha256": "30261a58491db4fe0ba6e6cfd20ab33de3126078bbbc33168b634c20d139458a"
+      "bytes": 98383,
+      "sha256": "eb2de94527686b970aec3d5f42c212c71959599f7f22fcc3e194e11cc339cd3e"
     },
     {
       "name": "proof-index-mobile.png",
-      "bytes": 152512,
-      "sha256": "d56d2cb74d7707aaffd0bd4b5dc771bc004b729d493b989a0b3bed40e8309a60"
+      "bytes": 152963,
+      "sha256": "90201158b98469820e0a41fd8605015f2bac9952b251ee0dc0e96c4d3fe12b42"
     },
     {
       "name": "proof-operator-route-desktop.png",
-      "bytes": 111813,
-      "sha256": "add0c31548d6976b846e95ce5fa77af6f625d52546e15d33c326f2ebe536f4fe"
+      "bytes": 111844,
+      "sha256": "3b108cad357e62d503d3fe3c8470a941fae128be481a9c4ac56062c7467d2d8f"
     },
     {
       "name": "public-comparison-verifier.json",
       "bytes": 7760,
-      "sha256": "e1fb3764d387e23d96cb0467dcf0b442be10d1bbd75f3eda8e224de986d62d1b"
+      "sha256": "6248d734128ad7c1b81685989e85c47fb904410cec4279180331ae4a2cf706a1"
     },
     {
       "name": "simulation.html",
       "bytes": 6442,
-      "sha256": "128ab2f9916fe6ce7a70b759f7ece2bf5312f72a5abbbbd2a540cba63a53ea40"
+      "sha256": "ef58008aabeaae4cbca1364ad5b89ef5a132bb1603721d1df2e26ee3c9bf5ab3"
     },
     {
       "name": "ten-line-scenario.html",
       "bytes": 6368,
-      "sha256": "c8fdf8ed74e5d2876e2deb222a38c298efd4696aa36b42b433f3cfcbe25b9eb3"
+      "sha256": "7b1f4983322d320adb3aed373cba8190719bbb409d19a68d28f427b0a96353d9"
     },
     {
       "name": "visual-proof.html",
       "bytes": 6481,
-      "sha256": "1ea5d13f65a1b9466862115fc9215e056e003799e4e729ed2ffa3809973e180e"
+      "sha256": "e3c20d2893085f0e8b1db97fef15212602ede39b6b5609b8d8ef8a2d3b157c81"
     }
   ]
 }

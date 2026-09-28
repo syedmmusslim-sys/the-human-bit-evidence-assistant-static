@@ -1,7 +1,7 @@
 {
-  "build": "79",
+  "build": "80",
   "status": "public_sanitized_partial_comparison_verifier",
-  "claim_boundary": "Build 79 canonical partial comparison evidence. Claude partial, ChatGPT blocked/unverified, spreadsheet baseline, Evidence Assistant static projection plus local workflow tests; no blanket superiority claim.",
+  "claim_boundary": "Build 80 canonical partial comparison evidence. Claude partial, ChatGPT blocked/unverified, spreadsheet baseline, Evidence Assistant static projection plus local workflow tests; no blanket superiority claim.",
   "prompt_sha256": "a618dd17bcf16f2ac8f726864baeae272a8ee412e6523aa631fa3ccd39c91904",
   "claude": {
     "provider": "Claude Code CLI",
@@ -40,7 +40,7 @@
   },
   "evidence_assistant_projection": {
     "provider": "Evidence Assistant seeded static workbench projection",
-    "method": "Build 79 canonical state projection used by public artifact and gates.",
+    "method": "Build 80 canonical state projection used by public artifact and gates.",
     "include_now": [
       "May bank statement",
       "Supplier invoice 1042"
