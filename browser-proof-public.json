@@ -1,71 +1,81 @@
 {
-  "build": "84",
+  "build": "85",
   "browser": "chromium-family headless browser (local path withheld)",
   "started_at": "withheld in public artifact; see local proof if needed",
   "screenshots": [
     {
       "file": "index-desktop.png",
-      "bytes": 96816
+      "bytes": 91356
     },
     {
-      "file": "workflow-replay-desktop.png",
-      "bytes": 79053
+      "file": "interactive-sandbox-desktop.png",
+      "bytes": 72822
     },
     {
-      "file": "index-mobile.png",
-      "bytes": 139969
+      "file": "interactive-sandbox-mobile.png",
+      "bytes": 139911
     }
   ],
   "checks": [
     {
-      "name": "Build84 first viewport is buyer-first replay with demo CTA",
+      "name": "Build85 first viewport is interactive sandbox CTA with honest boundary",
       "passed": true,
-      "detail": "{\"title\":\"Start here — Evidence Assistant\",\"h1\":\"Replay the close workflow: see which evidence is accepted, rejected, or still blocking close.\",\"nav\":[\"Start\",\"2-minute replay\",\"Buyer artifacts\",\"AI comparison\",\"Pilot package\",\"Next step\"],\"text\":\"The Human Bit · Evidence Assistant\\nA supervised close-readiness workflow: controlled state, reviewer gates, blocker-only chase, and manager packet proof.\\n\\nStart the 2-minute demo Request supervised pilot\\n\\nStart\\n2-minute replay\\nBuyer artifacts\\nAI comparison\\nPilot package\\nNext step\\nreceived\\nreviewer decides\\nchase blockers\\npacket handoff\\naudit trail\\nReplay the close workflow: see which evidence is accepted, rejected, or still blocking "
+      "detail": "{\"title\":\"Start here — Evidence Assistant Build 85\",\"h1\":\"Try the enforced close workflow: click reviewer gates, chase approval, and packet updates.\",\"nav\":[\"Start\",\"Interactive sandbox\",\"Buyer artifacts\",\"AI comparison\",\"Pilot package\",\"Next step\"],\"text\":\"The Human Bit · Evidence Assistant\\nStart\\nInteractive sandbox\\nBuyer artifacts\\nAI comparison\\nPilot package\\nNext step\\n\\nPublic static demo · synthetic Blue Wattle case · no client data\\n\\nTry the enforced close workflow: click reviewer gates, chase approval, and packet updates.\\n\\nBuild 85 moves beyond replay. It lets a buyer test the workflow-control advantage: non-reviewers are refused, waiting-review evidence stays out of the packe"
     },
     {
-      "name": "Build84 buyer nav is replay/artifact/AI route",
+      "name": "Build85 buyer nav includes Interactive sandbox, artifacts, AI, pilot",
       "passed": true,
-      "detail": "[\"Start\",\"2-minute replay\",\"Buyer artifacts\",\"AI comparison\",\"Pilot package\",\"Next step\"]"
+      "detail": "[\"Start\",\"Interactive sandbox\",\"Buyer artifacts\",\"AI comparison\",\"Pilot package\",\"Next step\"]"
     },
     {
-      "name": "Build84 no forms on static public artifact",
+      "name": "Build85 sandbox initial state shows waiting/rejected/missing and no auto-accept",
       "passed": true,
-      "detail": "{\"title\":\"Start here — Evidence Assistant\",\"h1\":\"Replay the close workflow: see which evidence is accepted, rejected, or still blocking close.\",\"nav\":[\"Start\",\"2-minute replay\",\"Buyer artifacts\",\"AI comparison\",\"Pilot package\",\"Next step\"],\"text\":\"The Human Bit · Evidence Assistant\\nA supervised close-readiness workflow: controlled state, reviewer gates, blocker-only chase, and manager packet proof.\\n\\nStart the 2-minute demo Request supervised pilot\\n\\nStart\\n2-minute replay\\nBuyer artifacts\\nAI comparison\\nPilot package\\nNext step\\nreceived\\nreviewer decides\\nchase blockers\\npacket handoff\\naudit trail\\nReplay the close workflow: see which evidence is accepted, rejected, or still blocking "
+      "detail": "The Human Bit · Evidence Assistant\nStart\nInteractive sandbox\nBuyer artifacts\nAI comparison\nPilot package\nNext step\n\nBuild 85 interactive enforced replay sandbox\n\nClick the workflow gates a prompt cannot enforce.\n\nUse the buttons below to prove reviewer-only acceptance, blocker-only chase, no auto-send, duplicate-send refusal, and packet updates from shared state.\n\nFailed-state examples are intentional: try “non-reviewer accept” and “send again” to see refusal events in the audit log.\nActions\n\nReviewer accepts PAY-001\n\nReviewer rejects PAY-001\n\nNon-reviewer tries to accept LOAN-003\n\nStaff approves blocker-only chase\n\nTry to send chase again\n\nReset sample state\n\nEvidence state\nPAY-001 — Payrol"
     },
     {
-      "name": "Build84 replay visibly shows event IDs, actors, before/after and packet rules",
+      "name": "Build85 non-reviewer accept is refused and state unchanged",
       "passed": true,
-      "detail": "The Human Bit · Evidence Assistant\nA supervised close-readiness workflow: controlled state, reviewer gates, blocker-only chase, and manager packet proof.\n\nStart the 2-minute demo Request supervised pilot\n\nStart\n2-minute replay\nBuyer artifacts\nAI comparison\nPilot package\nNext step\nreceived\nreviewer decides\nchase blockers\npacket handoff\naudit trail\nBlue Wattle replay: intake → review → blocker chase → packet.\n\nThis public replay shows the moat: persistent case state, actor-specific decisions, before/after status and packet inclusion rules. A generic prompt can draft a table; it cannot prove who decided what, when, or what was excluded.\n\n1EV-001 · intake_received\n\n08:10 · Staff Mina · September"
+      "detail": "oval; sample only)\n- Please fix/send BAS export: Wrong period: May instead of June.\n- Please fix/send Loan statement: Not received.\n\nWe are not asking again for accepted items. Waiting-review evidence is not chased until a reviewer decides.\nSample measurement panel — not measured pilot ROI\nMetric\tBaseline sample\tCurrent sample\tPilot rule\nDuplicate re-asks\t2\t0\tCount duplicate client asks in one close cycle.\nReviewer rework touches\t5\t2\tReviewer logs every avoidable re-check.\nTime to manager handoff\t36h\t18h\tTimestamp first intake to packet handoff.\nManager confidence\tLow\tMedium-high\tManager scores whether exclusions are clear.\n\nThese numbers are synthetic hypotheses until a governed pilot captu"
     },
     {
-      "name": "Build84 artifact page presents packet, chase and decision log",
+      "name": "Build85 reviewer accept updates packet and removes item from chase",
       "passed": true,
-      "detail": "The Human Bit · Evidence Assistant\nA supervised close-readiness workflow: controlled state, reviewer gates, blocker-only chase, and manager packet proof.\n\nStart the 2-minute demo Request supervised pilot\n\nStart\n2-minute replay\nBuyer artifacts\nAI comparison\nPilot package\nNext step\nreceived\nreviewer decides\nchase blockers\npacket handoff\naudit trail\nThe packet, chase and decision log are concrete — not just a promise.\n\nDownloadable, buyer-readable artifacts from the same Blue Wattle replay. They answer what changed, who decided, what still blocks close and why this is safer than a generic prompt.\n\nManager packet\n\nOpen sample manager packet\n\nShows accepted evidence, excluded blockers and can/can"
+      "detail": "The Human Bit · Evidence Assistant\nStart\nInteractive sandbox\nBuyer artifacts\nAI comparison\nPilot package\nNext step\n\nBuild 85 interactive enforced replay sandbox\n\nClick the workflow gates a prompt cannot enforce.\n\nUse the buttons below to prove reviewer-only acceptance, blocker-only chase, no auto-send, duplicate-send refusal, and packet updates from shared state.\n\nFailed-state examples are intentional: try “non-reviewer accept” and “send again” to see refusal events in the audit log.\nActions\n\nReviewer accepts PAY-001\n\nReviewer rejects PAY-001\n\nNon-reviewer tries to accept LOAN-003\n\nStaff approves blocker-only chase\n\nTry to send chase again\n\nReset sample state\n\nEvidence state\nPAY-001 — Payrol"
     },
     {
-      "name": "Build84 AI comparison is bounded to workflow control",
+      "name": "Build85 staff approval sends only unresolved blockers and excludes accepted/waiting-review",
       "passed": true,
-      "detail": "The Human Bit · Evidence Assistant\nA supervised close-readiness workflow: controlled state, reviewer gates, blocker-only chase, and manager packet proof.\n\nStart the 2-minute demo Request supervised pilot\n\nStart\n2-minute replay\nBuyer artifacts\nAI comparison\nPilot package\nNext step\nreceived\nreviewer decides\nchase blockers\npacket handoff\naudit trail\nWhat a prompt can draft vs what the workflow can prove.\n\nThis page uses the same Blue Wattle input to keep the comparison bounded and fair. A generic AI can draft a summary, checklist and chase email if the user supplies clean facts. Evidence Assistant wins only where controlled workflow proof matters.\n\nSame input\tGeneric AI can produce\tEvidence Ass"
+      "detail": "od: May instead of June.; LOAN-003 missing — Not received.\nBlocker-only chase draft\nClient chase draft (requires staff approval; sample only)\n- Please fix/send BAS export: Wrong period: May instead of June.\n- Please fix/send Loan statement: Not received.\n\nWe are not asking again for accepted items. Waiting-review evidence is not chased until a reviewer decides.\nSample measurement panel — not measured pilot ROI\nMetric\tBaseline sample\tCurrent sample\tPilot rule\nDuplicate re-asks\t2\t0\tCount duplicate client asks in one close cycle.\nReviewer rework touches\t5\t2\tReviewer logs every avoidable re-check.\nTime to manager handoff\t36h\t18h\tTimestamp first intake to packet handoff.\nManager confidence\tLow\tMe"
     },
     {
-      "name": "Build84 mobile viewport has no horizontal overflow and keeps h1 visible",
+      "name": "Build85 duplicate send is refused visibly",
       "passed": true,
-      "detail": "{\"scrollW\":390,\"clientW\":390,\"h1\":\"Replay the close workflow: see which evidence is accepted, rejected, or still blocking close.\",\"visible\":true}"
+      "detail": "ent panel — not measured pilot ROI\nMetric\tBaseline sample\tCurrent sample\tPilot rule\nDuplicate re-asks\t2\t0\tCount duplicate client asks in one close cycle.\nReviewer rework touches\t5\t2\tReviewer logs every avoidable re-check.\nTime to manager handoff\t36h\t18h\tTimestamp first intake to packet handoff.\nManager confidence\tLow\tMedium-high\tManager scores whether exclusions are clear.\n\nThese numbers are synthetic hypotheses until a governed pilot captures firm-specific baselines.\n\nAudit log\nEV-85-001 — Staff intake received three evidence items; nothing is auto-accepted.\nEV-85-002 — Refused non-reviewer accept attempt on LOAN-003; no state changed.\nEV-85-003 — Reviewer accepted PAY-001; packet includes "
     },
     {
-      "name": "Build84 rendered links/buttons have accessible names",
+      "name": "Build85 keyboard-visible controls have accessible names",
       "passed": true,
-      "detail": ""
+      "detail": "[\"Start\",\"Interactive sandbox\",\"Buyer artifacts\",\"AI comparison\",\"Pilot package\",\"Next step\",\"Reviewer accepts PAY-001\",\"Reviewer rejects PAY-001\",\"Non-reviewer tries to accept LOAN-003\",\"Staff approves blocker-only chase\",\"Try to send chase again\",\"Reset sample state\"]"
     },
     {
-      "name": "Build84 browser run produced no console errors",
+      "name": "Build85 desktop has no horizontal overflow",
+      "passed": true,
+      "detail": "{\"scrollW\":1265,\"clientW\":1265}"
+    },
+    {
+      "name": "Build85 mobile sandbox has no horizontal overflow and keeps h1 visible",
+      "passed": true,
+      "detail": "{\"scrollW\":390,\"clientW\":390,\"h1\":\"Click the workflow gates a prompt cannot enforce.\",\"visible\":true}"
+    },
+    {
+      "name": "Build85 browser run produced no console errors",
       "passed": true,
       "detail": ""
     }
   ],
   "finished_at": "withheld in public artifact; see local proof if needed",
   "result": {
-    "passed": 9,
+    "passed": 11,
     "failed": 0
   }
 }

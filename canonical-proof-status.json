@@ -1,18 +1,6 @@
 {
-  "build": "84",
-  "public_buyer_artifact": true,
-  "proof_hygiene": "sanitized_public_json_no_local_paths",
-  "comparison": {
-    "chatgpt": {
-      "status": "same_input_capability_acknowledged"
-    },
-    "claude": {
-      "status": "same_input_capability_acknowledged"
-    },
-    "evidence_assistant": {
-      "status": "static_replay_fixture_plus_artifact_bundle"
-    }
-  },
-  "case": "Blue Wattle",
-  "boundary": "static public replay artifact; no mutable SaaS enforcement claim"
+  "build": "85",
+  "status": "interactive sandbox built locally",
+  "bounded_claims": true,
+  "no_client_data": true
 }

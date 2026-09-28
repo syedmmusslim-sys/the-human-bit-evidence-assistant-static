@@ -1,132 +1,97 @@
 {
-  "builder": "evidence-assistant-build84-audit-fix-replay-link-and-pilot-request-builder",
-  "builder_version": "84.0.0",
-  "build": "84",
-  "generated_at": "2026-09-28T12:25:00.000Z",
-  "public_buyer_artifact": true,
-  "target": "audit fixes for replay fixture link, first-10-seconds clarity, safe no-client-data pilot request, replayable workflow proof bundle, downloadable buyer artifacts, same-input AI comparison",
-  "artifact_boundary": "Read-only immutable static replay and buyer artifact pack. No backend, forms, email, integrations, client data, public mutable SaaS claim, paid validation or ROI guarantee.",
-  "comparison_boundary": "Same-input generic AI capabilities acknowledged; defensible claim limited to workflow control, provenance, role gates and auditability.",
-  "buyer_route": [
-    "Start",
-    "2-minute replay",
-    "Buyer artifacts",
-    "AI comparison",
-    "Pilot package",
-    "Next step"
-  ],
-  "proof_status_source": "canonical-proof-status.json",
-  "publish_order": [
-    "static gate",
-    "browser visual gate",
-    "public fetch-back gate"
-  ],
-  "excluded_from_public": [
-    "build84-browser-proof/",
-    "build84-local-verifier-pack/",
-    "audit-only/",
-    "raw-comparison-registry.json"
-  ],
+  "build": "85",
+  "builder_version": "85.0.0",
+  "target": "Build 85 interactive enforced replay sandbox with role-gated state transitions, failed-state proof, measurement panel, safer pilot request path, and same-input AI comparison.",
   "files": [
     {
       "name": "STATIC_DEPLOYMENT.md",
-      "bytes": 299,
-      "sha256": "3e04e3f0ef3b2a9dc8016446e8cf982f2b115321bd342abf4cb4b472b5eec47d"
+      "bytes": 116,
+      "sha256": "1e9fed94e6c0819b9f283a8c72a1b4e3a050dc3a0521b2f6d7aba08b6b1aef93"
     },
     {
       "name": "blocker-only-chase-draft.txt",
-      "bytes": 506,
-      "sha256": "94780e0ea411f8f1e0bd2b6b8b857b2dec7389d0324dfddabc3bb5199e16633a"
+      "bytes": 335,
+      "sha256": "51d5d8107e056a3bc824d95382a31f80cb6ece5446cd6345db5e301c0aafbc97"
     },
     {
       "name": "browser-proof-public.json",
-      "bytes": 5628,
-      "sha256": "3df0bd8ba8cd1c7dca754bb2404e4ba53fe66aaee459851586b0f5f31ba11f94"
+      "bytes": 7009,
+      "sha256": "8069a64c3188994b26f8ceec78179d75f8d868ead2412c7a061e08e8e150f04a"
     },
     {
       "name": "buyer-artifacts.html",
-      "bytes": 5406,
-      "sha256": "1191f6abfbb8ed061be56d123cb6d2bab20a1077bca6c49e76d88e7041b34439"
-    },
-    {
-      "name": "canonical-case-state.json",
-      "bytes": 804,
-      "sha256": "755ebfd12adb87ca270c5066872ddf7454d2dfe81b0b48c0885c293dc3e2a8e4"
+      "bytes": 3633,
+      "sha256": "16ea40574fab1596aeaac2d040364fdc7f289adc0b8980efae44398d8604fc3b"
     },
     {
       "name": "canonical-proof-status.json",
-      "bytes": 508,
-      "sha256": "0645765fa99e669bc77d04a08485db229582ef610f360780863c2dcbacf69c91"
+      "bytes": 121,
+      "sha256": "1b8d8f77c188424bb711294a16097da6e7119c58998d35b94511e32087926a01"
     },
     {
       "name": "generic-ai-comparison.html",
-      "bytes": 5234,
-      "sha256": "43aa0ec2dcbd8dd7970c196ffa9980aa9d47ebf167e6d3a52846e196f44ef60a"
+      "bytes": 3925,
+      "sha256": "6a53613c15ba7d02e0d1fc727ee00fddad9bef5d390fa375b06309dd3ba09d7e"
     },
     {
       "name": "index.html",
-      "bytes": 5794,
-      "sha256": "1c66de8634dea7b78ca454dd2cfd4b4d203f607374b9224c62f0fb54862c32a0"
+      "bytes": 4697,
+      "sha256": "0fb750b75a0e19d3bb702a8fe391a2d6356048416fd0c006b1e8a40e23a62b93"
+    },
+    {
+      "name": "interactive-fixture.json",
+      "bytes": 1194,
+      "sha256": "9ae80da3c6f2a18da2096d0f22a27ded4fe4bb173719886f9dfd0f12fd0efbe6"
+    },
+    {
+      "name": "interactive-sandbox.html",
+      "bytes": 5466,
+      "sha256": "ba2bf18bc6f2dd85b060ebda28079f88649bf19f029de94b7a3f610d5ea37bbc"
     },
     {
       "name": "next-step.html",
-      "bytes": 4858,
-      "sha256": "9162fdfb91165a307e6ba5161b7a5bb6cc2558911c5e008940be16d5a5055704"
+      "bytes": 3373,
+      "sha256": "bff04e67550a6556181473901900aca6f1bf9d4ace84a508bbec3eea239c12f1"
     },
     {
       "name": "pilot-package.html",
-      "bytes": 4673,
-      "sha256": "8db891333404b686c9526542e5c24a267a8beee3ee3da11a98b32a92540d06c1"
+      "bytes": 3881,
+      "sha256": "ffd1b1d493ac11aec1e52ab93ec25e46999a3b5d9e7d4368cd5fe5ce38047652"
     },
     {
       "name": "proof-index-desktop.png",
-      "bytes": 96816,
-      "sha256": "ab48bc0307150e093f37d9418b6ff1db9bb00e913eec38736b6bcb124cd0d369"
+      "bytes": 91356,
+      "sha256": "dd29ffe70eba2a5c2b976ba3a97e8d2ef3cb9821ebe6aea689b3bba27a5236fb"
     },
     {
-      "name": "proof-index-mobile.png",
-      "bytes": 139969,
-      "sha256": "ce77c37dbc375fc05df70f04e77b52b03f5705cc5992adbf4a54d1227d4fef56"
+      "name": "proof-interactive-sandbox-desktop.png",
+      "bytes": 72822,
+      "sha256": "b123223a7723d2cb9504a20464749e6c41a559d53b9a9b30d57c0bd696192ad7"
     },
     {
-      "name": "proof-operator-route-desktop.png",
-      "bytes": 97041,
-      "sha256": "ef483d40deccd2d523e6ec0c734992119ada7d1d6b0818b07f23a94dc824cf1d"
-    },
-    {
-      "name": "proof-workflow-replay-desktop.png",
-      "bytes": 79053,
-      "sha256": "478111d62f714bbc4424d1a1cea26dab48b2d83c168f0189c635981397d26d26"
+      "name": "proof-interactive-sandbox-mobile.png",
+      "bytes": 139911,
+      "sha256": "2c08bc20eed3b0e1371142fc6805f6e5502141c2d32254d955136cc6381fb5ea"
     },
     {
       "name": "public-comparison-verifier.json",
-      "bytes": 472,
-      "sha256": "c20f30d5d69408c990cfb46b6b52c24fcd6fd79f4cd2e24bed82195e41b387fc"
-    },
-    {
-      "name": "replay-fixture.json",
-      "bytes": 2649,
-      "sha256": "436d6afff6bc4d48e69e223451f917d847c822871334ea8c72b1eb0e16299d02"
+      "bytes": 272,
+      "sha256": "4279129e15d5019f3758857dd65a2e669767eab1ac6206486449c933e8c57783"
     },
     {
       "name": "reviewer-decision-log.md",
-      "bytes": 446,
-      "sha256": "cee330cc28cf7597fc70e9e2eaf26957b29e5493adcd237f43773f9fce0b2e44"
+      "bytes": 315,
+      "sha256": "244d62d7e9d7b0de775e68e576e1a0e547b05c5ad2af1d1d901a513d8051cbf7"
     },
     {
       "name": "sample-manager-packet.md",
-      "bytes": 747,
-      "sha256": "29f4a74e0693eeb5757cbe0dfd378e962fcdfdd3b78e711bf2f0d1457c4b647e"
+      "bytes": 326,
+      "sha256": "9b2906d488dd178d9ede0e0d2910fe9da8dd72a4581132cd4da1a779f71793db"
     },
     {
-      "name": "workflow-replay-fixture.json",
-      "bytes": 2649,
-      "sha256": "436d6afff6bc4d48e69e223451f917d847c822871334ea8c72b1eb0e16299d02"
-    },
-    {
-      "name": "workflow-replay.html",
-      "bytes": 7448,
-      "sha256": "81e6e684352ec5d3210301f8b400b12cc2dd926ec00eccbeb40f9fcdcca2a1e3"
+      "name": "sandbox.js",
+      "bytes": 3848,
+      "sha256": "3ee4ec9e986106ca44f98ea89c5c52a6501a24365239b9a58fb11084f253b8f1"
     }
   ]
 }

@@ -1,18 +1,14 @@
 {
-  "build": "84",
-  "claim_boundary": "workflow-control proof, not blanket AI superiority",
-  "same_input_fixture": "workflow-replay-fixture.json",
+  "build": "85",
   "defensible_advantages": [
-    "event IDs",
-    "before/after state",
-    "reviewer-only acceptance",
-    "blocker-only chase",
-    "packet inclusion/exclusion",
-    "audit trail"
+    "role-gated acceptance",
+    "refusal events",
+    "duplicate-send refusal",
+    "shared state packet and chase"
   ],
   "forbidden_claims": [
     "better than ChatGPT",
-    "fully automated acceptance",
-    "production SaaS live"
+    "production-ready",
+    "guaranteed ROI"
   ]
 }

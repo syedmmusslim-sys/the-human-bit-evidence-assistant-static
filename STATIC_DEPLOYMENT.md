@@ -1,3 +1,3 @@
-# Build 84 static deployment boundary
+# Build 85 static deployment
 
-Public fetch-back proves the static replay, artifacts and comparison bytes only. It does not prove tenant auth, mutable workflow enforcement, production headers, encrypted storage, monitoring, backups, retention/deletion, disaster recovery or integrations.
+Public static artifact. No API, no client data, no integrations, no production claim.

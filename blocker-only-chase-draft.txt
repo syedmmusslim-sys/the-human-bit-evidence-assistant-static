@@ -1,13 +1,7 @@
-Subject: Blue Wattle September close — two blockers still open
+Build 85 blocker-only chase draft (sample only)
 
-Hi Mina,
+Please fix/send only unresolved blockers:
+- BAS export: wrong period, please provide June.
+- Loan statement: not received.
 
-Thanks for the evidence already accepted for the manager packet.
-
-Two items still block the September close:
-1. GST adjustment workpaper — the file received appears to be for the wrong period. Please send the September workpaper.
-2. Director loan statement — not received yet. Please upload the statement for the September close.
-
-We are not asking again for accepted items.
-
-Staff approval required before send.
+We are not asking again for accepted items. Waiting-review evidence is not chased until a reviewer decides. Staff approval is required before any simulated send.

@@ -1,13 +1,13 @@
-# Blue Wattle manager packet — sample
+# Build 85 sample manager packet
 
-Can close? Not yet. Payroll variance support and bank reconciliation are accepted and packet-ready. GST adjustment workpaper is rejected because it is the wrong period. Director loan statement is still missing.
+Can close? Not yet.
 
 Included evidence:
-- September payroll variance support — accepted by Reviewer Priya at EV-003.
-- Bank reconciliation for operating account — accepted by Reviewer Priya at EV-004.
+- PAY-001 after reviewer acceptance in the sandbox.
 
 Excluded blockers:
-- GST adjustment workpaper — rejected/problem at EV-005; request September workpaper.
-- Director loan statement — requested/missing; upload still required.
+- BAS-002 rejected/problem: wrong period.
+- LOAN-003 missing.
+- Waiting-review items remain excluded until reviewer decision.
 
-Safety note: no evidence entered this packet without reviewer acceptance. No chase was sent without staff approval.
+Safety: sample-only public artifact; no client data.
