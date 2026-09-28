@@ -1,5 +1,5 @@
 {
-  "build": "76",
+  "build": "77",
   "generated_for": "public static buyer artifact",
   "deterministic_timestamp_explained": "Static artifact uses deterministic metadata for reproducible verification, not live freshness.",
   "evidence_lines": [
@@ -73,5 +73,6 @@
       "why": "Still blocking reconciliation.",
       "next": "Chase"
     }
-  ]
+  ],
+  "build77_addition": "visible empty same-input capture slots plus browser proof gate"
 }

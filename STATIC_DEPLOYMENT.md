@@ -1,7 +1,7 @@
-# Build 76 public static deployment
+# Build 77 public static deployment
 
-Deploy only the contents of build76-public-buyer-demo/. Do not deploy build76-local-verifier-pack/, audit-only registries, local runtime files, API routes, forms, credentials or mutable endpoints.
+Deploy only the contents of build77-public-buyer-demo/. Do not deploy build77-local-verifier-pack/, browser proof PNGs/JSON, local runtime files, API routes, forms, credentials or mutable endpoints.
 
-GitHub Pages is a durable public static mirror only. It is not strict-header proof unless the live response actually returns the required headers.
+Build 77 adds visible empty same-input capture slots and a browser visual proof gate. It still does not claim same-input AI superiority until real captures are attached.
 
-Run: node mvp-core/tests/run-build76-public-fetchback-gate.js <BASE_URL> before any public claim.
+Run: node mvp-core/tests/run-build77-public-fetchback-gate.js <BASE_URL> before any public claim.

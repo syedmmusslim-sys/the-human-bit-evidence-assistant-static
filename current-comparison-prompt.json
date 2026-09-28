@@ -1,6 +1,7 @@
 {
-  "build": "76",
-  "status": "protocol_only_no_verified_captures",
+  "build": "77",
+  "status": "protocol_and_empty_capture_slots_no_verified_captures",
   "prompt": "Given the 10 evidence lines, identify accepted, held, chased, excluded lines and manager readiness; explain failure risks.",
-  "capture_required_before_claim": true
+  "capture_required_before_claim": true,
+  "capture_slots_publicly_visible": true
 }
