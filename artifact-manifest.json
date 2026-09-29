@@ -4,7 +4,7 @@
   "generated_at": "1970-01-01T00:00:00.000Z",
   "public_buyer_artifact": true,
   "source_of_truth": true,
-  "target": "buyer-ready supervised-pilot package: public static route, pilot setup handoff, diligence proof, safety lessons, and honest partial same-input verifier",
+  "target": "finished accountant-first supervised-pilot feature: close verdict workspace, safe action rail, pilot setup handoff, manager pack, diligence proof, safety lessons, and honest partial same-input verifier",
   "artifact_boundary": "Read-only immutable static buyer walkthrough plus supervised-pilot offer. No backend, no forms, no email, no integrations, no client data, no public mutable SaaS claim.",
   "commercial_boundary": "Pilot/pricing/ROI are hypotheses until buyer validation and measured outcomes exist.",
   "comparison_boundary": "Partial same-input evidence: raw Claude capture, deterministic spreadsheet baseline, Evidence Assistant projection, and blocked ChatGPT record; no blanket superiority claim.",
@@ -13,8 +13,8 @@
   "files": [
     {
       "name": "STATIC_DEPLOYMENT.md",
-      "bytes": 663,
-      "sha256": "9c895da60c8563afd34698500f00d7fb721cf111980a8f80febdaf1567268947"
+      "bytes": 838,
+      "sha256": "323da2a858062e94504ff9e4ac62191a32948927f963858ab8e58d7a02260e18"
     },
     {
       "name": "ai-capture-slots.html",
@@ -35,6 +35,11 @@
       "name": "chatgpt-comparison.html",
       "bytes": 6693,
       "sha256": "88057e8e83ca245aa4de0a38bdcfba82c71f8cc8ebbec44c80b62699366e8ff3"
+    },
+    {
+      "name": "close-workspace.html",
+      "bytes": 8619,
+      "sha256": "52db04ce97c34dcfcf028cc5dcec79b3b54d64c3099113d1ade69e9347d3f13b"
     },
     {
       "name": "comparison-evidence.html",
@@ -58,8 +63,13 @@
     },
     {
       "name": "index.html",
-      "bytes": 6543,
-      "sha256": "fa2b4b0a59647602dadb6cb10fd64e76bf58889dd5e8ce0fff5408235d11da3e"
+      "bytes": 6498,
+      "sha256": "46c89cf7b6090a8fbe44b6367d354eff5201faef069262d0dfaba2ef6480c743"
+    },
+    {
+      "name": "manager-handoff-pack.md",
+      "bytes": 894,
+      "sha256": "3badd09ac41e16d39ea65ade5698c1b68536733efe93921f26363d56528093b2"
     },
     {
       "name": "measurement-scorecard.html",
@@ -68,8 +78,8 @@
     },
     {
       "name": "package-authority.md",
-      "bytes": 1279,
-      "sha256": "0357206d2e503234926f5078fca9a14d43ebf726128cd99f57db089370b6614d"
+      "bytes": 1454,
+      "sha256": "0fc5548e0418f1bdb414026f57c727409a4f08775f0275258ebde41e7859791b"
     },
     {
       "name": "pilot-agreement.html",
@@ -98,8 +108,8 @@
     },
     {
       "name": "safety-lessons.html",
-      "bytes": 5778,
-      "sha256": "61a5fc6139e784fe4988480e2f9cbfede7c2c3afbece16656c7314ed9fc91269"
+      "bytes": 5953,
+      "sha256": "98e57f0327995f930f68e58b5b22a0e2226f331c55eb8213ed772e6feddb2001"
     },
     {
       "name": "simulation.html",

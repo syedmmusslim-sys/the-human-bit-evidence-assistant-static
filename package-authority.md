@@ -26,3 +26,6 @@ This public package is the source of truth for buyer-facing Evidence Assistant e
 - Strict-header hosting proof on GitHub Pages.
 - Paid validation or measured ROI.
 - Complete superiority over ChatGPT, Claude, Airtable, Karbon, TaxDome or spreadsheets.
+
+
+Pilot Package v1 primary feature surface: `close-workspace.html` — the accountant-first close verdict, blocker ownership, safe action rail and manager handoff preview.

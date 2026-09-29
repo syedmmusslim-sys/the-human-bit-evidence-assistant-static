@@ -9,3 +9,6 @@ Do not deploy local verifier packs, local runtime files, API routes, forms, cred
 Before any public claim, run:
 
 `node mvp-core/tests/run-pilot-package-v1-public-fetchback-gate.js <BASE_URL>`
+
+
+Pilot Package v1 primary feature surface: `close-workspace.html` — the accountant-first close verdict, blocker ownership, safe action rail and manager handoff preview.
