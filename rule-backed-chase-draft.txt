@@ -1,8 +1,0 @@
-Build 88 rule-backed chase draft (sample only)
-
-Please fix only unresolved chase-eligible blockers:
-- BAS-002: provide June BAS export; May export cannot support June close [R-PERIOD-04].
-- LOAN-003: provide director loan statement [R-CHASE-03].
-- PAYREF-006: correct invoice/payment reference mismatch [R-PERIOD-04].
-
-Not included: PAY-001 accepted; BANK-004 accepted; JRN-005 routed to reviewer for approval ambiguity.

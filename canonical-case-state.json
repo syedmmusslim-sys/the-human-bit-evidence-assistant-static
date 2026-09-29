@@ -1,0 +1,78 @@
+{
+  "version": "pilot-package-v1",
+  "generated_for": "public static buyer artifact",
+  "deterministic_timestamp_explained": "Static artifact uses deterministic metadata for reproducible verification, not live freshness.",
+  "evidence_lines": [
+    {
+      "name": "May bank statement",
+      "status": "accepted",
+      "owner": "Reviewer Amara",
+      "why": "Correct period and entity; supports close packet.",
+      "next": "Include, do not chase"
+    },
+    {
+      "name": "Stripe payout export",
+      "status": "waiting-review",
+      "owner": "Reviewer Amara",
+      "why": "Arrived, but payout fees need reviewer decision.",
+      "next": "Hold from chase and packet until decision"
+    },
+    {
+      "name": "Loan statement",
+      "status": "rejected-problem",
+      "owner": "Client",
+      "why": "Wrong period supplied; May still needed.",
+      "next": "Chase with reviewer reason"
+    },
+    {
+      "name": "Director approval note",
+      "status": "requested-missing",
+      "owner": "Client",
+      "why": "Not received.",
+      "next": "Chase"
+    },
+    {
+      "name": "Supplier invoice 1042",
+      "status": "accepted",
+      "owner": "Reviewer Amara",
+      "why": "Accepted and linked to expense accrual.",
+      "next": "Include"
+    },
+    {
+      "name": "Fuel receipt scan",
+      "status": "waiting-review",
+      "owner": "Reviewer Amara",
+      "why": "Unreadable image; reviewer must reject or request re-upload.",
+      "next": "Hold"
+    },
+    {
+      "name": "Payroll summary",
+      "status": "requested-missing",
+      "owner": "Client",
+      "why": "Needed for wages reconciliation.",
+      "next": "Chase"
+    },
+    {
+      "name": "Rent invoice duplicate",
+      "status": "duplicate-superseded",
+      "owner": "System state",
+      "why": "Duplicate of accepted rent invoice; must not be chased twice.",
+      "next": "Exclude as superseded"
+    },
+    {
+      "name": "ATO payment receipt",
+      "status": "rejected-problem",
+      "owner": "Client",
+      "why": "Wrong entity ABN on receipt.",
+      "next": "Chase corrected copy"
+    },
+    {
+      "name": "Credit card statement",
+      "status": "requested-missing",
+      "owner": "Client",
+      "why": "Still blocking reconciliation.",
+      "next": "Chase"
+    }
+  ],
+  "pilot-package-v1_addition": "collapsed buyer route, browser proof gate and public partial same-input verifier"
+}

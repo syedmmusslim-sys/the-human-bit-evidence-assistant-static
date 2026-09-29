@@ -1,3 +1,11 @@
-# Build 88 static deployment
+# Evidence Assistant Pilot Package v1 public static deployment
 
-Public static artifact. No API, no client data, no integrations, no production claim. Server-side controls are specified, not live.
+Deploy only the contents of `evidence-assistant-pilot-package-v1-public/`.
+
+This is the buyer-facing source of truth: a public static/read-only supervised-pilot package with a pilot offer, workflow simulation, agreement outline, scorecard, pilot setup packet and diligence appendix.
+
+Do not deploy local verifier packs, local runtime files, API routes, forms, credentials, mutable endpoints, proof harnesses, or private-pilot/backend experiments as the public product surface.
+
+Before any public claim, run:
+
+`node mvp-core/tests/run-pilot-package-v1-public-fetchback-gate.js <BASE_URL>`
